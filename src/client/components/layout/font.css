@@ -1,0 +1,12 @@
+@font-face {
+    font-family: OpenSans;
+    src: url('../../assets/Fonts/OpenSans-Regular.ttf');
+}
+@font-face {
+    font-family: OpenSansLight;
+    src: url('../../assets/Fonts/OpenSans-Light.ttf');
+}
+@font-face {
+    font-family: Nasalization;
+    src: url('../../assets/Fonts/nasalization-rg.otf');
+}
