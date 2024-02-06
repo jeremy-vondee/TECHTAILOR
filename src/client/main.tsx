@@ -1,10 +1,10 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
-//MUI importation//
+//*MUI importation
 import { CssBaseline, ThemeProvider } from "@mui/material"
 import theme from "./components/layout/theme"
-//Pages importation
+//*Pages importation
 import AccessoriesPage from "./components/pages/AccessoriesPage"
 import ConsolesPage from "./components/pages/ConsolesPage"
 import ErrorPage from "./components/pages/ErrorPage"
@@ -19,7 +19,7 @@ import SecuritysPage from "./components/pages/SecuritysPage"
 import SignInPage from "./components/pages/SignInPage"
 import SignUpPage from "./components/pages/SignUpPage"
 
-//Route destinations
+//*Route destinations
 const router = createBrowserRouter([
     {
         path: "/",
@@ -62,16 +62,16 @@ const router = createBrowserRouter([
         element: <SecuritysPage />,
     },
     {
-        path: "/error",
-        element: <ErrorPage />,
-    },
-    {
         path: "/consoles",
         element: <ConsolesPage />,
     },
     {
         path: "/accessories",
         element: <AccessoriesPage />,
+    },
+    {
+        path: "/*",
+        element: <ErrorPage />,
     },
 ])
 
