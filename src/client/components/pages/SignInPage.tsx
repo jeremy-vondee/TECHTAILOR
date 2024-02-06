@@ -1,20 +1,21 @@
+import { useState } from "react"
+//*Router link
+import { Link as routerLink } from "react-router-dom"
+//*MUI importation
 import {
     Box,
-    Button,
-    Checkbox,
     Divider,
-    FormControlLabel,
     Link,
     List,
     ListItem,
     Stack,
-    TextField,
     Typography,
 } from "@mui/material"
 import { useTheme } from "@mui/material/styles"
-import Logo from "../../assets/Logo2.svg"
 import { Google, Home } from "@mui/icons-material"
-import { Link as routerLink } from "react-router-dom"
+
+import Logo from "../../assets/Logo2.svg"
+import Form from "../layout/Form"
 
 const SignInPage = () => {
     const theme = useTheme()
@@ -38,72 +39,7 @@ const SignInPage = () => {
                 }}
                 src={Logo}
             />
-            <Stack
-                alignItems={"center"}
-                sx={{
-                    marginTop: { sm: "-8vh", md: 0 },
-                }}>
-                <TextField
-                    label="EMAIL"
-                    type="email"
-                    variant="standard"
-                    margin="normal"
-                    sx={{
-                        width: { xs: "80vw", sm: "60vw", md: "50vw" },
-
-                        "& .MuiFormLabel-root, &.MuiInput-underline": {
-                            color: theme.palette.text.primary,
-                        },
-                    }}
-                />
-                <TextField
-                    label="PASSWORD"
-                    type="password"
-                    variant="standard"
-                    sx={{
-                        width: { xs: "80vw", sm: "60vw", md: "50vw" },
-                        "& .MuiFormLabel-root": {
-                            color: theme.palette.text.primary,
-                        },
-                    }}
-                />
-                <Stack
-                    flexDirection={"row"}
-                    alignItems={"center"}
-                    justifyContent={"space-between"}
-                    sx={{ width: { xs: "80vw", sm: "60vw", md: "50vw" } }}>
-                    <FormControlLabel
-                        control={
-                            <Checkbox
-                                sx={{
-                                    color: theme.palette.text.primary,
-                                }}
-                            />
-                        }
-                        label="Remember password"
-                        sx={{
-                            "& .MuiTypography-root": {
-                                fontSize: { xs: "0.563rem", sm: "1rem" },
-                            },
-                        }}
-                    />
-                    <Link
-                        underline="none"
-                        sx={{ fontSize: { xs: "0.563rem", sm: "1rem" } }}>
-                        Forgot password?{" "}
-                    </Link>
-                </Stack>
-                <Button
-                    variant="contained"
-                    size="large"
-                    sx={{
-                        width: { md: "10vw" },
-                        fontSize: "1rem",
-                        fontWeight: "bolder",
-                    }}>
-                    SIGN IN
-                </Button>
-            </Stack>
+            <Form buttonProp="Sign in" forgotPassword={false} />
             <List>
                 <ListItem
                     sx={{
