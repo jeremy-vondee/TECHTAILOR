@@ -1,3 +1,4 @@
+//* Layout importation
 import Footer from "../layout/Footer"
 import Header from "../layout/Header"
 
