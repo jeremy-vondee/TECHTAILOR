@@ -28,18 +28,17 @@ const SignInPage = () => {
             <Box
                 component="img"
                 alt="logo"
-                mt={-11}
                 sx={{
                     width: { xs: "248px", sm: "400px", md: "640px" },
-                    height: { xs: "104px", sm: "182px", md: "200px" },
+                    height: { xs: "104px", sm: "182px", md: "144px" },
                     backgroundColor: theme.palette.secondary.main,
                     color: theme.palette.text.secondary,
-                    margin: "auto",
+                    margin: "auto ",
                     zIndex: -10,
                 }}
                 src={Logo}
             />
-            <Form buttonProp="Sign in" forgotPassword={false} />
+            <Form buttonProp="Sign in" forgotPassword={true} />
             <List>
                 <ListItem
                     sx={{
