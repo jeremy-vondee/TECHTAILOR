@@ -8,7 +8,7 @@ import theme from "./components/layout/theme"
 import AccessoriesPage from "./components/pages/AccessoriesPage"
 import ConsolesPage from "./components/pages/ConsolesPage"
 import ErrorPage from "./components/pages/ErrorPage"
-import LandingPage from "./components/pages/LandingPage"
+import App from "./App"
 import LaptopsPage from "./components/pages/LaptopsPage"
 import PhonesPage from "./components/pages/PhonesPage"
 import PrintersPage from "./components/pages/PrintersPage"
@@ -23,7 +23,7 @@ import SignUpPage from "./components/pages/SignUpPage"
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <LandingPage />,
+        element: <App />,
     },
     {
         path: "/sign-in",
