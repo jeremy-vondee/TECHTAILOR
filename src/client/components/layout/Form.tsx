@@ -10,7 +10,7 @@ import {
 } from "@mui/material"
 import { FC, ReactNode, useState } from "react"
 import { useForm, Controller } from "react-hook-form"
-import Schema from "../util/Schema"
+import Schema, { SchemaType } from "../util/Schema"
 
 type formProp = {
     buttonProp: ReactNode
@@ -40,7 +40,7 @@ const Form: FC<formProp> = ({ buttonProp, forgotPassword }) => {
         resolver: zodResolver(Schema),
     })
 
-    const handleFormSubmit = (values: typeof Schema) => {
+    const handleFormSubmit = (values: SchemaType) => {
         return console.log(values)
     }
 
