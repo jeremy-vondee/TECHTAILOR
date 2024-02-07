@@ -96,7 +96,12 @@ const Footer = () => {
                 <ListItem
                     sx={{ justifyContent: "center" }}
                     alignItems={"center"}>
-                    <CopyrightRounded sx={{ fontSize: "10px" }} />{" "}
+                    <CopyrightRounded
+                        sx={{
+                            fontSize: "10px",
+                            color: theme.palette.text.secondary,
+                        }}
+                    />{" "}
                     <Typography
                         color={theme.palette.text.secondary}
                         variant="caption">
