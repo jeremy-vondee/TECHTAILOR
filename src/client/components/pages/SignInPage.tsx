@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { FC, useState } from "react"
 //*Router link
 import { Link as routerLink } from "react-router-dom"
 //*MUI importation

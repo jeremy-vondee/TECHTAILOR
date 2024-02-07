@@ -34,39 +34,39 @@ const router = createBrowserRouter([
         element: <SignUpPage />,
     },
     {
-        path: "/phones",
+        path: "/category/phones",
         element: <PhonesPage />,
     },
     {
-        path: "/tvs",
+        path: "/category/tvs",
         element: <TvsPage />,
     },
     {
-        path: "/printers",
+        path: "/category/printers",
         element: <PrintersPage />,
     },
     {
-        path: "/laptops",
+        path: "/category/laptops",
         element: <LaptopsPage />,
     },
     {
-        path: "/toys",
+        path: "/category/toys",
         element: <ToysPage />,
     },
     {
-        path: "/hardwares",
+        path: "/category/hardwares",
         element: <HardwaresPage />,
     },
     {
-        path: "/securitys",
+        path: "/category/securitys",
         element: <SecuritysPage />,
     },
     {
-        path: "/consoles",
+        path: "/category/consoles",
         element: <ConsolesPage />,
     },
     {
-        path: "/accessories",
+        path: "/category/accessories",
         element: <AccessoriesPage />,
     },
     {
