@@ -52,7 +52,7 @@ const Form: FC<formProp> = ({ buttonProp, forgotPassword }) => {
             <Stack
                 alignItems={"center"}
                 sx={{
-                    marginTop: { xs: "-5vh", sm: "-8vh", md: 0 },
+                    marginTop: { xs: "-4vh", sm: "-8vh", md: 0 },
                 }}>
                 <Controller
                     control={control}
