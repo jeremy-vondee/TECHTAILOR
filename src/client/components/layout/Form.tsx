@@ -1,4 +1,8 @@
+import { FC, ReactNode } from "react"
+import { useForm, Controller } from "react-hook-form"
+//*Zod importation
 import { zodResolver } from "@hookform/resolvers/zod"
+//*MUI importation
 import {
     Button,
     Checkbox,
@@ -8,8 +12,7 @@ import {
     TextField,
     useTheme,
 } from "@mui/material"
-import { FC, ReactNode, useState } from "react"
-import { useForm, Controller } from "react-hook-form"
+//*Schema importation
 import Schema, { SchemaType } from "../util/Schema"
 
 type formProp = {
@@ -49,7 +52,7 @@ const Form: FC<formProp> = ({ buttonProp, forgotPassword }) => {
             <Stack
                 alignItems={"center"}
                 sx={{
-                    marginTop: { sm: "-8vh", md: 0 },
+                    marginTop: { xs: "-5vh", sm: "-8vh", md: 0 },
                 }}>
                 <Controller
                     control={control}
@@ -129,7 +132,7 @@ const Form: FC<formProp> = ({ buttonProp, forgotPassword }) => {
                         <Link
                             underline="none"
                             sx={{ fontSize: { xs: "0.563rem", sm: "1rem" } }}>
-                            Forgot password?{" "}
+                            Forgot password?
                         </Link>
                     ) : (
                         ""
@@ -140,7 +143,7 @@ const Form: FC<formProp> = ({ buttonProp, forgotPassword }) => {
                     size="large"
                     type="submit"
                     sx={{
-                        width: { md: "10vw" },
+                        width: "fit-content",
                         fontSize: "1rem",
                         fontWeight: "bolder",
                     }}>

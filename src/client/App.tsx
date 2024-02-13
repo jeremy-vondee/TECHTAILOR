@@ -6,7 +6,7 @@ import LandingPageBody from "./components/layout/LandingPageBody"
 function App() {
     return (
         <>
-            {/* <Header /> */}
+            <Header />
             <LandingPageBody />
             <Footer />
         </>

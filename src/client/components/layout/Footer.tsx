@@ -1,3 +1,4 @@
+//*MUI importation
 import {
     CopyrightRounded,
     FacebookRounded,
@@ -14,13 +15,14 @@ import {
     Typography,
 } from "@mui/material"
 import { useTheme } from "@mui/material/styles"
+//*Icon importation
 import Logo from "../../assets/Logo.svg"
 
 const Footer = () => {
     const theme = useTheme()
     return (
         <Box
-            mt={20}
+            mt={3}
             pl={3}
             sx={{
                 backgroundColor: theme.palette.primary.main,

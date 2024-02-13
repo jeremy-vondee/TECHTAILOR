@@ -1,3 +1,6 @@
+import { Link as routerLink } from "react-router-dom"
+import { useState } from "react"
+//*MUI importation
 import {
     AppBar,
     InputAdornment,
@@ -15,46 +18,45 @@ import { useTheme } from "@mui/material/styles"
 import MenuIcon from "@mui/icons-material/Menu"
 import SearchIcon from "@mui/icons-material/Search"
 import { ShoppingCart } from "@mui/icons-material"
-import { Link as routerLink } from "react-router-dom"
-import { useState } from "react"
+//*Icon importation
 import Logo from "../../assets/Logo.svg"
 
 const Header = () => {
     const Categorize = [
         {
-            path: "/phones",
+            path: "/category/phones",
             link: "Phones",
         },
         {
-            path: "/laptops",
+            path: "/category/laptops",
             link: "Laptops",
         },
         {
-            path: "/tvs",
+            path: "/category/tvs",
             link: "TVs",
         },
         {
-            path: "/toys",
+            path: "/category/toys",
             link: "Toys",
         },
         {
-            path: "/securitys",
+            path: "/category/securitys",
             link: "Security",
         },
         {
-            path: "/hardwares",
+            path: "/category/hardwares",
             link: "Hardware",
         },
         {
-            path: "/accessories",
+            path: "/category/accessories",
             link: "Accessories",
         },
         {
-            path: "/printers",
+            path: "/category/printers",
             link: "Printers",
         },
         {
-            path: "/consoles",
+            path: "/category/consoles",
             link: "Consoles",
         },
     ]
@@ -80,7 +82,7 @@ const Header = () => {
                         }}
                         src={Logo}
                     />
-                    {/* //Big screens */}
+                    {/* //Big Device Width */}
                     <Stack
                         flexDirection="row"
                         alignItems="center"
@@ -125,14 +127,14 @@ const Header = () => {
                         </Link>
                         <ShoppingCart />
                     </Stack>
-                    {/* //Smaller device width */}
+                    {/* //Smaller Device Width */}
                     <Stack
                         flexDirection={"row"}
                         gap={3}
                         sx={{ display: { xs: "flex", sm: "none" } }}>
                         <ShoppingCart />
                         <MenuIcon onClick={handleDrawerToogle} />
-                        {/* //Mobile menu drawer */}
+                        {/* //Mobile mMnu Drawer */}
                         <Drawer
                             variant="temporary"
                             open={openDrawer}
@@ -177,7 +179,7 @@ const Header = () => {
                     </Stack>
                 </Toolbar>
 
-                {/* //Categorize menu */}
+                {/* //Categorize Menu */}
                 <Toolbar
                     sx={{
                         justifyContent: "space-around",
