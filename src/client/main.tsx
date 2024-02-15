@@ -1,23 +1,23 @@
-import React from "react"
+import React, { lazy, Suspense } from "react"
 import ReactDOM from "react-dom/client"
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 //*MUI importation
 import { CssBaseline, ThemeProvider } from "@mui/material"
 import theme from "./components/layout/theme"
 //*Pages importation
-import AccessoriesPage from "./components/pages/AccessoriesPage"
-import ConsolesPage from "./components/pages/ConsolesPage"
-import ErrorPage from "./components/pages/ErrorPage"
-import App from "./App"
-import LaptopsPage from "./components/pages/LaptopsPage"
-import PhonesPage from "./components/pages/PhonesPage"
-import PrintersPage from "./components/pages/PrintersPage"
-import TvsPage from "./components/pages/TvsPage"
-import ToysPage from "./components/pages/ToysPage"
-import HardwaresPage from "./components/pages/HardwaresPage"
-import SecuritysPage from "./components/pages/SecuritysPage"
-import SignInPage from "./components/pages/SignInPage"
-import SignUpPage from "./components/pages/SignUpPage"
+const AccessoriesPage = lazy(() => import("./components/pages/AccessoriesPage"))
+const ConsolesPage = lazy(() => import("./components/pages/ConsolesPage"))
+const ErrorPage = lazy(() => import("./components/pages/ErrorPage"))
+const App = lazy(() => import("./App"))
+const LaptopsPage = lazy(() => import("./components/pages/LaptopsPage"))
+const PhonesPage = lazy(() => import("./components/pages/PhonesPage"))
+const PrintersPage = lazy(() => import("./components/pages/PrintersPage"))
+const TvsPage = lazy(() => import("./components/pages/TvsPage"))
+const ToysPage = lazy(() => import("./components/pages/ToysPage"))
+const HardwaresPage = lazy(() => import("./components/pages/HardwaresPage"))
+const SecuritysPage = lazy(() => import("./components/pages/SecuritysPage"))
+const SignInPage = lazy(() => import("./components/pages/SignInPage"))
+const SignUpPage = lazy(() => import("./components/pages/SignUpPage"))
 
 //*Route destinations
 const router = createBrowserRouter([
@@ -27,51 +27,111 @@ const router = createBrowserRouter([
     },
     {
         path: "/sign-in",
-        element: <SignInPage />,
+        element: (
+            <Suspense>
+                {" "}
+                <SignInPage />
+            </Suspense>
+        ),
     },
     {
         path: "/sign-up",
-        element: <SignUpPage />,
+        element: (
+            <Suspense>
+                {" "}
+                <SignUpPage />
+            </Suspense>
+        ),
     },
     {
         path: "/category/phones",
-        element: <PhonesPage />,
+        element: (
+            <Suspense>
+                {" "}
+                <PhonesPage />
+            </Suspense>
+        ),
     },
     {
         path: "/category/tvs",
-        element: <TvsPage />,
+        element: (
+            <Suspense>
+                {" "}
+                <TvsPage />
+            </Suspense>
+        ),
     },
     {
         path: "/category/printers",
-        element: <PrintersPage />,
+        element: (
+            <Suspense>
+                {" "}
+                <PrintersPage />
+            </Suspense>
+        ),
     },
     {
         path: "/category/laptops",
-        element: <LaptopsPage />,
+        element: (
+            <Suspense>
+                {" "}
+                <LaptopsPage />
+            </Suspense>
+        ),
     },
     {
         path: "/category/toys",
-        element: <ToysPage />,
+        element: (
+            <Suspense>
+                {" "}
+                <ToysPage />
+            </Suspense>
+        ),
     },
     {
         path: "/category/hardwares",
-        element: <HardwaresPage />,
+        element: (
+            <Suspense>
+                {" "}
+                <HardwaresPage />
+            </Suspense>
+        ),
     },
     {
         path: "/category/securitys",
-        element: <SecuritysPage />,
+        element: (
+            <Suspense>
+                {" "}
+                <SecuritysPage />
+            </Suspense>
+        ),
     },
     {
         path: "/category/consoles",
-        element: <ConsolesPage />,
+        element: (
+            <Suspense>
+                {" "}
+                <ConsolesPage />
+            </Suspense>
+        ),
     },
     {
         path: "/category/accessories",
-        element: <AccessoriesPage />,
+        element: (
+            <Suspense>
+                {" "}
+                <AccessoriesPage />
+            </Suspense>
+        ),
     },
     {
         path: "/*",
-        element: <ErrorPage />,
+        element: (
+            <Suspense>
+                {" "}
+                <ErrorPage />{" "}
+            </Suspense>
+        ),
     },
 ])
 
