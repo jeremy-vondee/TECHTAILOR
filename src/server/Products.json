@@ -1,467 +1,83 @@
 [
     {
-        "name": "Alienware M6",
+        "Laptop": [
+            {
+        "name": "Alienware M16",
         "brand": "Dell",
-        "category": "Laptop",
         "price": 1234,
         "key specs": {
-            "Processor": "13th Gen Intel® Core™ i7-13700HX (30 MB cache, 16 cores, 24 threads, up to 5.00 GHz Turbo)",
-            "Graphics Card": "NVIDIA® GeForce RTX™ 4070, 8 GB GDDR6",
+            "Processor": "13th Gen Intel Core i7-13700",
             "RAM": "16 GB",
             "Display": "16 inch",
             "SDD": "512 GB"
         },
-        "full specs": {
-            "Processor": "13th Gen Intel® Core™ i7-13700HX (30 MB cache, 16 cores, 24 threads, up to 5.00 GHz Turbo)",
-            "Graphics Card": "NVIDIA® GeForce RTX™ 4070, 8 GB GDDR6",
-            "RAM": "16 GB, DDR5, 4800 MT/s",
-            "Display": "16 inch, , QHD+ 2560x1600, 165Hz, Non-Touch, 100% sRGB, 3ms, ComfortView Plus, NVIDIA G-SYNC, DDS",
-            "SDD": "512 GB",
-            "Ports": "2 Type-C Port (Thunderbolt™ 4.0, USB 4 Gen 2, DisplayPort 1.4, and 15W Power Delivery (3A/5V) capabilities) 1 USB Type-A 3.2 Gen 1, 1 HDMI 2.1 Output port, 1 Mini DisplayPort 1.4, 1 Power/DC-in port, 1 RJ-45 Ethernet Port, 1 USB 3.2 Gen 1 Type-A with PowerShare Port, 1 Global headset jack 1 SD card slot",
-            "Dimensions & Weight": "Height: 1” (25.4 mm) Width: 14.5” (368.9 mm) Depth: 11.41” (289.9 mm) Maximum Weight: 7.17 lb (3.25 kg)",
-            "Camera": "1080p at 30 fps FHD camera, 1080p at 30 fps FHD IR camera, Dual-array microphones",
-            "Audio and Speakers": "Stereo speakers, Realtek ALC3254",
-            "Touchpad": "Multi-touch gesture touchpad with integrated scrolling",
-            "Wireless": "Intel® Killer™ Wi-Fi 6E AX1675, 2x2, 802.11ax, Bluetooth® wireless card",
-            "Primary Battery": "6 Cell, 86 Wh, integrated",
-            "Battery Life": "Up to 5 hours, 56 minutes",
-            "Power": "330W AC adapter"
-        },
-        "img": "hh"
+        "full specs": "13th Gen Intel Core i7-13700HX (30 MB cache, 16 cores, 24 threads, up to 5.00 GHz Turbo) NVIDIA GeForce RTX 4070, 8 GB GDDR6 16 GB, DDR5, 4800 MT/s 16 inch QHD+ 2560x1600, 165Hz, Non-Touch, 100% sRGB, 3ms, ComfortView Plus, NVIDIA G-SYNC, DDS 512 GB 2 Type-C Port (Thunderbolt™ 4.0, USB 4 Gen 2, DisplayPort 1.4, and 15W Power Delivery (3A/5V) capabilities) 1 USB Type-A 3.2 Gen 1, 1 HDMI 2.1 Output port, 1 Mini DisplayPort 1.4, 1 Power/DC-in port, 1 RJ-45 Ethernet Port, 1 USB 3.2 Gen 1 Type-A with PowerShare Port, 1 Global headset jack 1 SD card slot Height: 1” (25.4 mm) Width: 14.5” (368.9 mm) Depth: 11.41” (289.9 mm) Maximum Weight: 7.17 lb (3.25 kg) 1080p at 30 fps FHD camera, 1080p at 30 fps FHD IR camera, Dual-array microphones Stereo speakers, Realtek ALC3254 Multi-touch gesture touchpad with integrated scrolling Intel® Killer™ Wi-Fi 6E AX1675, 2x2, 802.11ax, Bluetooth® wireless card 6 Cell, 86 Wh, integrated Up to 5 hours, 56 minutes 330W AC adapter",
+        "img": "./assest/alienware-m16.png"
     },{
         "name": "Alienware M18",
         "brand": "Dell",
-        "category": "Laptop",
         "price": 1234,
-        "key specs": "ghh",
+        "key specs": {
+            "Processor": "13th Gen Intel Core  i9-13980",
+            "RAM": "32 GB",
+            "Display": "18 inch",
+            "SDD": "2 TB"
+        },"full specs": "13th Gen Intel Core i9-13980HX (36 MB cache, 24 cores, 32 threads, up to 5.60 GHz Turbo) NVIDIA GeForce RTX 4090, 16 GB GDDR6, 18 inch QHD+ (2560 x 1600) 165Hz, 3ms, ComfortView Plus, NVIDIA G-SYNC + DDS, 100% DCI-P3, FHD IR 1 USB 3.2 Gen 1 port with PowerShare 3 USB 3.2 Gen 1 ports Thunderbolt™ 4 Gen 2 Type-C® ports with DisplayPort Alt Mode/USB4 1 RJ45 Ethernet port 1 Universal audio port 1 HDMI 2.1 port 1 power-adapter port 1 mini-Display port 1 SD-card slot 1080p at 30 fps FHD IR camera Dual-array microphones Stereo speakers, 2 W x 2 = 4 W total Realtek ALC3254 Intel® Killer™ Wi-Fi 6E AX1675, 2x2, 802.11ax, Bluetooth® wireless card 6 Cell, 97 Wh, integrated Up to 5 hours, 47 minutes 330W AC adapter",
         "spec": "ggg",
-        "img": "hh"
+        "img": "./assest/alienware-m18.png"
     },
     {
         "name": "Alienware X14 R2",
         "brand": "Dell",
-        "category": "Laptop",
+        
         "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
+        "key specs": {
+            "Processor": "13th Gen Intel Core  i5-13420",
+            "RAM": "16 GB",
+            "Display": "14 inch",
+            "SDD": "512 GB"
+        },
+        "full specs": "13th Gen Intel® Core™ i5-13420H (12 MB cache, 8 cores, 12 threads, up to 4.60 GHz Turbo) NVIDIA® GeForce RTX™ 3050, 6 GB GDDR6 14 inch QHD+ (2560 x 1600)165Hz, 3ms, 300nitsDCIP3 100%typ + Hello/LBL/GSYNC/DDS/ ComfortView Plus 16 GB: LPDDR5, 4800 MT/s 512 GB, M.2, PCIe NVMe, SSD 1 USB 3.2 Gen 2 Type-C with Power Delivery and DisplayPort™  1 Global headset jack port 1 HDMI 2.1 port 1 USB 3.2 Gen 1 Type-A port with PowerShare 2 Thunderbolt™ 4 ports with Power Delivery and DisplayPort™ (Type-C port) 1 MicroSD-card slot 1080p at 30 fps, FHD RGB+IR camera Dual-array microphones Speaker: 2 W x 2 Intel® Wi-Fi 6E AX211, 2x2, 802.11ax, MU-MIMO, Bluetooth® wireless card 6 Cell, 80 Wh, Lithium Ion, Alienware Battery Defender Up to 6 hours, 35 minutes 130W AC small form factor adapter, USB Type-C",
+        "img": "./assest/alienware-x14 R2.png"
     },{
         "name": "G15 Gaming",
         "brand": "Dell",
-        "category": "Laptop",
         "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },
-    {
-        "name": "G16 Gaming",
-        "brand": "Dell",
-        "category": "Laptop",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },{
-        "name": "Inspiron 15 3520",
-        "brand": "Dell",
-        "category": "Laptop",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },
-    {
-        "name": "Inspiron 16 5630",
-        "brand": "Dell",
-        "category": "Laptop",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },{
-        "name": "Inspiron 16 7630",
-        "brand": "Dell",
-        "category": "Laptop",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },
-    {
-        "name": "Inspiron 16 Plus 7640",
-        "brand": "Dell",
-        "category": "Laptop",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },{
-        "name": "Latitude 14 3440",
-        "brand": "Dell",
-        "category": "Laptop",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },
-    {
-        "name": "Latitude 14 5440",
-        "brand": "Dell",
-        "category": "Laptop",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },{
-        "name": "Latitude14 7440",
-        "brand": "Dell",
-        "category": "Laptop",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },
-    {
-        "name": "XPS",
-        "brand": "Dell",
-        "category": "Laptop",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },{
-        "name": "Vostro 14 3430",
-        "brand": "Dell",
-        "category": "Laptop",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },
-    {
-        "name": "Vostro 3530",
-        "brand": "Dell",
-        "category": "Laptop",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },
-    {
-        "name": "Precision",
-        "brand": "Dell",
-        "category": "Laptop",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },
-    {
-        "name": "Vostro 16 5630",
-        "brand": "Dell",
-        "category": "Laptop",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },
-    {
-        "name": "HP 250",
-        "brand": "HP",
-        "category": "Laptop",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },
-    {
-        "name": "HP Dragonfly Pro Chromebook",
-        "brand": "HP",
-        "category": "Laptop",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },
-    {
-        "name": "HP EliteBook 860",
-        "brand": "HP",
-        "category": "Laptop",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },
-    {
-        "name": "HP Envy Laptop 16-h1000ca",
-        "brand": "HP",
-        "category": "Laptop",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },
-    {
-        "name": "HP Laptop 15t-fd100",
-        "brand": "HP",
-        "category": "Laptop",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },
-    {
-        "name": "HP Pavilion 15",
-        "brand": "HP",
-        "category": "Laptop",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },
-    {
-        "name": "HP ProBook 450",
-        "brand": "HP",
-        "category": "Laptop",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },
-    {
-        "name": "HP ProBook 455",
-        "brand": "HP",
-        "category": "Laptop",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },
-    {
-        "name": "HP Spectre x360",
-        "brand": "HP",
-        "category": "Laptop",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },
-    {
-        "name": "HP ZBook Firefly 14",
-        "brand": "HP",
-        "category": "Laptop",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },
-    {
-        "name": "HP ZBook Fury 16",
-        "brand": "HP",
-        "category": "Laptop",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },
-    {
-        "name": "HP ZBook Power",
-        "brand": "HP",
-        "category": "Laptop",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },
-    {
-        "name": "HP Victus 16T R100",
-        "brand": "HP",
-        "category": "Laptop",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },
-    {
-        "name": "MacBook Air 13 M1",
-        "brand": "Apple",
-        "category": "Laptop",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },
-    {
-        "name": "MacBook Air 13 M2",
-        "brand": "Apple",
-        "category": "Laptop",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },
-    {
-        "name": "MacBook Air 13 M2",
-        "brand": "Apple",
-        "category": "Laptop",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },
-    {
-        "name": "MacBook Pro M2",
-        "brand": "Apple",
-        "category": "Laptop",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },
-    {
-        "name": "MacBook Pro 14 M3 Max",
-        "brand": "Apple",
-        "category": "Laptop",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },
-    {
-        "name": "MacBook Pro 16 M3 Max",
-        "brand": "Apple",
-        "category": "Laptop",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },
-    {
-        "name": "MacBook Pro 14 M3 Pro",
-        "brand": "Apple",
-        "category": "Laptop",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },
-    {
-        "name": "MacBook Pro 16 M3 Pro",
-        "brand": "Apple",
-        "category": "Laptop",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },
-    {
-        "name": "Iphone 15",
-        "brand": "Apple",
-        "category": "Mobile",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },
-    {
-        "name": "Iphone 14",
-        "brand": "Apple",
-        "category": "Mobile",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },
-    {
-        "name": "Iphone 15 Pro",
-        "brand": "Apple",
-        "category": "Mobile",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },
-    {
-        "name": "Galaxy S22",
-        "brand": "Samsung",
-        "category": "Mobile",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },
-    {
-        "name": "Galaxy S23",
-        "brand": "Samsung",
-        "category": "Mobile",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },
-    {
-        "name": "Galaxy S23 FE",
-        "brand": "Samsung",
-        "category": "Mobile",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },
-    {
-        "name": "Galaxy S23 Ultra",
-        "brand": "Samsung",
-        "category": "Mobile",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },
-    {
-        "name": "Ps4 Pro",
-        "brand": "Playstation",
-        "category": "Console",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },
-    {
-        "name": "Ps4 Slim",
-        "brand": "Playstation",
-        "category": "Console",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },
-    {
-        "name": "Xbox Series X",
-        "brand": "Xbox",
-        "category": "Console",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },
-    {
-        "name": "Xbox Series S",
-        "brand": "Xbox",
-        "category": "Console",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
-    },
-    {
-        "name": "Nintendo Switch",
-        "brand": "Nintendo",
-        "category": "Console",
-        "price": 1234,
-        "key specs": "ghh",
-        "spec": "ggg",
-        "img": "hh"
+        "key specs": {
+            "Processor": "13th Gen Intel Core  i7-13650",
+            "RAM": "16 GB",
+            "Display": "15.6 inch",
+            "SDD": "1 TB"
+        },
+        "spec": "13th Gen Intel® Core™ i7-13650HX (24 MB cache, 14 cores, 20 threads, up to 4.90 GHz Turbo) NVIDIA® GeForce RTX™ 4060, 8 GB GDDR6 15.6 inch, FHD 1920x1080, 165Hz, Non-Touch, 100% sRGB, 3ms, ComfortView Plus, NVIDIA G-SYNC + DDS 16 GB: 2 x 8 GB, DDR5, 4800 MT/s 1 TB, M.2, PCIe NVMe, SSD 1 headset (headphone and microphone combo) port 1 RJ45 Ethernet port 3 USB 3.2 Gen 1 ports 1 HDMI 2.1 port 1 USB-C 3.2 Gen 2 port with DisplayPort™ Integrated widescreen HD (720p) Webcam with Single Array Digital Microphone 2 tuned speakers with Dolby Audio 1 combo headphone / microphone jack Intel® Wi-Fi 6 AX201, 2x2, 802.11ax, Bluetooth® wireless card 6 Cell, 86 Wh, integrated Up to 6 hours, 31 minutes 330W AC adapter",
+        "img": "./assest/G15 Gaming.png"
     }
-    
+        ],
+        "Phone": [{
+        "name": "Galaxy 23",
+        "brand": "Samsung",
+        "price": 1234,
+        "spec": "Nano-SIM and eSIM or Dual SIM (2 Nano-SIMs and eSIM, dual stand-by) IP68 dust/water resistant (up to 1.5m for 30 min) Armor aluminum frame with tougher drop and scratch resistance Dynamic AMOLED 2X, 120Hz, HDR10+, 1200 nits (HBM), 1750 nits (peak) 6.1 inches, 90.1 cm2 (~86.8% screen-to-body ratio) 1080 x 2340 pixels, 19.5:9 ratio (~425 ppi density) Corning Gorilla Glass Victus 2 Always-on display Android 13, upgradable to Android 14, One UI 6 Qualcomm SM8550-AC Snapdragon 8 Gen 2 (4 nm) Octa-core (1x3.36 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz Cortex-A510) Adreno 740 128GB 8GB RAM, 256GB 8GB RAM, 512GB 8GB RAM Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass, barometer Samsung DeX, Samsung Wireless DeX (desktop experience support)",
+        "img": "./assest/Galaxy S23.jpg"
+    }, {
+        "name": "Galaxy 23 FE",
+        "brand": "Samsung",
+        "price": 1234,
+        "spec": "Nano-SIM and eSIM or Dual SIM (2 Nano-SIMs and eSIM, dual stand-by) IP68 dust/water resistant (up to 1.5m for 30 min) Armor aluminum frame with tougher drop and scratch resistance Dynamic AMOLED 2X, 120Hz, HDR10+, 1200 nits (HBM), 1750 nits (peak) 6.1 inches, 90.1 cm2 (~86.8% screen-to-body ratio) 1080 x 2340 pixels, 19.5:9 ratio (~425 ppi density) Corning Gorilla Glass Victus 2 Always-on display Android 13, upgradable to Android 14, One UI 6 Qualcomm SM8550-AC Snapdragon 8 Gen 2 (4 nm) Octa-core (1x3.36 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz Cortex-A510) Adreno 740 128GB 8GB RAM, 256GB 8GB RAM, 512GB 8GB RAM Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass, barometer Samsung DeX, Samsung Wireless DeX (desktop experience support)",
+
+        "img": "./assest/Galaxy S23 FE.jpg"
+    },{
+        "name": "Galaxy 23 Ultra",
+        "brand": "Samsung",
+        "price": 1234,
+        "spec": "Nano-SIM and eSIM or Dual SIM (2 Nano-SIMs and eSIM, dual stand-by) IP68 dust/water resistant (up to 1.5m for 30 min) Armor aluminum frame with tougher drop and scratch resistance Dynamic AMOLED 2X, 120Hz, HDR10+, 1200 nits (HBM), 1750 nits (peak) 6.1 inches, 90.1 cm2 (~86.8% screen-to-body ratio) 1080 x 2340 pixels, 19.5:9 ratio (~425 ppi density) Corning Gorilla Glass Victus 2 Always-on display Android 13, upgradable to Android 14, One UI 6 Qualcomm SM8550-AC Snapdragon 8 Gen 2 (4 nm) Octa-core (1x3.36 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz Cortex-A510) Adreno 740 128GB 8GB RAM, 256GB 8GB RAM, 512GB 8GB RAM Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass, barometer Samsung DeX, Samsung Wireless DeX (desktop experience support)",
+        "img": "./assest/Galaxy S23 Ultra.jpg"
+    }, {
+        "name": "Galaxy 22",
+        "brand": "Samsung",
+        "price": 1234,
+        "spec": "Nano-SIM and eSIM or Dual SIM (2 Nano-SIMs and eSIM, dual stand-by) IP68 dust/water resistant (up to 1.5m for 30 min) Armor aluminum frame with tougher drop and scratch resistance Dynamic AMOLED 2X, 120Hz, HDR10+, 1200 nits (HBM), 1750 nits (peak) 6.1 inches, 90.1 cm2 (~86.8% screen-to-body ratio) 1080 x 2340 pixels, 19.5:9 ratio (~425 ppi density) Corning Gorilla Glass Victus 2 Always-on display Android 13, upgradable to Android 14, One UI 6 Qualcomm SM8550-AC Snapdragon 8 Gen 2 (4 nm) Octa-core (1x3.36 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz Cortex-A510) Adreno 740 128GB 8GB RAM, 256GB 8GB RAM, 512GB 8GB RAM Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass, barometer Samsung DeX, Samsung Wireless DeX (desktop experience support)",
+        "img": "./assest/Galaxy-S22.jpg"
+    }]
+    }
 ]
