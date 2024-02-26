@@ -3,6 +3,7 @@ import ViteExpress from "vite-express"
 import Products from "./Products.json"
 
 const app = express()
+app.use(express.static("public"))
 
 app.get("/products", (req, res) => {
     res.json(Products)
