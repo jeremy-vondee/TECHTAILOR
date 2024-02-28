@@ -5,7 +5,9 @@ export type productType = {
     name: string
     brand: string
     price: number
-    keySpec: string
+    keySpecs: {
+        [key: string]: string[]
+    }
     spec: string
     img: string
 }
