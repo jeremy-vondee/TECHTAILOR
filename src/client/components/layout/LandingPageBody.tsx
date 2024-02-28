@@ -19,11 +19,10 @@ import DellLogo from "../../assets/Dell.svg"
 import HpLogo from "../../assets/Hp.svg"
 import LgLogo from "../../assets/Lg.svg"
 import NintendoLogo from "../../assets/Nintendo.svg"
-import pic from "../../assets/alienware-m16.png"
-
+//* Fetch util importation
 import useFetch, { productType } from "../hook/useFetch"
-
-import Carousel from "./Carousel"
+//* Layout importation
+import Carousel from "./HeroCarousel"
 
 const LandingPageBody = () => {
     const theme = useTheme()
@@ -32,15 +31,8 @@ const LandingPageBody = () => {
 
     return (
         <>
-            <Box mt={18}>
-                <Carousel
-                    img={pic}
-                    name="Alienware M16"
-                    hdd="512 GB"
-                    display="16 inch"
-                    cpu="13th Gen Intel Core i7"
-                    ram="16 GB"
-                />
+            <Box mt={{ xs: 14, sm: 18 }}>
+                <Carousel fetchRes={fetchRes} />
                 //*Laptop section
                 <Stack mt={5}>
                     <Stack
@@ -63,10 +55,10 @@ const LandingPageBody = () => {
                     </Stack>
                     <Grid
                         container
-                        pl={3}
+                        pl={4}
                         mt={5}
-                        gap={2}
-                        columnGap={{ xs: 2, sm: 2, md: 0 }}>
+                        gap={{ sm: 5, md: 3 }}
+                        columnGap={{ xs: 3, sm: 5, md: 0 }}>
                         {fetchRes !== null && fetchRes !== undefined
                             ? fetchRes?.Laptop?.filter(
                                   (_, index) => index < 4
@@ -74,9 +66,14 @@ const LandingPageBody = () => {
                                   <Grid
                                       item
                                       key={key.name}
-                                      xs={12}
-                                      sm={4}
-                                      md={3}>
+                                      xs={5}
+                                      md={3}
+                                      sx={{
+                                          maxWidth: {
+                                              xs: "fit-content",
+                                              sm: "100%",
+                                          },
+                                      }}>
                                       <Box
                                           component="img"
                                           alt={`${key.name} image`}
@@ -94,20 +91,14 @@ const LandingPageBody = () => {
                                       <Stack>
                                           <Typography
                                               sx={{
-                                                  fontSize: {
-                                                      sm: "2.5rem",
-                                                      md: "1.1rem",
-                                                  },
+                                                  fontSize: "1.1rem",
                                               }}>
                                               {key.name}
                                           </Typography>
                                           <Typography
                                               variant="caption"
                                               sx={{
-                                                  fontSize: {
-                                                      sm: "2.5rem",
-                                                      md: "1.1rem",
-                                                  },
+                                                  fontSize: "1.1rem",
                                               }}>
                                               {key.price}
                                           </Typography>
@@ -149,7 +140,8 @@ const LandingPageBody = () => {
                         container
                         pl={3}
                         mt={5}
-                        columnGap={{ xs: 2, sm: 2, md: 0 }}>
+                        gap={{ xs: 3, sm: 5, md: 3 }}
+                        columnGap={{ sm: 5, md: 0 }}>
                         {fetchRes !== null && fetchRes !== undefined
                             ? fetchRes?.Phone?.filter(
                                   (_, index) => index < 4
@@ -159,7 +151,13 @@ const LandingPageBody = () => {
                                       key={key.name}
                                       xs={12}
                                       sm={4}
-                                      md={3}>
+                                      md={3}
+                                      sx={{
+                                          maxWidth: {
+                                              xs: "max-content",
+                                              sm: "100%",
+                                          },
+                                      }}>
                                       <Box
                                           component="img"
                                           alt={`${key.name} image`}
@@ -171,27 +169,20 @@ const LandingPageBody = () => {
                                                   lg: "18.75rem",
                                               },
                                               height: "10rem",
-
                                               objectFit: "contain",
                                           }}
                                       />
                                       <Stack>
                                           <Typography
                                               sx={{
-                                                  fontSize: {
-                                                      sm: "2.5rem",
-                                                      md: "1.1rem",
-                                                  },
+                                                  fontSize: "1.1rem",
                                               }}>
                                               {key.name}
                                           </Typography>
                                           <Typography
                                               variant="caption"
                                               sx={{
-                                                  fontSize: {
-                                                      sm: "2.5rem",
-                                                      md: "1.1rem",
-                                                  },
+                                                  fontSize: "1.1rem",
                                               }}>
                                               {key.price}
                                           </Typography>
@@ -233,7 +224,8 @@ const LandingPageBody = () => {
                         container
                         pl={3}
                         mt={5}
-                        columnGap={{ xs: 2, sm: 2, md: 0 }}>
+                        gap={{ sm: 5, md: 3 }}
+                        columnGap={{ xs: 3, sm: 5, md: 0 }}>
                         {fetchRes !== null && fetchRes !== undefined
                             ? fetchRes?.Console?.filter(
                                   (_, index) => index < 4
@@ -243,7 +235,13 @@ const LandingPageBody = () => {
                                       key={key.name}
                                       xs={12}
                                       sm={4}
-                                      md={3}>
+                                      md={3}
+                                      sx={{
+                                          maxWidth: {
+                                              xs: "fit-content",
+                                              sm: "100%",
+                                          },
+                                      }}>
                                       <Box
                                           component="img"
                                           alt={`${key.name} image`}
@@ -261,20 +259,14 @@ const LandingPageBody = () => {
                                       <Stack>
                                           <Typography
                                               sx={{
-                                                  fontSize: {
-                                                      sm: "2.5rem",
-                                                      md: "1.1rem",
-                                                  },
+                                                  fontSize: "1.1rem",
                                               }}>
                                               {key.name}
                                           </Typography>
                                           <Typography
                                               variant="caption"
                                               sx={{
-                                                  fontSize: {
-                                                      sm: "2.5rem",
-                                                      md: "1.1rem",
-                                                  },
+                                                  fontSize: "1.1rem",
                                               }}>
                                               {key.price}
                                           </Typography>
