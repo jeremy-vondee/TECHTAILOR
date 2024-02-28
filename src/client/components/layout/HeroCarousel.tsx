@@ -1,5 +1,6 @@
 //*MUI importation
 import { Box, Button, Grid, Typography, useTheme } from "@mui/material"
+import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material"
 //*Icons importation
 import Memory from "../../assets/Ram.svg"
 import Cpu from "../../assets/Cpu.svg"
@@ -9,18 +10,57 @@ import Hdd from "../../assets/Hdd.svg"
 import Carousel from "nuka-carousel"
 
 import { productType } from "../hook/useFetch"
+import { FC, ReactNode } from "react"
 type carouselProps = {
     fetchRes: {
         [key: string]: productType[]
     } | null
 }
 
-const HeroCarousel = ({ fetchRes }: carouselProps) => {
+type CustomControlPropType = {
+    onClickHandler: () => void
+    children: ReactNode
+}
+
+const HeroCarousel: FC<carouselProps> = ({ fetchRes }: carouselProps) => {
     const theme = useTheme()
+
+    const CustomControlButton: FC<CustomControlPropType> = ({
+        onClickHandler,
+        children,
+    }) => {
+        return (
+            <>
+                <Button
+                    onClick={onClickHandler}
+                    sx={{
+                        opacity: 0,
+                        "&:hover": {
+                            opacity: 1,
+                        },
+                    }}>
+                    {children}
+                </Button>
+            </>
+        )
+    }
 
     return (
         <>
-            <Carousel autoplay={true} wrapAround={true}>
+            <Carousel
+                autoplay={true}
+                wrapAround={true}
+                renderBottomCenterControls={null}
+                renderCenterLeftControls={({ previousSlide }) => (
+                    <CustomControlButton onClickHandler={previousSlide}>
+                        <ArrowBackIos />
+                    </CustomControlButton>
+                )}
+                renderCenterRightControls={({ nextSlide }) => (
+                    <CustomControlButton onClickHandler={nextSlide}>
+                        <ArrowForwardIos />
+                    </CustomControlButton>
+                )}>
                 {fetchRes !== null && fetchRes !== undefined
                     ? fetchRes?.Laptop?.filter((_, index) => index < 4).map(
                           (key: productType) => (
