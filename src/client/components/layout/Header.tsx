@@ -1,5 +1,5 @@
 import { Link as routerLink } from "react-router-dom"
-import { useState } from "react"
+import { FC, useState } from "react"
 //*MUI importation
 import {
     AppBar,
@@ -10,7 +10,6 @@ import {
     Toolbar,
     Drawer,
     List,
-    Divider,
     Box,
     ListItem,
 } from "@mui/material"
@@ -21,42 +20,42 @@ import { ShoppingCart } from "@mui/icons-material"
 //*Icon importation
 import Logo from "../../assets/Logo.svg"
 
-const Header = () => {
+const Header: FC = () => {
     const Categorize = [
         {
-            path: "/category/phones",
+            path: "phones",
             link: "Phones",
         },
         {
-            path: "/category/laptops",
+            path: "laptops",
             link: "Laptops",
         },
         {
-            path: "/category/tvs",
+            path: "tvs",
             link: "TVs",
         },
         {
-            path: "/category/toys",
+            path: "toys",
             link: "Toys",
         },
         {
-            path: "/category/securitys",
-            link: "Security",
+            path: "securities",
+            link: "Securities",
         },
         {
-            path: "/category/hardwares",
-            link: "Hardware",
+            path: "hardwares",
+            link: "Hardwares",
         },
         {
-            path: "/category/accessories",
+            path: "accessories",
             link: "Accessories",
         },
         {
-            path: "/category/printers",
+            path: "printers",
             link: "Printers",
         },
         {
-            path: "/category/consoles",
+            path: "consoles",
             link: "Consoles",
         },
     ]
@@ -134,7 +133,7 @@ const Header = () => {
                         sx={{ display: { xs: "flex", sm: "none" } }}>
                         <ShoppingCart />
                         <MenuIcon onClick={handleDrawerToogle} />
-                        {/* //Mobile mMnu Drawer */}
+                        {/* //Mobile menu Drawer */}
                         <Drawer
                             variant="temporary"
                             open={openDrawer}
@@ -155,11 +154,11 @@ const Header = () => {
                                     width: 200,
                                 }}>
                                 {Categorize.map((keys) => (
-                                    <ListItem divider>
+                                    <ListItem divider key={keys.link}>
                                         <Link
                                             key={keys.link}
                                             component={routerLink}
-                                            to={keys.path}
+                                            to={`categories/${keys.path}`}
                                             pt={2}
                                             underline="none">
                                             {keys.link}
@@ -190,7 +189,7 @@ const Header = () => {
                         <Link
                             key={keys.link}
                             component={routerLink}
-                            to={keys.path}
+                            to={`/categories/${keys.path}`}
                             underline="none"
                             sx={{
                                 color: theme.palette.text.secondary,
