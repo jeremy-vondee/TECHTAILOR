@@ -12,7 +12,7 @@ export type productType = {
     img: string
 }
 
-type fetchResponseType = {
+export type fetchResponseType = {
     [key: string]: productType[]
 }
 
