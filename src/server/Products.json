@@ -1,5 +1,5 @@
 {
-    "Laptop": [
+    "laptops": [
         {
             "name": "Alienware M16",
             "brand": "Dell",
@@ -222,7 +222,7 @@
             "img": "/assest/MacBook Air M2 15.png"
         }
     ],
-    "Phone": [
+    "phones": [
         {
             "name": "Galaxy 23",
             "brand": "Samsung",
@@ -281,7 +281,7 @@
             "img": "/assest/Iphone 15.jpg"
         }
     ],
-    "Console": [
+    "consoles": [
         {
             "name": "PS4 Slim",
             "brand": "Playstation",
@@ -315,6 +315,60 @@
             "brand": "Nintendo",
             "spec": "Nano-SIM and eSIM or Dual SIM (2 Nano-SIMs and eSIM, dual stand-by) IP68 dust/water resistant (up to 1.5m for 30 min) Armor aluminum frame with tougher drop and scratch resistance Dynamic AMOLED 2X, 120Hz, HDR10+, 1200 nits (HBM), 1750 nits (peak) 6.1 inches, 90.1 cm2 (~86.8% screen-to-body ratio) 1080 x 2340 pixels, 19.5:9 ratio (~425 ppi density) Corning Gorilla Glass Victus 2 Always-on display Android 13, upgradable to Android 14, One UI 6 Qualcomm SM8550-AC Snapdragon 8 Gen 2 (4 nm) Octa-core (1x3.36 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz Cortex-A510) Adreno 740 128GB 8GB RAM, 256GB 8GB RAM, 512GB 8GB RAM Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass, barometer Samsung DeX, Samsung Wireless DeX (desktop experience support)",
             "img": "/assest/Nintendo Switch.jpg"
+        }
+    ],
+    "toys": [
+        {
+            "name": "Hoonigan Mustang RC Car",
+            "brand": "",
+            "price": 1234,
+            "spec": "Speed and Range: Achieves an exhilarating top speed of 4 mph, ensuring dynamic remote-controlled experiences, coupled with an impressive 100 ft range for versatile and extended play 2.4 GHz Remote Control: Precision control at your fingertips with the included pistol remote control, ensuring accurate handling, requires 2 AA batteries (NOT INCLUDED) USB Rechargeable: This Hoonigan RC Car comes equipped with a 3.7V rechargeable battery that can easily be charged using a USB port. Realistic Experience: Delivers a realistic and immersive experience with a replica design, appealing to enthusiasts and collectors alike. Immerse yourself in the Hoonigan engine as it races around The Real Hoonigan Powerhouse: With over 1.5 billion views on YouTube, the full-sized Hoonigan Mustang boasts 1,400 horsepower, a rally-derived all-wheel-drive system, twin turbos fueled by pure methanol, and unmatched performance on various terrains. Enjoy the power of the real Hoonigan Mustang at a mini size portion of fun, for both kids and adults",
+            "img": "/assest/Hoonigan Mustang RC Car.jpg"
+        }
+    ],
+    "securities": [
+        {
+            "name": "CHAMBERLAIN Smart Garage Control",
+            "brand": "CHAMBERLAIN",
+            "price": 1234,
+            "spec": "Open or close your garage from anywhere. Simply download the free myQ app for iPhone or Android and get connected with your very own Smart Garage Works with Amazon Key In-Garage Delivery—an exclusive Prime member benefit that protects your Amazon packages. Give access to family or friends while on the go Never worry if the garage is closed at night by setting a close schedule 1. Works with most brands of garage door openers manufactured after 1993 that use photoelectric sensors that do not shut off. It is not intended for use with openers in which the photoelectric sensors located near the bottom of the garage door change power mode (e.g., lights on the sensors turn off after the door is closed), or any Chamberlain Group opener with a yellow learn button manufactured between 2010 and 2021, or any Linear opener. System Requirements: a router with 2.4 gigahertz Wi-Fi frequency, router with 802.11 B/G/N, a router within 50 feet of the Smart Garage Control (more details in PDF user manual). Must have a sectional garage door. Product certified for use in US only. Bluetooth makes setup easier than ever. Control a second door with additional sensor",
+            "img": "/assest/CHAMBERLAIN Smart Garage Control.jpg"
+        }
+    ],
+    "hardwares": [
+        {
+            "name": "TP-Link AX1800",
+            "brand": "TP-Link",
+            "price": 1234,
+            "spec": "VPN Server: Archer AX21 Supports both Open VPN Server and PPTP VPN Server Dual-Band WiFi 6 Internet Router: Wi-Fi 6(802.11ax) technology achieves faster speeds, greater capacity and reduced network congestion compared to the previous generation Next-Gen 1.8 Gbps Speeds: Enjoy smoother and more stable streaming, gaming, downloading and more with WiFi speeds up to 1.8 Gbps (1200 Mbps on 5 GHz band and 574 Mbps on 2.4 GHz band) Connect more devices: Wi-Fi 6 technology communicates more data to more devices simultaneously using revolutionary OFDMA technology Extensive Coverage: Achieve the strong, reliable WiFi coverage with Archer AX1800 as it focuses signal strength to your devices far away using Beamforming technology, 4 high-gain antennas and an advanced front-end module (FEM) chipset Works with all internet service providers, such as Comcast, Charter, AT&T, Verizon, Xfinity, Spectrum, RCN, Cox, CenturyLink, Frontier, etc.( a modem is required for most internet service providers)",
+            "img": "/assest/TP-Link AX1800.jpg"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Amazon Basics SD Card",
+            "brand": "Amazon",
+            "price": 1234,
+            "spec": "WIDE COMPATIBILITY: Compatible with smartphones, tablets, cameras, GoPro/action cameras, laptops, desktop computers, DSLRs, drones, Nintendo Switch/other portable consoles and much more. Includes SD adapter. Note: Please refer to compatible devices list (keep update) in below Product guides for more detail. HIGH QUALITY STORAGE: Perfect for high resolution photos, for recording and storing Full HD/4K videos and any other data type ULTRA FAST: Read speed up to 100mb/s. Write speed up to 60mb/s (varies according to memory size). UHS, U3, Class 10 and A2 speed classes for an optimal smartphone experience LASTING RELIABILITY: Shockproof, IPX6 waterproof, temperature-proof (-10° to 80°), X-Ray-proof and magnetic-proof Note: Actual storage capacity shown by a device's OS may be less than the capacity indicated on the product label due to different measurement standards. The available storage capacity is higher than 116GB. Read and write speeds are based on internal tests conducted under controlled conditions. Actual speeds may vary depending on device used, interface, conditions of use, and other factors Note: Please note that we are changing the product's printing and packaging; both 2 versions are the same. (Old version does not show the A2 logo, but its performance is A2 level.) Note: Check whether your device is compatible with the MicroSD capacity, for example, if the device only supports a maximum capacity of 64GB, it may not recognize 128GB MicroSDs above",
+            "img": "/assest/Amazon Basics SD Card.jpg"
+        }
+    ],
+    "acs": [
+        {
+            "name": "Lasko Tower Fan",
+            "brand": "Lasko",
+            "price": 1234,
+            "spec": "3 Whisper Quiet Speeds: Provide smooth, consistent air flow. The unique space saver design and quiet operation make this fan ideal for a child's room bedroom, or home office. Widespread Oscillation: Allows you to direct airflow where you need. Turn on oscillation and the fan will gently direct air side to side, allowing the air to distribute and cool the room. Built-in Timer: Automatically shuts the fan off after the selected time. Choose from 1 hour to 7 hours in 1 hour increments. The LED display conveniently displays the number of hours the timer is set for. Wireless Remote Control: Make this fan well suited for the bedroom or home office. The remote allows you to control oscillation, fan speed, the built-in timer or turn the fan or night light on or off. Simple Base Assembly: Allows you to take the fan out of the box and assemble it in minutes. Simply connect the 2 pieces of the base to the fan, plug it in, and start enjoying a cooling breeze.",
+            "img": "/assest/Lasko Tower Fan.jpg"
+        }
+    ],
+    "tvs": [
+        {
+            "name": "Lasko Tower Fan",
+            "brand": "Samsung",
+            "price": 1234,
+            "spec": "",
+            "img": "/assest/Lasko Tower Fan.jpg"
         }
     ]
 }
