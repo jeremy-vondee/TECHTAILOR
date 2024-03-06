@@ -1,3 +1,4 @@
+import { FC, ReactNode } from "react"
 //*MUI importation
 import { Box, Button, Grid, Typography, useTheme } from "@mui/material"
 import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material"
@@ -8,9 +9,9 @@ import Display from "../../assets/Display.svg"
 import Hdd from "../../assets/Hdd.svg"
 //*Nuka carousel importation
 import Carousel from "nuka-carousel"
-
+//* Response type importation
 import { productType } from "../hook/useFetch"
-import { FC, ReactNode } from "react"
+
 type carouselProps = {
     fetchRes: {
         [key: string]: productType[]
@@ -62,8 +63,9 @@ const HeroCarousel: FC<carouselProps> = ({ fetchRes }: carouselProps) => {
                     </CustomControlButton>
                 )}>
                 {fetchRes !== null && fetchRes !== undefined
-                    ? fetchRes?.Laptop?.filter((_, index) => index < 4).map(
-                          (key: productType) => (
+                    ? fetchRes?.laptops
+                          ?.filter((_, index) => index < 4)
+                          .map((key: productType) => (
                               <Grid
                                   container
                                   mt={{ md: 7 }}
@@ -256,8 +258,7 @@ const HeroCarousel: FC<carouselProps> = ({ fetchRes }: carouselProps) => {
                                       />
                                   </Grid>
                               </Grid>
-                          )
-                      )
+                          ))
                     : ""}
             </Carousel>
         </>
