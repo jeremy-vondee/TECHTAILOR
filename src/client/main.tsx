@@ -8,6 +8,7 @@ import theme from "./components/layout/theme"
 const ErrorPage = lazy(() => import("./components/pages/ErrorPage"))
 const App = lazy(() => import("./App"))
 const ProductsPage = lazy(() => import("./components/pages/ProductsPage"))
+const ProductPage = lazy(() => import("./components/pages/ProductPage"))
 const SignInPage = lazy(() => import("./components/pages/SignInPage"))
 const SignUpPage = lazy(() => import("./components/pages/SignUpPage"))
 
@@ -44,7 +45,15 @@ const router = createBrowserRouter([
             </Suspense>
         ),
     },
-
+    {
+        path: "/:product",
+        element: (
+            <Suspense>
+                {" "}
+                <ProductPage />
+            </Suspense>
+        ),
+    },
     {
         path: "/*",
         element: (
