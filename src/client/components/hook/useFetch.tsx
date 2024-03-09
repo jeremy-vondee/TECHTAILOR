@@ -8,7 +8,7 @@ export type productType = {
     keySpecs: {
         [key: string]: string[]
     }
-    spec: string
+    fullSpecs: string
     img: string
 }
 
