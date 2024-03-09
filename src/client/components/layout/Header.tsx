@@ -55,6 +55,10 @@ const Header: FC = () => {
             link: "Printers",
         },
         {
+            path: "acs",
+            link: "Acs",
+        },
+        {
             path: "consoles",
             link: "Consoles",
         },
