@@ -16,7 +16,12 @@ const SignUpPage = lazy(() => import("./components/pages/SignUpPage"))
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <App />,
+        element: (
+            <Suspense>
+                {" "}
+                <App />
+            </Suspense>
+        ),
     },
     {
         path: "/sign-in",
