@@ -1,6 +1,7 @@
 import { FC, ReactNode } from "react"
+import { Link as routerLink, useParams } from "react-router-dom"
 //*MUI importation
-import { Box, Button, Grid, Typography, useTheme } from "@mui/material"
+import { Box, Button, Grid, Link, Typography, useTheme } from "@mui/material"
 import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material"
 //*Icons importation
 import Memory from "../../assets/Ram.svg"
@@ -9,22 +10,17 @@ import Display from "../../assets/Display.svg"
 import Hdd from "../../assets/Hdd.svg"
 //*Nuka carousel importation
 import Carousel from "nuka-carousel"
-//* Response type importation
-import { productType } from "../hook/useFetch"
-
-type carouselProps = {
-    fetchRes: {
-        [key: string]: productType[]
-    } | null
-}
+//* Fetch util importation
+import { useProductStore } from "../store/useProductStore"
 
 type CustomControlPropType = {
     onClickHandler: () => void
     children: ReactNode
 }
 
-const HeroCarousel: FC<carouselProps> = ({ fetchRes }: carouselProps) => {
+const HeroCarousel: FC = () => {
     const theme = useTheme()
+    const data = useProductStore((state) => state.data)
 
     const CustomControlButton: FC<CustomControlPropType> = ({
         onClickHandler,
@@ -62,203 +58,238 @@ const HeroCarousel: FC<carouselProps> = ({ fetchRes }: carouselProps) => {
                         <ArrowForwardIos />
                     </CustomControlButton>
                 )}>
-                {fetchRes !== null && fetchRes !== undefined
-                    ? fetchRes?.laptops
-                          ?.filter((_, index) => index < 4)
-                          .map((key: productType) => (
-                              <Grid
-                                  container
-                                  mt={{ md: 7 }}
-                                  flexDirection={{
-                                      xs: "column-reverse",
-                                      sm: "row",
-                                  }}>
-                                  <Grid
-                                      item
-                                      xs={12}
-                                      sm={7}
-                                      pl={8}
-                                      sx={{
-                                          display: "flex",
-                                          flexDirection: "column",
-                                          justifyContent: "center",
-                                      }}>
-                                      <Typography
-                                          variant="h2"
-                                          sx={{
-                                              fontSize: {
-                                                  xs: "2.7rem",
-                                                  sm: "1.5rem",
-                                                  md: "3.75rem",
-                                              },
-                                          }}>
-                                          NEW ARRIVAL
-                                      </Typography>
-                                      <Typography
-                                          variant="h5"
-                                          mt={3}
-                                          sx={{
-                                              fontSize: {
-                                                  xs: "1.75rem",
-                                                  sm: "1.5rem",
-                                                  md: "2.75rem",
-                                              },
-                                          }}>
-                                          {key.name}
-                                      </Typography>
-                                      <Grid
-                                          container
-                                          mt={1}
-                                          sx={{
-                                              flexDirection: "row",
-                                              width: "fit-content",
-                                          }}>
+                {data !== null && data !== undefined
+                    ? Object.entries(data)
+                          .filter(([key, _]) => key === "laptops")
+                          .map(([key, val]) =>
+                              val
+                                  .filter((_, index) => index < 4)
+                                  .map((keys) => (
+                                      <Link
+                                          component={routerLink}
+                                          key={keys.name}
+                                          underline="none"
+                                          to={`/${keys.name}`}>
                                           <Grid
-                                              item
-                                              xs={12}
-                                              sm={6}
-                                              md={6}
-                                              sx={{
-                                                  display: "flex",
-                                                  flexDirection: "row",
+                                              container
+                                              mt={{ md: 7 }}
+                                              flexDirection={{
+                                                  xs: "column-reverse",
+                                                  sm: "row",
                                               }}>
-                                              <Box
-                                                  component="img"
-                                                  alt="Hdd"
-                                                  src={Hdd}
+                                              <Grid
+                                                  item
+                                                  xs={12}
+                                                  sm={7}
+                                                  pl={8}
                                                   sx={{
-                                                      width: "32px",
-                                                      height: "32px",
-                                                      marginRight: "4px",
-                                                  }}
-                                              />
-                                              <Typography>
-                                                  {key.keySpecs.SSD}
-                                              </Typography>
-                                          </Grid>
-                                          <Grid
-                                              item
-                                              xs={12}
-                                              sm={6}
-                                              md={5}
-                                              sx={{
-                                                  display: "flex",
-                                                  flexDirection: "row",
-                                              }}>
-                                              <Box
-                                                  component="img"
-                                                  alt="Display"
-                                                  src={Display}
+                                                      display: "flex",
+                                                      flexDirection: "column",
+                                                      justifyContent: "center",
+                                                  }}>
+                                                  <Typography
+                                                      variant="h2"
+                                                      sx={{
+                                                          fontSize: {
+                                                              xs: "2.7rem",
+                                                              sm: "1.5rem",
+                                                              md: "3.75rem",
+                                                          },
+                                                      }}>
+                                                      NEW ARRIVAL
+                                                  </Typography>
+                                                  <Typography
+                                                      variant="h5"
+                                                      mt={3}
+                                                      sx={{
+                                                          fontSize: {
+                                                              xs: "1.75rem",
+                                                              sm: "1.5rem",
+                                                              md: "2.75rem",
+                                                          },
+                                                      }}>
+                                                      {keys.name}
+                                                  </Typography>
+                                                  <Grid
+                                                      container
+                                                      mt={1}
+                                                      sx={{
+                                                          flexDirection: "row",
+                                                          width: "fit-content",
+                                                      }}>
+                                                      <Grid
+                                                          item
+                                                          xs={12}
+                                                          sm={6}
+                                                          md={6}
+                                                          sx={{
+                                                              display: "flex",
+                                                              flexDirection:
+                                                                  "row",
+                                                          }}>
+                                                          <Box
+                                                              component="img"
+                                                              alt="Hdd"
+                                                              src={Hdd}
+                                                              sx={{
+                                                                  width: "32px",
+                                                                  height: "32px",
+                                                                  marginRight:
+                                                                      "4px",
+                                                              }}
+                                                          />
+                                                          <Typography>
+                                                              {
+                                                                  keys.keySpecs
+                                                                      .SSD
+                                                              }
+                                                          </Typography>
+                                                      </Grid>
+                                                      <Grid
+                                                          item
+                                                          xs={12}
+                                                          sm={6}
+                                                          md={5}
+                                                          sx={{
+                                                              display: "flex",
+                                                              flexDirection:
+                                                                  "row",
+                                                          }}>
+                                                          <Box
+                                                              component="img"
+                                                              alt="Display"
+                                                              src={Display}
+                                                              sx={{
+                                                                  width: "32px",
+                                                                  height: "32px",
+                                                                  marginRight:
+                                                                      "4px",
+                                                              }}
+                                                          />
+                                                          <Typography>
+                                                              {
+                                                                  keys.keySpecs
+                                                                      .Display
+                                                              }
+                                                          </Typography>
+                                                      </Grid>
+                                                      <Grid
+                                                          item
+                                                          xs={12}
+                                                          sm={6}
+                                                          md={6}
+                                                          sx={{
+                                                              display: "flex",
+                                                              flexDirection:
+                                                                  "row",
+                                                              marginTop: {
+                                                                  xs: 0,
+                                                                  sm: "8px",
+                                                              },
+                                                          }}>
+                                                          <Box
+                                                              component="img"
+                                                              alt="Cpu"
+                                                              src={Cpu}
+                                                              sx={{
+                                                                  width: "32px",
+                                                                  height: "32px",
+                                                                  marginRight:
+                                                                      "4px",
+                                                              }}
+                                                          />
+                                                          <Typography>
+                                                              {
+                                                                  keys.keySpecs
+                                                                      .Processor
+                                                              }
+                                                          </Typography>
+                                                      </Grid>
+                                                      <Grid
+                                                          item
+                                                          xs={12}
+                                                          sm={6}
+                                                          md={6}
+                                                          sx={{
+                                                              display: "flex",
+                                                              flexDirection:
+                                                                  "row",
+                                                              marginTop: {
+                                                                  xs: 0,
+                                                                  sm: "8px",
+                                                              },
+                                                          }}>
+                                                          <Box
+                                                              component="img"
+                                                              alt="Dell logo"
+                                                              src={Memory}
+                                                              sx={{
+                                                                  width: "32px",
+                                                                  height: "32px",
+                                                                  marginRight:
+                                                                      "4px",
+                                                              }}
+                                                          />
+                                                          <Typography>
+                                                              {
+                                                                  keys.keySpecs
+                                                                      .RAM
+                                                              }
+                                                          </Typography>
+                                                      </Grid>
+                                                  </Grid>
+                                                  <Button
+                                                      variant="contained"
+                                                      size="large"
+                                                      sx={{
+                                                          borderWidth: "2px",
+                                                          borderColor:
+                                                              theme.palette
+                                                                  .primary.main,
+                                                          fontWeight: "bolder",
+                                                          fontSize: "1.5rem",
+                                                          maxWidth:
+                                                              "fit-content",
+                                                          marginTop: "24px",
+                                                      }}>
+                                                      oder now
+                                                  </Button>
+                                              </Grid>
+                                              <Grid
+                                                  item
+                                                  xs={12}
+                                                  sm={5}
                                                   sx={{
-                                                      width: "32px",
-                                                      height: "32px",
-                                                      marginRight: "4px",
-                                                  }}
-                                              />
-                                              <Typography>
-                                                  {key.keySpecs.Display}
-                                              </Typography>
+                                                      margin: {
+                                                          xs: "auto",
+                                                          sm: 0,
+                                                      },
+                                                      width: {
+                                                          xs: "100%",
+                                                          sm: "12.5rem",
+                                                          md: "25rem",
+                                                      },
+                                                      height: {
+                                                          xs: "280px",
+                                                          sm: "280px",
+                                                          md: "22.5rem",
+                                                      },
+                                                  }}>
+                                                  <Box
+                                                      component="img"
+                                                      alt={`${keys.name} 'image'`}
+                                                      src={keys.img}
+                                                      sx={{
+                                                          width: "100%",
+                                                          height: "100%",
+                                                          objectFit: "contain",
+                                                      }}
+                                                  />
+                                              </Grid>
                                           </Grid>
-                                          <Grid
-                                              item
-                                              xs={12}
-                                              sm={6}
-                                              md={6}
-                                              sx={{
-                                                  display: "flex",
-                                                  flexDirection: "row",
-                                                  marginTop: {
-                                                      xs: 0,
-                                                      sm: "8px",
-                                                  },
-                                              }}>
-                                              <Box
-                                                  component="img"
-                                                  alt="Cpu"
-                                                  src={Cpu}
-                                                  sx={{
-                                                      width: "32px",
-                                                      height: "32px",
-                                                      marginRight: "4px",
-                                                  }}
-                                              />
-                                              <Typography>
-                                                  {key.keySpecs.Processor}
-                                              </Typography>
-                                          </Grid>
-                                          <Grid
-                                              item
-                                              xs={12}
-                                              sm={6}
-                                              md={6}
-                                              sx={{
-                                                  display: "flex",
-                                                  flexDirection: "row",
-                                                  marginTop: {
-                                                      xs: 0,
-                                                      sm: "8px",
-                                                  },
-                                              }}>
-                                              <Box
-                                                  component="img"
-                                                  alt="Dell logo"
-                                                  src={Memory}
-                                                  sx={{
-                                                      width: "32px",
-                                                      height: "32px",
-                                                      marginRight: "4px",
-                                                  }}
-                                              />
-                                              <Typography>
-                                                  {key.keySpecs.RAM}
-                                              </Typography>
-                                          </Grid>
-                                      </Grid>
-                                      <Button
-                                          variant="contained"
-                                          size="large"
-                                          sx={{
-                                              borderWidth: "2px",
-                                              borderColor:
-                                                  theme.palette.primary.main,
-                                              fontWeight: "bolder",
-                                              fontSize: "1.5rem",
-                                              maxWidth: "fit-content",
-                                              marginTop: "24px",
-                                          }}>
-                                          oder now
-                                      </Button>
-                                  </Grid>
-                                  <Grid
-                                      item
-                                      xs={12}
-                                      sm={5}
-                                      sx={{
-                                          margin: { xs: "auto", sm: 0 },
-                                          width: {
-                                              xs: "100%",
-                                              sm: "12.5rem",
-                                              md: "25rem",
-                                          },
-                                          height: {
-                                              xs: "280px",
-                                              sm: "280px",
-                                              md: "22.5rem",
-                                          },
-                                      }}>
-                                      <Box
-                                          component="img"
-                                          alt={`${key.name} 'image'`}
-                                          src={key.img}
-                                          sx={{
-                                              width: "100%",
-                                              height: "100%",
-                                              objectFit: "contain",
-                                          }}
-                                      />
-                                  </Grid>
-                              </Grid>
-                          ))
+                                      </Link>
+                                  ))
+                          )
                     : ""}
             </Carousel>
         </>
