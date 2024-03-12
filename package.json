@@ -25,7 +25,8 @@
     "tsx": "^4.3.0",
     "uuid": "^9.0.1",
     "vite-express": "*",
-    "zod": "^3.22.4"
+    "zod": "^3.22.4",
+    "zustand": "^4.5.2"
   },
   "devDependencies": {
     "@types/express": "^4.17.21",
