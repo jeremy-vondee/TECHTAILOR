@@ -1,40 +1,50 @@
 import { FC } from "react"
 import { Link as routerLink, useParams } from "react-router-dom"
-
-import Header from "../layout/Header"
-//* Fetch util importation
-import useFetch from "../hook/useFetch"
+//*MUI importation
 import { Link, Stack, Grid, Box, Typography, Button } from "@mui/material"
+//* Fetch util importation
+import { useProductStore } from "../store/useProductStore"
+//* Layout importation
+import Header from "../layout/Header"
 import Footer from "../layout/Footer"
+//* ErrorPage importation
+import ErrorPage from "../pages/ErrorPage"
 
 const ProductsPage: FC = () => {
     const { category } = useParams<string>()
-    const { fetchRes, error } = useFetch("/api/products")
+    const data = useProductStore((state) => state.data)
 
     return (
         <>
-            <Header />
-            <Stack
-                mt={{ xs: 14, sm: 18 }}
-                flexDirection={"row"}
-                flexWrap={"wrap"}
-                mb={5}>
-                <Grid
-                    container
-                    pl={4}
-                    mt={5}
-                    mb={4}
-                    gap={{ sm: 5, md: 3 }}
-                    rowGap={{ md: 5 }}
-                    columnGap={{ xs: 3, sm: 5, md: 0 }}>
-                    {fetchRes !== null && fetchRes !== undefined
-                        ? Object.entries(fetchRes).map(([key, value]) => {
-                              return key === category
-                                  ? value.map((item) => {
-                                        return (
+            {data !== null &&
+            data !== undefined &&
+            Object.keys(data).find((product) => product === category) ? (
+                <>
+                    <Header />
+                    <Stack
+                        mt={{ xs: 14, sm: 18 }}
+                        flexDirection={"row"}
+                        flexWrap={"wrap"}
+                        mb={5}>
+                        <Grid
+                            container
+                            pl={4}
+                            mt={5}
+                            mb={4}
+                            gap={{ sm: 5, md: 3 }}
+                            rowGap={{ md: 5 }}
+                            columnGap={{ xs: 3, sm: 5, md: 0 }}>
+                            {Object.entries(data)
+                                .filter(([key, _]) => key === category)
+                                .map(([key, val]) =>
+                                    val.map((keys) => (
+                                        <Link
+                                            component={routerLink}
+                                            key={keys.name}
+                                            underline="none"
+                                            to={`/${keys.name}`}>
                                             <Grid
                                                 item
-                                                key={item.name}
                                                 xs={5}
                                                 md={3}
                                                 sx={{
@@ -43,61 +53,54 @@ const ProductsPage: FC = () => {
                                                         sm: "100%",
                                                     },
                                                 }}>
-                                                <Link
-                                                    component={routerLink}
-                                                    underline="none"
-                                                    to={`/${item.name}`}>
-                                                    <Box
-                                                        component="img"
-                                                        alt={`${item.name} image`}
-                                                        src={item.img}
+                                                <Box
+                                                    component="img"
+                                                    alt={`${keys.name} image`}
+                                                    src={keys.img}
+                                                    sx={{
+                                                        width: {
+                                                            xs: "100%",
+                                                            sm: "12.5rem",
+                                                            lg: "18.75rem",
+                                                        },
+                                                        height: "10rem",
+                                                        objectFit: "contain",
+                                                    }}
+                                                />
+                                                <Stack>
+                                                    <Typography
                                                         sx={{
-                                                            width: {
-                                                                xs: "100%",
-                                                                sm: "12.5rem",
-                                                                lg: "18.75rem",
-                                                            },
-                                                            height: "10rem",
-                                                            objectFit:
-                                                                "contain",
-                                                        }}
-                                                    />
-                                                    <Stack>
-                                                        <Typography
-                                                            sx={{
-                                                                fontSize:
-                                                                    "1.1rem",
-                                                            }}>
-                                                            {item.name}
-                                                        </Typography>
-                                                        <Typography
-                                                            variant="caption"
-                                                            sx={{
-                                                                fontSize:
-                                                                    "1.1rem",
-                                                            }}>
-                                                            {item.price}
-                                                        </Typography>
-                                                        <Button
-                                                            variant="contained"
-                                                            sx={{
-                                                                width: "fit-content",
-                                                                marginTop:
-                                                                    "8px",
-                                                            }}>
-                                                            add to cart
-                                                        </Button>
-                                                    </Stack>
-                                                </Link>
+                                                            fontSize: "1.1rem",
+                                                        }}>
+                                                        {keys.name}
+                                                    </Typography>
+                                                    <Typography
+                                                        variant="caption"
+                                                        sx={{
+                                                            fontSize: "1.1rem",
+                                                        }}>
+                                                        {`GH₵ ` + keys.price}
+                                                    </Typography>
+                                                    <Button
+                                                        variant="contained"
+                                                        sx={{
+                                                            width: "fit-content",
+                                                            marginTop: "8px",
+                                                        }}>
+                                                        add to cart
+                                                    </Button>
+                                                </Stack>
                                             </Grid>
-                                        )
-                                    })
-                                  : ""
-                          })
-                        : ""}
-                </Grid>
-            </Stack>
-            <Footer />
+                                        </Link>
+                                    ))
+                                )}
+                        </Grid>
+                    </Stack>
+                    <Footer />
+                </>
+            ) : (
+                <ErrorPage />
+            )}
         </>
     )
 }
