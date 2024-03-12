@@ -313,6 +313,7 @@
         {
             "name": "Nintendo Switch",
             "brand": "Nintendo",
+            "price": 1234,
             "fullSpecs": "Nano-SIM and eSIM or Dual SIM (2 Nano-SIMs and eSIM, dual stand-by) IP68 dust/water resistant (up to 1.5m for 30 min) Armor aluminum frame with tougher drop and scratch resistance Dynamic AMOLED 2X, 120Hz, HDR10+, 1200 nits (HBM), 1750 nits (peak) 6.1 inches, 90.1 cm2 (~86.8% screen-to-body ratio) 1080 x 2340 pixels, 19.5:9 ratio (~425 ppi density) Corning Gorilla Glass Victus 2 Always-on display Android 13, upgradable to Android 14, One UI 6 Qualcomm SM8550-AC Snapdragon 8 Gen 2 (4 nm) Octa-core (1x3.36 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz Cortex-A510) Adreno 740 128GB 8GB RAM, 256GB 8GB RAM, 512GB 8GB RAM Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass, barometer Samsung DeX, Samsung Wireless DeX (desktop experience support)",
             "img": "/assest/Nintendo Switch.jpg"
         }
