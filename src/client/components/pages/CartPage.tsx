@@ -81,14 +81,14 @@ const CartPage: FC = () => {
                                 <Divider
                                     sx={{ width: "96%", margin: "auto" }}
                                 />
-                                {cartItems.map((item) => {
+                                {cartItems.map((item, index) => {
                                     return (
                                         <Grid container mt={1}>
                                             <Grid
                                                 item
                                                 pl={3}
                                                 md={3}
-                                                key={`${item.name} +${cartItems.length}`}
+                                                key={`${item.name}-${index}`}
                                                 alignItems={"center"}>
                                                 <Box
                                                     component="img"
