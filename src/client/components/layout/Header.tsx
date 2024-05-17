@@ -77,14 +77,16 @@ const Header: FC = () => {
                     sx={{
                         justifyContent: "space-between",
                     }}>
-                    <Box
-                        component="img"
-                        alt="logo"
-                        sx={{
-                            width: { xs: "160px", md: "304px" },
-                        }}
-                        src={Logo}
-                    />
+                    <Link component={routerLink} to="/" underline="none">
+                        <Box
+                            component="img"
+                            alt="logo"
+                            sx={{
+                                width: { xs: "160px", md: "304px" },
+                            }}
+                            src={Logo}
+                        />
+                    </Link>
                     {/* //Big Device Width */}
                     <Stack
                         flexDirection="row"
@@ -128,14 +130,28 @@ const Header: FC = () => {
                             sx={{ color: theme.palette.text.secondary }}>
                             Sign in
                         </Link>
-                        <ShoppingCart />
+                        <Link
+                            component={routerLink}
+                            to="/cart"
+                            underline="none"
+                            fontWeight={"bold"}
+                            sx={{ color: theme.palette.text.secondary }}>
+                            <ShoppingCart />
+                        </Link>
                     </Stack>
                     {/* //Smaller Device Width */}
                     <Stack
                         flexDirection={"row"}
                         gap={3}
                         sx={{ display: { xs: "flex", sm: "none" } }}>
-                        <ShoppingCart />
+                        <Link
+                            component={routerLink}
+                            to="/cart"
+                            underline="none"
+                            fontWeight={"bold"}
+                            sx={{ color: theme.palette.text.secondary }}>
+                            <ShoppingCart />
+                        </Link>
                         <MenuIcon onClick={handleDrawerToogle} />
                         {/* //Mobile menu Drawer */}
                         <Drawer
