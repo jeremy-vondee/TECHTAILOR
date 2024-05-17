@@ -23,11 +23,17 @@ import NintendoLogo from "../../assets/Nintendo.svg"
 import { useProductStore } from "../store/useProductStore"
 //* Layout importation
 import Carousel from "./HeroCarousel"
+import { useAddToCartStore } from "../store/useAddToCartStore"
 
 const LandingPageBody: FC = () => {
     const theme = useTheme()
     const { product } = useParams<string>()
     const data = useProductStore((state) => state.data)
+    const { addItemToCart } = useAddToCartStore()
+
+    const onAddToCart = (keys) => {
+        addItemToCart(keys)
+    }
 
     return (
         <>
@@ -65,22 +71,22 @@ const LandingPageBody: FC = () => {
                                 .map(([key, val]) =>
                                     val
                                         .filter((_, index) => index < 4)
-                                        .map((keys) => (
-                                            <Link
-                                                component={routerLink}
-                                                key={keys.name}
-                                                underline="none"
-                                                to={`/${keys.name}`}>
-                                                <Grid
-                                                    item
-                                                    xs={5}
-                                                    md={3}
-                                                    sx={{
-                                                        maxWidth: {
-                                                            xs: "fit-content",
-                                                            sm: "100%",
-                                                        },
-                                                    }}>
+                                        .map((keys, index) => (
+                                            <Grid
+                                                item
+                                                xs={5}
+                                                md={3}
+                                                sx={{
+                                                    maxWidth: {
+                                                        xs: "fit-content",
+                                                        sm: "100%",
+                                                    },
+                                                }}>
+                                                <Link
+                                                    component={routerLink}
+                                                    key={`${keys.name}+ ${index}`}
+                                                    underline="none"
+                                                    to={`/${keys.name}`}>
                                                     <Box
                                                         component="img"
                                                         alt={`${keys.name} image`}
@@ -104,6 +110,7 @@ const LandingPageBody: FC = () => {
                                                             }}>
                                                             {keys.name}
                                                         </Typography>
+
                                                         <Typography
                                                             variant="caption"
                                                             sx={{
@@ -112,18 +119,20 @@ const LandingPageBody: FC = () => {
                                                             }}>
                                                             {keys.price}
                                                         </Typography>
-                                                        <Button
-                                                            variant="contained"
-                                                            sx={{
-                                                                width: "fit-content",
-                                                                marginTop:
-                                                                    "8px",
-                                                            }}>
-                                                            add to cart
-                                                        </Button>
                                                     </Stack>
-                                                </Grid>
-                                            </Link>
+                                                </Link>
+                                                <Button
+                                                    variant="contained"
+                                                    sx={{
+                                                        width: "fit-content",
+                                                        marginTop: "8px",
+                                                    }}
+                                                    onClick={() =>
+                                                        onAddToCart(keys)
+                                                    }>
+                                                    add to cart
+                                                </Button>
+                                            </Grid>
                                         ))
                                 )
                         ) : (
@@ -163,22 +172,22 @@ const LandingPageBody: FC = () => {
                                 .map(([key, val]) =>
                                     val
                                         .filter((_, index) => index < 4)
-                                        .map((keys) => (
-                                            <Link
-                                                component={routerLink}
-                                                key={keys.name}
-                                                underline="none"
-                                                to={`/${keys.name}`}>
-                                                <Grid
-                                                    item
-                                                    xs={5}
-                                                    md={3}
-                                                    sx={{
-                                                        maxWidth: {
-                                                            xs: "fit-content",
-                                                            sm: "100%",
-                                                        },
-                                                    }}>
+                                        .map((keys, index) => (
+                                            <Grid
+                                                item
+                                                xs={5}
+                                                md={3}
+                                                sx={{
+                                                    maxWidth: {
+                                                        xs: "fit-content",
+                                                        sm: "100%",
+                                                    },
+                                                }}>
+                                                <Link
+                                                    component={routerLink}
+                                                    key={`${keys.name}+ ${index}`}
+                                                    underline="none"
+                                                    to={`/${keys.name}`}>
                                                     <Box
                                                         component="img"
                                                         alt={`${keys.name} image`}
@@ -202,6 +211,7 @@ const LandingPageBody: FC = () => {
                                                             }}>
                                                             {keys.name}
                                                         </Typography>
+
                                                         <Typography
                                                             variant="caption"
                                                             sx={{
@@ -210,18 +220,20 @@ const LandingPageBody: FC = () => {
                                                             }}>
                                                             {keys.price}
                                                         </Typography>
-                                                        <Button
-                                                            variant="contained"
-                                                            sx={{
-                                                                width: "fit-content",
-                                                                marginTop:
-                                                                    "8px",
-                                                            }}>
-                                                            add to cart
-                                                        </Button>
                                                     </Stack>
-                                                </Grid>
-                                            </Link>
+                                                </Link>
+                                                <Button
+                                                    variant="contained"
+                                                    sx={{
+                                                        width: "fit-content",
+                                                        marginTop: "8px",
+                                                    }}
+                                                    onClick={() =>
+                                                        onAddToCart(keys)
+                                                    }>
+                                                    add to cart
+                                                </Button>
+                                            </Grid>
                                         ))
                                 )
                         ) : (
@@ -261,22 +273,22 @@ const LandingPageBody: FC = () => {
                                 .map(([key, val]) =>
                                     val
                                         .filter((_, index) => index < 4)
-                                        .map((keys) => (
-                                            <Link
-                                                component={routerLink}
-                                                key={keys.name}
-                                                underline="none"
-                                                to={`/${keys.name}`}>
-                                                <Grid
-                                                    item
-                                                    xs={5}
-                                                    md={3}
-                                                    sx={{
-                                                        maxWidth: {
-                                                            xs: "fit-content",
-                                                            sm: "100%",
-                                                        },
-                                                    }}>
+                                        .map((keys, index) => (
+                                            <Grid
+                                                item
+                                                xs={5}
+                                                md={3}
+                                                sx={{
+                                                    maxWidth: {
+                                                        xs: "fit-content",
+                                                        sm: "100%",
+                                                    },
+                                                }}>
+                                                <Link
+                                                    component={routerLink}
+                                                    key={`${keys.name}+ ${index}`}
+                                                    underline="none"
+                                                    to={`/${keys.name}`}>
                                                     <Box
                                                         component="img"
                                                         alt={`${keys.name} image`}
@@ -300,6 +312,7 @@ const LandingPageBody: FC = () => {
                                                             }}>
                                                             {keys.name}
                                                         </Typography>
+
                                                         <Typography
                                                             variant="caption"
                                                             sx={{
@@ -308,18 +321,20 @@ const LandingPageBody: FC = () => {
                                                             }}>
                                                             {keys.price}
                                                         </Typography>
-                                                        <Button
-                                                            variant="contained"
-                                                            sx={{
-                                                                width: "fit-content",
-                                                                marginTop:
-                                                                    "8px",
-                                                            }}>
-                                                            add to cart
-                                                        </Button>
                                                     </Stack>
-                                                </Grid>
-                                            </Link>
+                                                </Link>
+                                                <Button
+                                                    variant="contained"
+                                                    sx={{
+                                                        width: "fit-content",
+                                                        marginTop: "8px",
+                                                    }}
+                                                    onClick={() =>
+                                                        onAddToCart(keys)
+                                                    }>
+                                                    add to cart
+                                                </Button>
+                                            </Grid>
                                         ))
                                 )
                         ) : (
