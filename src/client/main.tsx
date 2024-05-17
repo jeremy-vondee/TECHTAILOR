@@ -11,6 +11,7 @@ const ProductsPage = lazy(() => import("./components/pages/ProductsPage"))
 const ProductPage = lazy(() => import("./components/pages/ProductPage"))
 const SignInPage = lazy(() => import("./components/pages/SignInPage"))
 const SignUpPage = lazy(() => import("./components/pages/SignUpPage"))
+const CartPage = lazy(() => import("./components/pages/CartPage"))
 
 //*Route destinations
 const router = createBrowserRouter([
@@ -56,6 +57,15 @@ const router = createBrowserRouter([
             <Suspense>
                 {" "}
                 <ProductPage />
+            </Suspense>
+        ),
+    },
+    {
+        path: "/cart",
+        element: (
+            <Suspense>
+                {" "}
+                <CartPage />{" "}
             </Suspense>
         ),
     },
