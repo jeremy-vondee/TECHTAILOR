@@ -1,20 +1,20 @@
 import { create } from "zustand"
 import axios, { AxiosError } from "axios"
 
+export interface productDataType {
+    name: string
+    brand: string
+    price: number
+    keySpecs: {
+        [key: string]: string[]
+    }
+    fullSpecs: string
+    img: string
+}
+
 export type productType = {
     data: {
-        [key: string]: [
-            {
-                name: string
-                brand: string
-                price: number
-                keySpecs: {
-                    [key: string]: string[]
-                }
-                fullSpecs: string
-                img: string
-            },
-        ]
+        [key: string]: [productDataType]
     } | null
     fetch: () => Promise<void>
 }
