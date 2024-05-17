@@ -37,10 +37,10 @@ const ProductsPage: FC = () => {
                             {Object.entries(data)
                                 .filter(([key, _]) => key === category)
                                 .map(([key, val]) =>
-                                    val.map((keys) => (
+                                    val.map((keys, index) => (
                                         <Link
                                             component={routerLink}
-                                            key={keys.name}
+                                            key={`${keys.name}-${index}`}
                                             underline="none"
                                             to={`/${keys.name}`}>
                                             <Grid
