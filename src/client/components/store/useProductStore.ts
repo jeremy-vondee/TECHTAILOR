@@ -10,6 +10,7 @@ export interface productDataType {
     }
     fullSpecs: string
     img: string
+    quantity: number
 }
 
 export type productType = {
