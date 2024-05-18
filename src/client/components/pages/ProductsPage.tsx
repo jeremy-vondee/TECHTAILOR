@@ -3,7 +3,8 @@ import { Link as routerLink, useParams } from "react-router-dom"
 //*MUI importation
 import { Link, Stack, Grid, Box, Typography, Button } from "@mui/material"
 //* Fetch util importation
-import { useProductStore } from "../store/useProductStore"
+import { productDataType, useProductStore } from "../store/useProductStore"
+import { useAddToCartStore } from "../store/useAddToCartStore"
 //* Layout importation
 import Header from "../layout/Header"
 import Footer from "../layout/Footer"
@@ -13,6 +14,10 @@ import ErrorPage from "../pages/ErrorPage"
 const ProductsPage: FC = () => {
     const { category } = useParams<string>()
     const data = useProductStore((state) => state.data)
+    const { addItemToCart } = useAddToCartStore()
+    const onAddToCart = (keys: productDataType) => {
+        addItemToCart(keys)
+    }
 
     return (
         <>
@@ -38,21 +43,21 @@ const ProductsPage: FC = () => {
                                 .filter(([key, _]) => key === category)
                                 .map(([key, val]) =>
                                     val.map((keys, index) => (
-                                        <Link
-                                            component={routerLink}
-                                            key={`${keys.name}-${index}`}
-                                            underline="none"
-                                            to={`/${keys.name}`}>
-                                            <Grid
-                                                item
-                                                xs={5}
-                                                md={3}
-                                                sx={{
-                                                    maxWidth: {
-                                                        xs: "fit-content",
-                                                        sm: "100%",
-                                                    },
-                                                }}>
+                                        <Grid
+                                            item
+                                            xs={5}
+                                            md={3}
+                                            sx={{
+                                                maxWidth: {
+                                                    xs: "fit-content",
+                                                    sm: "100%",
+                                                },
+                                            }}>
+                                            <Link
+                                                component={routerLink}
+                                                key={`${keys.name}-${index}`}
+                                                underline="none"
+                                                to={`/${keys.name}`}>
                                                 <Box
                                                     component="img"
                                                     alt={`${keys.name} image`}
@@ -81,17 +86,20 @@ const ProductsPage: FC = () => {
                                                         }}>
                                                         {`GH₵ ` + keys.price}
                                                     </Typography>
-                                                    <Button
-                                                        variant="contained"
-                                                        sx={{
-                                                            width: "fit-content",
-                                                            marginTop: "8px",
-                                                        }}>
-                                                        add to cart
-                                                    </Button>
                                                 </Stack>
-                                            </Grid>
-                                        </Link>
+                                            </Link>
+                                            <Button
+                                                variant="contained"
+                                                sx={{
+                                                    width: "fit-content",
+                                                    marginTop: "8px",
+                                                }}
+                                                onClick={() =>
+                                                    onAddToCart(keys)
+                                                }>
+                                                add to cart
+                                            </Button>
+                                        </Grid>
                                     ))
                                 )}
                         </Grid>
