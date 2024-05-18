@@ -57,16 +57,14 @@ export const useAddToCartStore = create(
                 )
 
                 if (itemExist) {
-                    if (typeof itemExist.quantity === "number") {
-                        if (itemExist.quantity <= 1) {
-                            const updatedCartItems = items.filter(
-                                (item) => item.name !== item.name
-                            )
-                            set({ cartItems: updatedCartItems })
-                        } else {
-                            itemExist.quantity--
-                            set({ cartItems: [...items] })
-                        }
+                    if (itemExist.quantity === 1) {
+                        const updatedCartItems = get().cartItems.filter(
+                            (productItem) => productItem.name !== item.name
+                        )
+                        set({ cartItems: updatedCartItems })
+                    } else {
+                        itemExist.quantity--
+                        set({ cartItems: [...get().cartItems] })
                     }
                 }
             },
