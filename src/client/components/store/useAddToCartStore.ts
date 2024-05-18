@@ -7,6 +7,7 @@ export type cartType = {
     addItemToCart: (item: productDataType) => void
     increaseQuantity: (item: productDataType) => void
     decreaseQuantity: (item: productDataType) => void
+    removeItemFromCart: (item: productDataType) => void
 }
 
 export const useAddToCartStore = create(
@@ -65,6 +66,21 @@ export const useAddToCartStore = create(
                     } else {
                         itemExist.quantity--
                         set({ cartItems: [...get().cartItems] })
+                    }
+                }
+            },
+            removeItemFromCart: (item) => {
+                const items = get().cartItems
+                const itemExist = items.find(
+                    (cartItem) => cartItem.name === item.name
+                )
+
+                if (itemExist) {
+                    if (typeof itemExist.quantity === "number") {
+                        const updatedCartItems = items.filter(
+                            (productItem) => productItem.name !== item.name
+                        )
+                        set({ cartItems: updatedCartItems })
                     }
                 }
             },
