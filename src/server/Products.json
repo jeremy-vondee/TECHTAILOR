@@ -11,7 +11,8 @@
                 "SSD": "512 GB"
             },
             "fullSpecs": "13th Gen Intel Core i7-13700HX (30 MB cache, 16 cores, 24 threads, up to 5.00 GHz Turbo) NVIDIA GeForce RTX 4070, 8 GB GDDR6 16 GB, DDR5, 4800 MT/s 16 inch QHD+ 2560x1600, 165Hz, Non-Touch, 100% sRGB, 3ms, ComfortView Plus, NVIDIA G-SYNC, DDS 512 GB 2 Type-C Port (Thunderbolt™ 4.0, USB 4 Gen 2, DisplayPort 1.4, and 15W Power Delivery (3A/5V) capabilities) 1 USB Type-A 3.2 Gen 1, 1 HDMI 2.1 Output port, 1 Mini DisplayPort 1.4, 1 Power/DC-in port, 1 RJ-45 Ethernet Port, 1 USB 3.2 Gen 1 Type-A with PowerShare Port, 1 Global headset jack 1 SD card slot Height: 1” (25.4 mm) Width: 14.5” (368.9 mm) Depth: 11.41” (289.9 mm) Maximum Weight: 7.17 lb (3.25 kg) 1080p at 30 fps FHD camera, 1080p at 30 fps FHD IR camera, Dual-array microphones Stereo speakers, Realtek ALC3254 Multi-touch gesture touchpad with integrated scrolling Intel® Killer™ Wi-Fi 6E AX1675, 2x2, 802.11ax, Bluetooth® wireless card 6 Cell, 86 Wh, integrated Up to 5 hours, 56 minutes 330W AC adapter",
-            "img": "/assest/Alienware M16.png"
+            "img": "/assest/Alienware M16.png",
+            "quantity": 0
         },
         {
             "name": "Alienware M18",
@@ -25,7 +26,8 @@
             },
             "fullSpecs": "13th Gen Intel Core i9-13980HX (36 MB cache, 24 cores, 32 threads, up to 5.60 GHz Turbo) NVIDIA GeForce RTX 4090, 16 GB GDDR6, 18 inch QHD+ (2560 x 1600) 165Hz, 3ms, ComfortView Plus, NVIDIA G-SYNC + DDS, 100% DCI-P3, FHD IR 1 USB 3.2 Gen 1 port with PowerShare 3 USB 3.2 Gen 1 ports Thunderbolt™ 4 Gen 2 Type-C® ports with DisplayPort Alt Mode/USB4 1 RJ45 Ethernet port 1 Universal audio port 1 HDMI 2.1 port 1 power-adapter port 1 mini-Display port 1 SD-card slot 1080p at 30 fps FHD IR camera Dual-array microphones Stereo speakers, 2 W x 2 = 4 W total Realtek ALC3254 Intel® Killer™ Wi-Fi 6E AX1675, 2x2, 802.11ax, Bluetooth® wireless card 6 Cell, 97 Wh, integrated Up to 5 hours, 47 minutes 330W AC adapter",
             "spec": "ggg",
-            "img": "/assest/Alienware M18.png"
+            "img": "/assest/Alienware M18.png",
+            "quantity": 0
         },
         {
             "name": "Alienware X14 R2",
@@ -38,7 +40,8 @@
                 "SSD": "512 GB"
             },
             "fullSpecs": "13th Gen Intel® Core™ i5-13420H (12 MB cache, 8 cores, 12 threads, up to 4.60 GHz Turbo) NVIDIA® GeForce RTX™ 3050, 6 GB GDDR6 14 inch QHD+ (2560 x 1600)165Hz, 3ms, 300nitsDCIP3 100%typ + Hello/LBL/GSYNC/DDS/ ComfortView Plus 16 GB: LPDDR5, 4800 MT/s 512 GB, M.2, PCIe NVMe, SSD 1 USB 3.2 Gen 2 Type-C with Power Delivery and DisplayPort™  1 Global headset jack port 1 HDMI 2.1 port 1 USB 3.2 Gen 1 Type-A port with PowerShare 2 Thunderbolt™ 4 ports with Power Delivery and DisplayPort™ (Type-C port) 1 MicroSD-card slot 1080p at 30 fps, FHD RGB+IR camera Dual-array microphones Speaker: 2 W x 2 Intel® Wi-Fi 6E AX211, 2x2, 802.11ax, MU-MIMO, Bluetooth® wireless card 6 Cell, 80 Wh, Lithium Ion, Alienware Battery Defender Up to 6 hours, 35 minutes 130W AC small form factor adapter, USB Type-C",
-            "img": "/assest/Alienware X14 R2.jpg"
+            "img": "/assest/Alienware X14 R2.jpg",
+            "quantity": 0
         },
         {
             "name": "G15 Gaming",
@@ -51,175 +54,200 @@
                 "SSD": "1 TB"
             },
             "fullSpecs": "13th Gen Intel® Core™ i7-13650HX (24 MB cache, 14 cores, 20 threads, up to 4.90 GHz Turbo) NVIDIA® GeForce RTX™ 4060, 8 GB GDDR6 15.6 inch, FHD 1920x1080, 165Hz, Non-Touch, 100% sRGB, 3ms, ComfortView Plus, NVIDIA G-SYNC + DDS 16 GB: 2 x 8 GB, DDR5, 4800 MT/s 1 TB, M.2, PCIe NVMe, SSD 1 headset (headphone and microphone combo) port 1 RJ45 Ethernet port 3 USB 3.2 Gen 1 ports 1 HDMI 2.1 port 1 USB-C 3.2 Gen 2 port with DisplayPort™ Integrated widescreen HD (720p) Webcam with Single Array Digital Microphone 2 tuned speakers with Dolby Audio 1 combo headphone / microphone jack Intel® Wi-Fi 6 AX201, 2x2, 802.11ax, Bluetooth® wireless card 6 Cell, 86 Wh, integrated Up to 6 hours, 31 minutes 330W AC adapter",
-            "img": "/assest/G15 Gaming.png"
+            "img": "/assest/G15 Gaming.png",
+            "quantity": 0
         },
         {
             "name": "G16 Gaming",
             "brand": "Dell",
             "price": 1234,
             "fullSpecs": "13th Gen Intel® Core™ i7-13650HX (24 MB cache, 14 cores, 20 threads, up to 4.90 GHz Turbo) NVIDIA® GeForce RTX™ 4060, 8 GB GDDR6 15.6 inch, FHD 1920x1080, 165Hz, Non-Touch, 100% sRGB, 3ms, ComfortView Plus, NVIDIA G-SYNC + DDS 16 GB: 2 x 8 GB, DDR5, 4800 MT/s 1 TB, M.2, PCIe NVMe, SSD 1 headset (headphone and microphone combo) port 1 RJ45 Ethernet port 3 USB 3.2 Gen 1 ports 1 HDMI 2.1 port 1 USB-C 3.2 Gen 2 port with DisplayPort™ Integrated widescreen HD (720p) Webcam with Single Array Digital Microphone 2 tuned speakers with Dolby Audio 1 combo headphone / microphone jack Intel® Wi-Fi 6 AX201, 2x2, 802.11ax, Bluetooth® wireless card 6 Cell, 86 Wh, integrated Up to 6 hours, 31 minutes 330W AC adapter",
-            "img": "/assest/G16 Gaming.png"
+            "img": "/assest/G16 Gaming.png",
+            "quantity": 0
         },
         {
             "name": "Inspiron 15 3520",
             "brand": "Dell",
             "price": 1234,
             "fullSpecs": "13th Gen Intel® Core™ i7-13650HX (24 MB cache, 14 cores, 20 threads, up to 4.90 GHz Turbo) NVIDIA® GeForce RTX™ 4060, 8 GB GDDR6 15.6 inch, FHD 1920x1080, 165Hz, Non-Touch, 100% sRGB, 3ms, ComfortView Plus, NVIDIA G-SYNC + DDS 16 GB: 2 x 8 GB, DDR5, 4800 MT/s 1 TB, M.2, PCIe NVMe, SSD 1 headset (headphone and microphone combo) port 1 RJ45 Ethernet port 3 USB 3.2 Gen 1 ports 1 HDMI 2.1 port 1 USB-C 3.2 Gen 2 port with DisplayPort™ Integrated widescreen HD (720p) Webcam with Single Array Digital Microphone 2 tuned speakers with Dolby Audio 1 combo headphone / microphone jack Intel® Wi-Fi 6 AX201, 2x2, 802.11ax, Bluetooth® wireless card 6 Cell, 86 Wh, integrated Up to 6 hours, 31 minutes 330W AC adapter",
-            "img": "/assest/Inspiron 15 3520.png"
+            "img": "/assest/Inspiron 15 3520.png",
+            "quantity": 0
         },
         {
             "name": "Inspiron 16 5630",
             "brand": "Dell",
             "price": 1234,
             "fullSpecs": "13th Gen Intel® Core™ i7-13650HX (24 MB cache, 14 cores, 20 threads, up to 4.90 GHz Turbo) NVIDIA® GeForce RTX™ 4060, 8 GB GDDR6 15.6 inch, FHD 1920x1080, 165Hz, Non-Touch, 100% sRGB, 3ms, ComfortView Plus, NVIDIA G-SYNC + DDS 16 GB: 2 x 8 GB, DDR5, 4800 MT/s 1 TB, M.2, PCIe NVMe, SSD 1 headset (headphone and microphone combo) port 1 RJ45 Ethernet port 3 USB 3.2 Gen 1 ports 1 HDMI 2.1 port 1 USB-C 3.2 Gen 2 port with DisplayPort™ Integrated widescreen HD (720p) Webcam with Single Array Digital Microphone 2 tuned speakers with Dolby Audio 1 combo headphone / microphone jack Intel® Wi-Fi 6 AX201, 2x2, 802.11ax, Bluetooth® wireless card 6 Cell, 86 Wh, integrated Up to 6 hours, 31 minutes 330W AC adapter",
-            "img": "/assest/Inspiron 16 5630.png"
+            "img": "/assest/Inspiron 16 5630.png",
+            "quantity": 0
         },
         {
             "name": "Inspiron 16 7630",
             "brand": "Dell",
             "price": 1234,
             "fullSpecs": "13th Gen Intel® Core™ i7-13650HX (24 MB cache, 14 cores, 20 threads, up to 4.90 GHz Turbo) NVIDIA® GeForce RTX™ 4060, 8 GB GDDR6 15.6 inch, FHD 1920x1080, 165Hz, Non-Touch, 100% sRGB, 3ms, ComfortView Plus, NVIDIA G-SYNC + DDS 16 GB: 2 x 8 GB, DDR5, 4800 MT/s 1 TB, M.2, PCIe NVMe, SSD 1 headset (headphone and microphone combo) port 1 RJ45 Ethernet port 3 USB 3.2 Gen 1 ports 1 HDMI 2.1 port 1 USB-C 3.2 Gen 2 port with DisplayPort™ Integrated widescreen HD (720p) Webcam with Single Array Digital Microphone 2 tuned speakers with Dolby Audio 1 combo headphone / microphone jack Intel® Wi-Fi 6 AX201, 2x2, 802.11ax, Bluetooth® wireless card 6 Cell, 86 Wh, integrated Up to 6 hours, 31 minutes 330W AC adapter",
-            "img": "/assest/Inspiron 16 7630.png"
+            "img": "/assest/Inspiron 16 7630.png",
+            "quantity": 0
         },
         {
             "name": "Inspiron 16 Plus 7640",
             "brand": "Dell",
             "price": 1234,
             "fullSpecs": "13th Gen Intel® Core™ i7-13650HX (24 MB cache, 14 cores, 20 threads, up to 4.90 GHz Turbo) NVIDIA® GeForce RTX™ 4060, 8 GB GDDR6 15.6 inch, FHD 1920x1080, 165Hz, Non-Touch, 100% sRGB, 3ms, ComfortView Plus, NVIDIA G-SYNC + DDS 16 GB: 2 x 8 GB, DDR5, 4800 MT/s 1 TB, M.2, PCIe NVMe, SSD 1 headset (headphone and microphone combo) port 1 RJ45 Ethernet port 3 USB 3.2 Gen 1 ports 1 HDMI 2.1 port 1 USB-C 3.2 Gen 2 port with DisplayPort™ Integrated widescreen HD (720p) Webcam with Single Array Digital Microphone 2 tuned speakers with Dolby Audio 1 combo headphone / microphone jack Intel® Wi-Fi 6 AX201, 2x2, 802.11ax, Bluetooth® wireless card 6 Cell, 86 Wh, integrated Up to 6 hours, 31 minutes 330W AC adapter",
-            "img": "/assest/Inspiron 16 Plus 7640.jpg"
+            "img": "/assest/Inspiron 16 Plus 7640.jpg",
+            "quantity": 0
         },
         {
             "name": "Latitude 14 3440",
             "brand": "Dell",
             "price": 1234,
             "fullSpecs": "13th Gen Intel® Core™ i7-13650HX (24 MB cache, 14 cores, 20 threads, up to 4.90 GHz Turbo) NVIDIA® GeForce RTX™ 4060, 8 GB GDDR6 15.6 inch, FHD 1920x1080, 165Hz, Non-Touch, 100% sRGB, 3ms, ComfortView Plus, NVIDIA G-SYNC + DDS 16 GB: 2 x 8 GB, DDR5, 4800 MT/s 1 TB, M.2, PCIe NVMe, SSD 1 headset (headphone and microphone combo) port 1 RJ45 Ethernet port 3 USB 3.2 Gen 1 ports 1 HDMI 2.1 port 1 USB-C 3.2 Gen 2 port with DisplayPort™ Integrated widescreen HD (720p) Webcam with Single Array Digital Microphone 2 tuned speakers with Dolby Audio 1 combo headphone / microphone jack Intel® Wi-Fi 6 AX201, 2x2, 802.11ax, Bluetooth® wireless card 6 Cell, 86 Wh, integrated Up to 6 hours, 31 minutes 330W AC adapter",
-            "img": "/assest/Latitude 14 3440.png"
+            "img": "/assest/Latitude 14 3440.png",
+            "quantity": 0
         },
         {
             "name": "Latitude 14 9440",
             "brand": "Dell",
             "price": 1234,
             "fullSpecs": "13th Gen Intel® Core™ i7-13650HX (24 MB cache, 14 cores, 20 threads, up to 4.90 GHz Turbo) NVIDIA® GeForce RTX™ 4060, 8 GB GDDR6 15.6 inch, FHD 1920x1080, 165Hz, Non-Touch, 100% sRGB, 3ms, ComfortView Plus, NVIDIA G-SYNC + DDS 16 GB: 2 x 8 GB, DDR5, 4800 MT/s 1 TB, M.2, PCIe NVMe, SSD 1 headset (headphone and microphone combo) port 1 RJ45 Ethernet port 3 USB 3.2 Gen 1 ports 1 HDMI 2.1 port 1 USB-C 3.2 Gen 2 port with DisplayPort™ Integrated widescreen HD (720p) Webcam with Single Array Digital Microphone 2 tuned speakers with Dolby Audio 1 combo headphone / microphone jack Intel® Wi-Fi 6 AX201, 2x2, 802.11ax, Bluetooth® wireless card 6 Cell, 86 Wh, integrated Up to 6 hours, 31 minutes 330W AC adapter",
-            "img": "/assest/Latitude 14 9440.png"
+            "img": "/assest/Latitude 14 9440.png",
+            "quantity": 0
         },
         {
             "name": "Latitude 14 5440",
             "brand": "Dell",
             "price": 1234,
             "fullSpecs": "13th Gen Intel® Core™ i7-13650HX (24 MB cache, 14 cores, 20 threads, up to 4.90 GHz Turbo) NVIDIA® GeForce RTX™ 4060, 8 GB GDDR6 15.6 inch, FHD 1920x1080, 165Hz, Non-Touch, 100% sRGB, 3ms, ComfortView Plus, NVIDIA G-SYNC + DDS 16 GB: 2 x 8 GB, DDR5, 4800 MT/s 1 TB, M.2, PCIe NVMe, SSD 1 headset (headphone and microphone combo) port 1 RJ45 Ethernet port 3 USB 3.2 Gen 1 ports 1 HDMI 2.1 port 1 USB-C 3.2 Gen 2 port with DisplayPort™ Integrated widescreen HD (720p) Webcam with Single Array Digital Microphone 2 tuned speakers with Dolby Audio 1 combo headphone / microphone jack Intel® Wi-Fi 6 AX201, 2x2, 802.11ax, Bluetooth® wireless card 6 Cell, 86 Wh, integrated Up to 6 hours, 31 minutes 330W AC adapter",
-            "img": "/assest/Latitude 14 5440.png"
+            "img": "/assest/Latitude 14 5440.png",
+            "quantity": 0
         },
         {
             "name": "Latitude 14 7440",
             "brand": "Dell",
             "price": 1234,
             "fullSpecs": "13th Gen Intel® Core™ i7-13650HX (24 MB cache, 14 cores, 20 threads, up to 4.90 GHz Turbo) NVIDIA® GeForce RTX™ 4060, 8 GB GDDR6 15.6 inch, FHD 1920x1080, 165Hz, Non-Touch, 100% sRGB, 3ms, ComfortView Plus, NVIDIA G-SYNC + DDS 16 GB: 2 x 8 GB, DDR5, 4800 MT/s 1 TB, M.2, PCIe NVMe, SSD 1 headset (headphone and microphone combo) port 1 RJ45 Ethernet port 3 USB 3.2 Gen 1 ports 1 HDMI 2.1 port 1 USB-C 3.2 Gen 2 port with DisplayPort™ Integrated widescreen HD (720p) Webcam with Single Array Digital Microphone 2 tuned speakers with Dolby Audio 1 combo headphone / microphone jack Intel® Wi-Fi 6 AX201, 2x2, 802.11ax, Bluetooth® wireless card 6 Cell, 86 Wh, integrated Up to 6 hours, 31 minutes 330W AC adapter",
-            "img": "/assest/Latitude 14 7440.png"
+            "img": "/assest/Latitude 14 7440.png",
+            "quantity": 0
         },
         {
             "name": "XPS",
             "brand": "Dell",
             "price": 1234,
             "fullSpecs": "13th Gen Intel® Core™ i7-13650HX (24 MB cache, 14 cores, 20 threads, up to 4.90 GHz Turbo) NVIDIA® GeForce RTX™ 4060, 8 GB GDDR6 15.6 inch, FHD 1920x1080, 165Hz, Non-Touch, 100% sRGB, 3ms, ComfortView Plus, NVIDIA G-SYNC + DDS 16 GB: 2 x 8 GB, DDR5, 4800 MT/s 1 TB, M.2, PCIe NVMe, SSD 1 headset (headphone and microphone combo) port 1 RJ45 Ethernet port 3 USB 3.2 Gen 1 ports 1 HDMI 2.1 port 1 USB-C 3.2 Gen 2 port with DisplayPort™ Integrated widescreen HD (720p) Webcam with Single Array Digital Microphone 2 tuned speakers with Dolby Audio 1 combo headphone / microphone jack Intel® Wi-Fi 6 AX201, 2x2, 802.11ax, Bluetooth® wireless card 6 Cell, 86 Wh, integrated Up to 6 hours, 31 minutes 330W AC adapter",
-            "img": "/assest/XPS.png"
+            "img": "/assest/XPS.png",
+            "quantity": 0
         },
         {
             "name": "Vostro 14 3430",
             "brand": "Dell",
             "price": 1234,
             "fullSpecs": "13th Gen Intel® Core™ i7-13650HX (24 MB cache, 14 cores, 20 threads, up to 4.90 GHz Turbo) NVIDIA® GeForce RTX™ 4060, 8 GB GDDR6 15.6 inch, FHD 1920x1080, 165Hz, Non-Touch, 100% sRGB, 3ms, ComfortView Plus, NVIDIA G-SYNC + DDS 16 GB: 2 x 8 GB, DDR5, 4800 MT/s 1 TB, M.2, PCIe NVMe, SSD 1 headset (headphone and microphone combo) port 1 RJ45 Ethernet port 3 USB 3.2 Gen 1 ports 1 HDMI 2.1 port 1 USB-C 3.2 Gen 2 port with DisplayPort™ Integrated widescreen HD (720p) Webcam with Single Array Digital Microphone 2 tuned speakers with Dolby Audio 1 combo headphone / microphone jack Intel® Wi-Fi 6 AX201, 2x2, 802.11ax, Bluetooth® wireless card 6 Cell, 86 Wh, integrated Up to 6 hours, 31 minutes 330W AC adapter",
-            "img": "/assest/Vostro 14 3430.png"
+            "img": "/assest/Vostro 14 3430.png",
+            "quantity": 0
         },
         {
             "name": "Vostro 3530",
             "brand": "Dell",
             "price": 1234,
             "fullSpecs": "13th Gen Intel® Core™ i7-13650HX (24 MB cache, 14 cores, 20 threads, up to 4.90 GHz Turbo) NVIDIA® GeForce RTX™ 4060, 8 GB GDDR6 15.6 inch, FHD 1920x1080, 165Hz, Non-Touch, 100% sRGB, 3ms, ComfortView Plus, NVIDIA G-SYNC + DDS 16 GB: 2 x 8 GB, DDR5, 4800 MT/s 1 TB, M.2, PCIe NVMe, SSD 1 headset (headphone and microphone combo) port 1 RJ45 Ethernet port 3 USB 3.2 Gen 1 ports 1 HDMI 2.1 port 1 USB-C 3.2 Gen 2 port with DisplayPort™ Integrated widescreen HD (720p) Webcam with Single Array Digital Microphone 2 tuned speakers with Dolby Audio 1 combo headphone / microphone jack Intel® Wi-Fi 6 AX201, 2x2, 802.11ax, Bluetooth® wireless card 6 Cell, 86 Wh, integrated Up to 6 hours, 31 minutes 330W AC adapter",
-            "img": "/assest/Vostro 3530.jpg"
+            "img": "/assest/Vostro 3530.jpg",
+            "quantity": 0
         },
         {
             "name": "HP 250",
             "brand": "Dell",
             "price": 1234,
             "fullSpecs": "13th Gen Intel® Core™ i7-13650HX (24 MB cache, 14 cores, 20 threads, up to 4.90 GHz Turbo) NVIDIA® GeForce RTX™ 4060, 8 GB GDDR6 15.6 inch, FHD 1920x1080, 165Hz, Non-Touch, 100% sRGB, 3ms, ComfortView Plus, NVIDIA G-SYNC + DDS 16 GB: 2 x 8 GB, DDR5, 4800 MT/s 1 TB, M.2, PCIe NVMe, SSD 1 headset (headphone and microphone combo) port 1 RJ45 Ethernet port 3 USB 3.2 Gen 1 ports 1 HDMI 2.1 port 1 USB-C 3.2 Gen 2 port with DisplayPort™ Integrated widescreen HD (720p) Webcam with Single Array Digital Microphone 2 tuned speakers with Dolby Audio 1 combo headphone / microphone jack Intel® Wi-Fi 6 AX201, 2x2, 802.11ax, Bluetooth® wireless card 6 Cell, 86 Wh, integrated Up to 6 hours, 31 minutes 330W AC adapter",
-            "img": "/assest/HP 250.png"
+            "img": "/assest/HP 250.png",
+            "quantity": 0
         },
         {
             "name": "HP Dragonfly Pro Chromebook",
             "brand": "HP",
             "price": 1234,
             "fullSpecs": "13th Gen Intel® Core™ i7-13650HX (24 MB cache, 14 cores, 20 threads, up to 4.90 GHz Turbo) NVIDIA® GeForce RTX™ 4060, 8 GB GDDR6 15.6 inch, FHD 1920x1080, 165Hz, Non-Touch, 100% sRGB, 3ms, ComfortView Plus, NVIDIA G-SYNC + DDS 16 GB: 2 x 8 GB, DDR5, 4800 MT/s 1 TB, M.2, PCIe NVMe, SSD 1 headset (headphone and microphone combo) port 1 RJ45 Ethernet port 3 USB 3.2 Gen 1 ports 1 HDMI 2.1 port 1 USB-C 3.2 Gen 2 port with DisplayPort™ Integrated widescreen HD (720p) Webcam with Single Array Digital Microphone 2 tuned speakers with Dolby Audio 1 combo headphone / microphone jack Intel® Wi-Fi 6 AX201, 2x2, 802.11ax, Bluetooth® wireless card 6 Cell, 86 Wh, integrated Up to 6 hours, 31 minutes 330W AC adapter",
-            "img": "/assest/HP Dragonfly Pro Chromebook.png"
+            "img": "/assest/HP Dragonfly Pro Chromebook.png",
+            "quantity": 0
         },
         {
             "name": "HP EliteBook 860",
             "brand": "HP",
             "price": 1234,
             "fullSpecs": "13th Gen Intel® Core™ i7-13650HX (24 MB cache, 14 cores, 20 threads, up to 4.90 GHz Turbo) NVIDIA® GeForce RTX™ 4060, 8 GB GDDR6 15.6 inch, FHD 1920x1080, 165Hz, Non-Touch, 100% sRGB, 3ms, ComfortView Plus, NVIDIA G-SYNC + DDS 16 GB: 2 x 8 GB, DDR5, 4800 MT/s 1 TB, M.2, PCIe NVMe, SSD 1 headset (headphone and microphone combo) port 1 RJ45 Ethernet port 3 USB 3.2 Gen 1 ports 1 HDMI 2.1 port 1 USB-C 3.2 Gen 2 port with DisplayPort™ Integrated widescreen HD (720p) Webcam with Single Array Digital Microphone 2 tuned speakers with Dolby Audio 1 combo headphone / microphone jack Intel® Wi-Fi 6 AX201, 2x2, 802.11ax, Bluetooth® wireless card 6 Cell, 86 Wh, integrated Up to 6 hours, 31 minutes 330W AC adapter",
-            "img": "/assest/HP EliteBook 860.png"
+            "img": "/assest/HP EliteBook 860.png",
+            "quantity": 0
         },
         {
             "name": "HP Laptop 15",
             "brand": "HP",
             "price": 1234,
             "fullSpecs": "13th Gen Intel® Core™ i7-13650HX (24 MB cache, 14 cores, 20 threads, up to 4.90 GHz Turbo) NVIDIA® GeForce RTX™ 4060, 8 GB GDDR6 15.6 inch, FHD 1920x1080, 165Hz, Non-Touch, 100% sRGB, 3ms, ComfortView Plus, NVIDIA G-SYNC + DDS 16 GB: 2 x 8 GB, DDR5, 4800 MT/s 1 TB, M.2, PCIe NVMe, SSD 1 headset (headphone and microphone combo) port 1 RJ45 Ethernet port 3 USB 3.2 Gen 1 ports 1 HDMI 2.1 port 1 USB-C 3.2 Gen 2 port with DisplayPort™ Integrated widescreen HD (720p) Webcam with Single Array Digital Microphone 2 tuned speakers with Dolby Audio 1 combo headphone / microphone jack Intel® Wi-Fi 6 AX201, 2x2, 802.11ax, Bluetooth® wireless card 6 Cell, 86 Wh, integrated Up to 6 hours, 31 minutes 330W AC adapter",
-            "img": "/assest/HP Laptop 15.png"
+            "img": "/assest/HP Laptop 15.png",
+            "quantity": 0
         },
         {
             "name": "HP ProBook 450",
             "brand": "HP",
             "price": 1234,
             "fullSpecs": "13th Gen Intel® Core™ i7-13650HX (24 MB cache, 14 cores, 20 threads, up to 4.90 GHz Turbo) NVIDIA® GeForce RTX™ 4060, 8 GB GDDR6 15.6 inch, FHD 1920x1080, 165Hz, Non-Touch, 100% sRGB, 3ms, ComfortView Plus, NVIDIA G-SYNC + DDS 16 GB: 2 x 8 GB, DDR5, 4800 MT/s 1 TB, M.2, PCIe NVMe, SSD 1 headset (headphone and microphone combo) port 1 RJ45 Ethernet port 3 USB 3.2 Gen 1 ports 1 HDMI 2.1 port 1 USB-C 3.2 Gen 2 port with DisplayPort™ Integrated widescreen HD (720p) Webcam with Single Array Digital Microphone 2 tuned speakers with Dolby Audio 1 combo headphone / microphone jack Intel® Wi-Fi 6 AX201, 2x2, 802.11ax, Bluetooth® wireless card 6 Cell, 86 Wh, integrated Up to 6 hours, 31 minutes 330W AC adapter",
-            "img": "/assest/HP ProBook 450.png"
+            "img": "/assest/HP ProBook 450.png",
+            "quantity": 0
         },
         {
             "name": "HP ZBook Firefly 14 G10",
             "brand": "HP",
             "price": 1234,
             "fullSpecs": "13th Gen Intel® Core™ i7-13650HX (24 MB cache, 14 cores, 20 threads, up to 4.90 GHz Turbo) NVIDIA® GeForce RTX™ 4060, 8 GB GDDR6 15.6 inch, FHD 1920x1080, 165Hz, Non-Touch, 100% sRGB, 3ms, ComfortView Plus, NVIDIA G-SYNC + DDS 16 GB: 2 x 8 GB, DDR5, 4800 MT/s 1 TB, M.2, PCIe NVMe, SSD 1 headset (headphone and microphone combo) port 1 RJ45 Ethernet port 3 USB 3.2 Gen 1 ports 1 HDMI 2.1 port 1 USB-C 3.2 Gen 2 port with DisplayPort™ Integrated widescreen HD (720p) Webcam with Single Array Digital Microphone 2 tuned speakers with Dolby Audio 1 combo headphone / microphone jack Intel® Wi-Fi 6 AX201, 2x2, 802.11ax, Bluetooth® wireless card 6 Cell, 86 Wh, integrated Up to 6 hours, 31 minutes 330W AC adapter",
-            "img": "/assest/HP ZBook Firefly 14 G10.png"
+            "img": "/assest/HP ZBook Firefly 14 G10.png",
+            "quantity": 0
         },
         {
             "name": "HP ZBook Fury 16",
             "brand": "HP",
             "price": 1234,
             "fullSpecs": "13th Gen Intel® Core™ i7-13650HX (24 MB cache, 14 cores, 20 threads, up to 4.90 GHz Turbo) NVIDIA® GeForce RTX™ 4060, 8 GB GDDR6 15.6 inch, FHD 1920x1080, 165Hz, Non-Touch, 100% sRGB, 3ms, ComfortView Plus, NVIDIA G-SYNC + DDS 16 GB: 2 x 8 GB, DDR5, 4800 MT/s 1 TB, M.2, PCIe NVMe, SSD 1 headset (headphone and microphone combo) port 1 RJ45 Ethernet port 3 USB 3.2 Gen 1 ports 1 HDMI 2.1 port 1 USB-C 3.2 Gen 2 port with DisplayPort™ Integrated widescreen HD (720p) Webcam with Single Array Digital Microphone 2 tuned speakers with Dolby Audio 1 combo headphone / microphone jack Intel® Wi-Fi 6 AX201, 2x2, 802.11ax, Bluetooth® wireless card 6 Cell, 86 Wh, integrated Up to 6 hours, 31 minutes 330W AC adapter",
-            "img": "/assest/HP ZBook Fury 16.png"
+            "img": "/assest/HP ZBook Fury 16.png",
+            "quantity": 0
         },
         {
             "name": "HP ZBook Power",
             "brand": "HP",
             "price": 1234,
             "fullSpecs": "13th Gen Intel® Core™ i7-13650HX (24 MB cache, 14 cores, 20 threads, up to 4.90 GHz Turbo) NVIDIA® GeForce RTX™ 4060, 8 GB GDDR6 15.6 inch, FHD 1920x1080, 165Hz, Non-Touch, 100% sRGB, 3ms, ComfortView Plus, NVIDIA G-SYNC + DDS 16 GB: 2 x 8 GB, DDR5, 4800 MT/s 1 TB, M.2, PCIe NVMe, SSD 1 headset (headphone and microphone combo) port 1 RJ45 Ethernet port 3 USB 3.2 Gen 1 ports 1 HDMI 2.1 port 1 USB-C 3.2 Gen 2 port with DisplayPort™ Integrated widescreen HD (720p) Webcam with Single Array Digital Microphone 2 tuned speakers with Dolby Audio 1 combo headphone / microphone jack Intel® Wi-Fi 6 AX201, 2x2, 802.11ax, Bluetooth® wireless card 6 Cell, 86 Wh, integrated Up to 6 hours, 31 minutes 330W AC adapter",
-            "img": "/assest/HP ZBook Power.png"
+            "img": "/assest/HP ZBook Power.png",
+            "quantity": 0
         },
         {
             "name": "HP Victus 16",
             "brand": "HP",
             "price": 1234,
             "fullSpecs": "13th Gen Intel® Core™ i7-13650HX (24 MB cache, 14 cores, 20 threads, up to 4.90 GHz Turbo) NVIDIA® GeForce RTX™ 4060, 8 GB GDDR6 15.6 inch, FHD 1920x1080, 165Hz, Non-Touch, 100% sRGB, 3ms, ComfortView Plus, NVIDIA G-SYNC + DDS 16 GB: 2 x 8 GB, DDR5, 4800 MT/s 1 TB, M.2, PCIe NVMe, SSD 1 headset (headphone and microphone combo) port 1 RJ45 Ethernet port 3 USB 3.2 Gen 1 ports 1 HDMI 2.1 port 1 USB-C 3.2 Gen 2 port with DisplayPort™ Integrated widescreen HD (720p) Webcam with Single Array Digital Microphone 2 tuned speakers with Dolby Audio 1 combo headphone / microphone jack Intel® Wi-Fi 6 AX201, 2x2, 802.11ax, Bluetooth® wireless card 6 Cell, 86 Wh, integrated Up to 6 hours, 31 minutes 330W AC adapter",
-            "img": "/assest/HP Victus 16.png"
+            "img": "/assest/HP Victus 16.png",
+            "quantity": 0
         },
         {
             "name": "MacBook Air M1 13",
             "brand": "Apple",
             "price": 1234,
             "fullSpecs": "13th Gen Intel® Core™ i7-13650HX (24 MB cache, 14 cores, 20 threads, up to 4.90 GHz Turbo) NVIDIA® GeForce RTX™ 4060, 8 GB GDDR6 15.6 inch, FHD 1920x1080, 165Hz, Non-Touch, 100% sRGB, 3ms, ComfortView Plus, NVIDIA G-SYNC + DDS 16 GB: 2 x 8 GB, DDR5, 4800 MT/s 1 TB, M.2, PCIe NVMe, SSD 1 headset (headphone and microphone combo) port 1 RJ45 Ethernet port 3 USB 3.2 Gen 1 ports 1 HDMI 2.1 port 1 USB-C 3.2 Gen 2 port with DisplayPort™ Integrated widescreen HD (720p) Webcam with Single Array Digital Microphone 2 tuned speakers with Dolby Audio 1 combo headphone / microphone jack Intel® Wi-Fi 6 AX201, 2x2, 802.11ax, Bluetooth® wireless card 6 Cell, 86 Wh, integrated Up to 6 hours, 31 minutes 330W AC adapter",
-            "img": "/assest/MacBook Air M1 13.png"
+            "img": "/assest/MacBook Air M1 13.png",
+            "quantity": 0
         },
         {
             "name": "MacBook Air M2 13",
             "brand": "Apple",
             "price": 1234,
             "fullSpecs": "13th Gen Intel® Core™ i7-13650HX (24 MB cache, 14 cores, 20 threads, up to 4.90 GHz Turbo) NVIDIA® GeForce RTX™ 4060, 8 GB GDDR6 15.6 inch, FHD 1920x1080, 165Hz, Non-Touch, 100% sRGB, 3ms, ComfortView Plus, NVIDIA G-SYNC + DDS 16 GB: 2 x 8 GB, DDR5, 4800 MT/s 1 TB, M.2, PCIe NVMe, SSD 1 headset (headphone and microphone combo) port 1 RJ45 Ethernet port 3 USB 3.2 Gen 1 ports 1 HDMI 2.1 port 1 USB-C 3.2 Gen 2 port with DisplayPort™ Integrated widescreen HD (720p) Webcam with Single Array Digital Microphone 2 tuned speakers with Dolby Audio 1 combo headphone / microphone jack Intel® Wi-Fi 6 AX201, 2x2, 802.11ax, Bluetooth® wireless card 6 Cell, 86 Wh, integrated Up to 6 hours, 31 minutes 330W AC adapter",
-            "img": "/assest/MacBook Air M2 13.png"
+            "img": "/assest/MacBook Air M2 13.png",
+            "quantity": 0
         },
         {
             "name": "MacBook Air M2 15",
             "brand": "Apple",
             "price": 1234,
             "fullSpecs": "13th Gen Intel® Core™ i7-13650HX (24 MB cache, 14 cores, 20 threads, up to 4.90 GHz Turbo) NVIDIA® GeForce RTX™ 4060, 8 GB GDDR6 15.6 inch, FHD 1920x1080, 165Hz, Non-Touch, 100% sRGB, 3ms, ComfortView Plus, NVIDIA G-SYNC + DDS 16 GB: 2 x 8 GB, DDR5, 4800 MT/s 1 TB, M.2, PCIe NVMe, SSD 1 headset (headphone and microphone combo) port 1 RJ45 Ethernet port 3 USB 3.2 Gen 1 ports 1 HDMI 2.1 port 1 USB-C 3.2 Gen 2 port with DisplayPort™ Integrated widescreen HD (720p) Webcam with Single Array Digital Microphone 2 tuned speakers with Dolby Audio 1 combo headphone / microphone jack Intel® Wi-Fi 6 AX201, 2x2, 802.11ax, Bluetooth® wireless card 6 Cell, 86 Wh, integrated Up to 6 hours, 31 minutes 330W AC adapter",
-            "img": "/assest/MacBook Air M2 15.png"
+            "img": "/assest/MacBook Air M2 15.png",
+            "quantity": 0
         }
     ],
     "phones": [
@@ -228,57 +256,64 @@
             "brand": "Samsung",
             "price": 1234,
             "fullSpecs": "Nano-SIM and eSIM or Dual SIM (2 Nano-SIMs and eSIM, dual stand-by) IP68 dust/water resistant (up to 1.5m for 30 min) Armor aluminum frame with tougher drop and scratch resistance Dynamic AMOLED 2X, 120Hz, HDR10+, 1200 nits (HBM), 1750 nits (peak) 6.1 inches, 90.1 cm2 (~86.8% screen-to-body ratio) 1080 x 2340 pixels, 19.5:9 ratio (~425 ppi density) Corning Gorilla Glass Victus 2 Always-on display Android 13, upgradable to Android 14, One UI 6 Qualcomm SM8550-AC Snapdragon 8 Gen 2 (4 nm) Octa-core (1x3.36 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz Cortex-A510) Adreno 740 128GB 8GB RAM, 256GB 8GB RAM, 512GB 8GB RAM Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass, barometer Samsung DeX, Samsung Wireless DeX (desktop experience support)",
-            "img": "/assest/Galaxy S23.jpg"
+            "img": "/assest/Galaxy S23.jpg",
+            "quantity": 0
         },
         {
             "name": "Galaxy 23 FE",
             "brand": "Samsung",
             "price": 1234,
             "fullSpecs": "Nano-SIM and eSIM or Dual SIM (2 Nano-SIMs and eSIM, dual stand-by) IP68 dust/water resistant (up to 1.5m for 30 min) Armor aluminum frame with tougher drop and scratch resistance Dynamic AMOLED 2X, 120Hz, HDR10+, 1200 nits (HBM), 1750 nits (peak) 6.1 inches, 90.1 cm2 (~86.8% screen-to-body ratio) 1080 x 2340 pixels, 19.5:9 ratio (~425 ppi density) Corning Gorilla Glass Victus 2 Always-on display Android 13, upgradable to Android 14, One UI 6 Qualcomm SM8550-AC Snapdragon 8 Gen 2 (4 nm) Octa-core (1x3.36 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz Cortex-A510) Adreno 740 128GB 8GB RAM, 256GB 8GB RAM, 512GB 8GB RAM Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass, barometer Samsung DeX, Samsung Wireless DeX (desktop experience support)",
-
-            "img": "/assest/Galaxy S23 FE.jpg"
+            "img": "/assest/Galaxy S23 FE.jpg",
+            "quantity": 0
         },
         {
             "name": "Galaxy 23 Ultra",
             "brand": "Samsung",
             "price": 1234,
             "fullSpecs": "Nano-SIM and eSIM or Dual SIM (2 Nano-SIMs and eSIM, dual stand-by) IP68 dust/water resistant (up to 1.5m for 30 min) Armor aluminum frame with tougher drop and scratch resistance Dynamic AMOLED 2X, 120Hz, HDR10+, 1200 nits (HBM), 1750 nits (peak) 6.1 inches, 90.1 cm2 (~86.8% screen-to-body ratio) 1080 x 2340 pixels, 19.5:9 ratio (~425 ppi density) Corning Gorilla Glass Victus 2 Always-on display Android 13, upgradable to Android 14, One UI 6 Qualcomm SM8550-AC Snapdragon 8 Gen 2 (4 nm) Octa-core (1x3.36 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz Cortex-A510) Adreno 740 128GB 8GB RAM, 256GB 8GB RAM, 512GB 8GB RAM Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass, barometer Samsung DeX, Samsung Wireless DeX (desktop experience support)",
-            "img": "/assest/Galaxy S23 Ultra.jpg"
+            "img": "/assest/Galaxy S23 Ultra.jpg",
+            "quantity": 0
         },
         {
             "name": "Galaxy 22",
             "brand": "Samsung",
             "price": 1234,
             "fullSpecs": "Nano-SIM and eSIM or Dual SIM (2 Nano-SIMs and eSIM, dual stand-by) IP68 dust/water resistant (up to 1.5m for 30 min) Armor aluminum frame with tougher drop and scratch resistance Dynamic AMOLED 2X, 120Hz, HDR10+, 1200 nits (HBM), 1750 nits (peak) 6.1 inches, 90.1 cm2 (~86.8% screen-to-body ratio) 1080 x 2340 pixels, 19.5:9 ratio (~425 ppi density) Corning Gorilla Glass Victus 2 Always-on display Android 13, upgradable to Android 14, One UI 6 Qualcomm SM8550-AC Snapdragon 8 Gen 2 (4 nm) Octa-core (1x3.36 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz Cortex-A510) Adreno 740 128GB 8GB RAM, 256GB 8GB RAM, 512GB 8GB RAM Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass, barometer Samsung DeX, Samsung Wireless DeX (desktop experience support)",
-            "img": "/assest/Galaxy S22.jpg"
+            "img": "/assest/Galaxy S22.jpg",
+            "quantity": 0
         },
         {
             "name": "Iphone 15",
             "brand": "Apple",
             "price": 1234,
             "fullSpecs": "Nano-SIM and eSIM or Dual SIM (2 Nano-SIMs and eSIM, dual stand-by) IP68 dust/water resistant (up to 1.5m for 30 min) Armor aluminum frame with tougher drop and scratch resistance Dynamic AMOLED 2X, 120Hz, HDR10+, 1200 nits (HBM), 1750 nits (peak) 6.1 inches, 90.1 cm2 (~86.8% screen-to-body ratio) 1080 x 2340 pixels, 19.5:9 ratio (~425 ppi density) Corning Gorilla Glass Victus 2 Always-on display Android 13, upgradable to Android 14, One UI 6 Qualcomm SM8550-AC Snapdragon 8 Gen 2 (4 nm) Octa-core (1x3.36 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz Cortex-A510) Adreno 740 128GB 8GB RAM, 256GB 8GB RAM, 512GB 8GB RAM Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass, barometer Samsung DeX, Samsung Wireless DeX (desktop experience support)",
-            "img": "/assest/Iphone 15.jpg"
+            "img": "/assest/Iphone 15.jpg",
+            "quantity": 0
         },
         {
             "name": "Iphone 14",
             "brand": "Apple",
             "price": 1234,
             "fullSpecs": "Nano-SIM and eSIM or Dual SIM (2 Nano-SIMs and eSIM, dual stand-by) IP68 dust/water resistant (up to 1.5m for 30 min) Armor aluminum frame with tougher drop and scratch resistance Dynamic AMOLED 2X, 120Hz, HDR10+, 1200 nits (HBM), 1750 nits (peak) 6.1 inches, 90.1 cm2 (~86.8% screen-to-body ratio) 1080 x 2340 pixels, 19.5:9 ratio (~425 ppi density) Corning Gorilla Glass Victus 2 Always-on display Android 13, upgradable to Android 14, One UI 6 Qualcomm SM8550-AC Snapdragon 8 Gen 2 (4 nm) Octa-core (1x3.36 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz Cortex-A510) Adreno 740 128GB 8GB RAM, 256GB 8GB RAM, 512GB 8GB RAM Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass, barometer Samsung DeX, Samsung Wireless DeX (desktop experience support)",
-            "img": "/assest/Iphone 14.jpg"
+            "img": "/assest/Iphone 14.jpg",
+            "quantity": 0
         },
         {
             "name": "Iphone 15 Pro",
             "brand": "Apple",
             "price": 1234,
             "fullSpecs": "Nano-SIM and eSIM or Dual SIM (2 Nano-SIMs and eSIM, dual stand-by) IP68 dust/water resistant (up to 1.5m for 30 min) Armor aluminum frame with tougher drop and scratch resistance Dynamic AMOLED 2X, 120Hz, HDR10+, 1200 nits (HBM), 1750 nits (peak) 6.1 inches, 90.1 cm2 (~86.8% screen-to-body ratio) 1080 x 2340 pixels, 19.5:9 ratio (~425 ppi density) Corning Gorilla Glass Victus 2 Always-on display Android 13, upgradable to Android 14, One UI 6 Qualcomm SM8550-AC Snapdragon 8 Gen 2 (4 nm) Octa-core (1x3.36 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz Cortex-A510) Adreno 740 128GB 8GB RAM, 256GB 8GB RAM, 512GB 8GB RAM Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass, barometer Samsung DeX, Samsung Wireless DeX (desktop experience support)",
-            "img": "/assest/Iphone 15 Pro.jpg"
+            "img": "/assest/Iphone 15 Pro.jpg",
+            "quantity": 0
         },
         {
             "name": "Iphone 15",
             "brand": "Apple",
             "price": 1234,
             "fullSpecs": "Nano-SIM and eSIM or Dual SIM (2 Nano-SIMs and eSIM, dual stand-by) IP68 dust/water resistant (up to 1.5m for 30 min) Armor aluminum frame with tougher drop and scratch resistance Dynamic AMOLED 2X, 120Hz, HDR10+, 1200 nits (HBM), 1750 nits (peak) 6.1 inches, 90.1 cm2 (~86.8% screen-to-body ratio) 1080 x 2340 pixels, 19.5:9 ratio (~425 ppi density) Corning Gorilla Glass Victus 2 Always-on display Android 13, upgradable to Android 14, One UI 6 Qualcomm SM8550-AC Snapdragon 8 Gen 2 (4 nm) Octa-core (1x3.36 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz Cortex-A510) Adreno 740 128GB 8GB RAM, 256GB 8GB RAM, 512GB 8GB RAM Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass, barometer Samsung DeX, Samsung Wireless DeX (desktop experience support)",
-            "img": "/assest/Iphone 15.jpg"
+            "img": "/assest/Iphone 15.jpg",
+            "quantity": 0
         }
     ],
     "consoles": [
@@ -287,35 +322,40 @@
             "brand": "Playstation",
             "price": 1234,
             "fullSpecs": "Nano-SIM and eSIM or Dual SIM (2 Nano-SIMs and eSIM, dual stand-by) IP68 dust/water resistant (up to 1.5m for 30 min) Armor aluminum frame with tougher drop and scratch resistance Dynamic AMOLED 2X, 120Hz, HDR10+, 1200 nits (HBM), 1750 nits (peak) 6.1 inches, 90.1 cm2 (~86.8% screen-to-body ratio) 1080 x 2340 pixels, 19.5:9 ratio (~425 ppi density) Corning Gorilla Glass Victus 2 Always-on display Android 13, upgradable to Android 14, One UI 6 Qualcomm SM8550-AC Snapdragon 8 Gen 2 (4 nm) Octa-core (1x3.36 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz Cortex-A510) Adreno 740 128GB 8GB RAM, 256GB 8GB RAM, 512GB 8GB RAM Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass, barometer Samsung DeX, Samsung Wireless DeX (desktop experience support)",
-            "img": "/assest/PS4 Slim.webp"
+            "img": "/assest/PS4 Slim.webp",
+            "quantity": 0
         },
         {
             "name": "PS4 Pro",
             "brand": "Playstation",
             "price": 1234,
             "fullSpecs": "Nano-SIM and eSIM or Dual SIM (2 Nano-SIMs and eSIM, dual stand-by) IP68 dust/water resistant (up to 1.5m for 30 min) Armor aluminum frame with tougher drop and scratch resistance Dynamic AMOLED 2X, 120Hz, HDR10+, 1200 nits (HBM), 1750 nits (peak) 6.1 inches, 90.1 cm2 (~86.8% screen-to-body ratio) 1080 x 2340 pixels, 19.5:9 ratio (~425 ppi density) Corning Gorilla Glass Victus 2 Always-on display Android 13, upgradable to Android 14, One UI 6 Qualcomm SM8550-AC Snapdragon 8 Gen 2 (4 nm) Octa-core (1x3.36 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz Cortex-A510) Adreno 740 128GB 8GB RAM, 256GB 8GB RAM, 512GB 8GB RAM Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass, barometer Samsung DeX, Samsung Wireless DeX (desktop experience support)",
-            "img": "/assest/PS4 Pro.webp"
+            "img": "/assest/PS4 Pro.webp",
+            "quantity": 0
         },
         {
             "name": "Xbox Series X",
             "brand": "Xbox",
             "price": 1234,
             "fullSpecs": "Nano-SIM and eSIM or Dual SIM (2 Nano-SIMs and eSIM, dual stand-by) IP68 dust/water resistant (up to 1.5m for 30 min) Armor aluminum frame with tougher drop and scratch resistance Dynamic AMOLED 2X, 120Hz, HDR10+, 1200 nits (HBM), 1750 nits (peak) 6.1 inches, 90.1 cm2 (~86.8% screen-to-body ratio) 1080 x 2340 pixels, 19.5:9 ratio (~425 ppi density) Corning Gorilla Glass Victus 2 Always-on display Android 13, upgradable to Android 14, One UI 6 Qualcomm SM8550-AC Snapdragon 8 Gen 2 (4 nm) Octa-core (1x3.36 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz Cortex-A510) Adreno 740 128GB 8GB RAM, 256GB 8GB RAM, 512GB 8GB RAM Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass, barometer Samsung DeX, Samsung Wireless DeX (desktop experience support)",
-            "img": "/assest/Xbox Series X.png"
+            "img": "/assest/Xbox Series X.png",
+            "quantity": 0
         },
         {
             "name": "Xbox Series S",
             "brand": "Xbox",
             "price": 1234,
             "fullSpecs": "Nano-SIM and eSIM or Dual SIM (2 Nano-SIMs and eSIM, dual stand-by) IP68 dust/water resistant (up to 1.5m for 30 min) Armor aluminum frame with tougher drop and scratch resistance Dynamic AMOLED 2X, 120Hz, HDR10+, 1200 nits (HBM), 1750 nits (peak) 6.1 inches, 90.1 cm2 (~86.8% screen-to-body ratio) 1080 x 2340 pixels, 19.5:9 ratio (~425 ppi density) Corning Gorilla Glass Victus 2 Always-on display Android 13, upgradable to Android 14, One UI 6 Qualcomm SM8550-AC Snapdragon 8 Gen 2 (4 nm) Octa-core (1x3.36 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz Cortex-A510) Adreno 740 128GB 8GB RAM, 256GB 8GB RAM, 512GB 8GB RAM Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass, barometer Samsung DeX, Samsung Wireless DeX (desktop experience support)",
-            "img": "/assest/Xbox Series S.png"
+            "img": "/assest/Xbox Series S.png",
+            "quantity": 0
         },
         {
             "name": "Nintendo Switch",
             "brand": "Nintendo",
             "price": 1234,
             "fullSpecs": "Nano-SIM and eSIM or Dual SIM (2 Nano-SIMs and eSIM, dual stand-by) IP68 dust/water resistant (up to 1.5m for 30 min) Armor aluminum frame with tougher drop and scratch resistance Dynamic AMOLED 2X, 120Hz, HDR10+, 1200 nits (HBM), 1750 nits (peak) 6.1 inches, 90.1 cm2 (~86.8% screen-to-body ratio) 1080 x 2340 pixels, 19.5:9 ratio (~425 ppi density) Corning Gorilla Glass Victus 2 Always-on display Android 13, upgradable to Android 14, One UI 6 Qualcomm SM8550-AC Snapdragon 8 Gen 2 (4 nm) Octa-core (1x3.36 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz Cortex-A510) Adreno 740 128GB 8GB RAM, 256GB 8GB RAM, 512GB 8GB RAM Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass, barometer Samsung DeX, Samsung Wireless DeX (desktop experience support)",
-            "img": "/assest/Nintendo Switch.jpg"
+            "img": "/assest/Nintendo Switch.jpg",
+            "quantity": 0
         }
     ],
     "toys": [
@@ -324,7 +364,8 @@
             "brand": "",
             "price": 1234,
             "fullSpecs": "Speed and Range: Achieves an exhilarating top speed of 4 mph, ensuring dynamic remote-controlled experiences, coupled with an impressive 100 ft range for versatile and extended play 2.4 GHz Remote Control: Precision control at your fingertips with the included pistol remote control, ensuring accurate handling, requires 2 AA batteries (NOT INCLUDED) USB Rechargeable: This Hoonigan RC Car comes equipped with a 3.7V rechargeable battery that can easily be charged using a USB port. Realistic Experience: Delivers a realistic and immersive experience with a replica design, appealing to enthusiasts and collectors alike. Immerse yourself in the Hoonigan engine as it races around The Real Hoonigan Powerhouse: With over 1.5 billion views on YouTube, the full-sized Hoonigan Mustang boasts 1,400 horsepower, a rally-derived all-wheel-drive system, twin turbos fueled by pure methanol, and unmatched performance on various terrains. Enjoy the power of the real Hoonigan Mustang at a mini size portion of fun, for both kids and adults",
-            "img": "/assest/Hoonigan Mustang RC Car.jpg"
+            "img": "/assest/Hoonigan Mustang RC Car.jpg",
+            "quantity": 0
         }
     ],
     "securities": [
@@ -333,7 +374,8 @@
             "brand": "CHAMBERLAIN",
             "price": 1234,
             "fullSpecs": "Open or close your garage from anywhere. Simply download the free myQ app for iPhone or Android and get connected with your very own Smart Garage Works with Amazon Key In-Garage Delivery—an exclusive Prime member benefit that protects your Amazon packages. Give access to family or friends while on the go Never worry if the garage is closed at night by setting a close schedule 1. Works with most brands of garage door openers manufactured after 1993 that use photoelectric sensors that do not shut off. It is not intended for use with openers in which the photoelectric sensors located near the bottom of the garage door change power mode (e.g., lights on the sensors turn off after the door is closed), or any Chamberlain Group opener with a yellow learn button manufactured between 2010 and 2021, or any Linear opener. System Requirements: a router with 2.4 gigahertz Wi-Fi frequency, router with 802.11 B/G/N, a router within 50 feet of the Smart Garage Control (more details in PDF user manual). Must have a sectional garage door. Product certified for use in US only. Bluetooth makes setup easier than ever. Control a second door with additional sensor",
-            "img": "/assest/CHAMBERLAIN Smart Garage Control.jpg"
+            "img": "/assest/CHAMBERLAIN Smart Garage Control.jpg",
+            "quantity": 0
         }
     ],
     "hardwares": [
@@ -342,7 +384,8 @@
             "brand": "TP-Link",
             "price": 1234,
             "fullSpecs": "VPN Server: Archer AX21 Supports both Open VPN Server and PPTP VPN Server Dual-Band WiFi 6 Internet Router: Wi-Fi 6(802.11ax) technology achieves faster speeds, greater capacity and reduced network congestion compared to the previous generation Next-Gen 1.8 Gbps Speeds: Enjoy smoother and more stable streaming, gaming, downloading and more with WiFi speeds up to 1.8 Gbps (1200 Mbps on 5 GHz band and 574 Mbps on 2.4 GHz band) Connect more devices: Wi-Fi 6 technology communicates more data to more devices simultaneously using revolutionary OFDMA technology Extensive Coverage: Achieve the strong, reliable WiFi coverage with Archer AX1800 as it focuses signal strength to your devices far away using Beamforming technology, 4 high-gain antennas and an advanced front-end module (FEM) chipset Works with all internet service providers, such as Comcast, Charter, AT&T, Verizon, Xfinity, fullSpecstrum, RCN, Cox, CenturyLink, Frontier, etc.( a modem is required for most internet service providers)",
-            "img": "/assest/TP-Link AX1800.jpg"
+            "img": "/assest/TP-Link AX1800.jpg",
+            "quantity": 0
         }
     ],
     "accessories": [
@@ -351,7 +394,8 @@
             "brand": "Amazon",
             "price": 1234,
             "fullSpecs": "WIDE COMPATIBILITY: Compatible with smartphones, tablets, cameras, GoPro/action cameras, laptops, desktop computers, DSLRs, drones, Nintendo Switch/other portable consoles and much more. Includes SD adapter. Note: Please refer to compatible devices list (keep update) in below Product guides for more detail. HIGH QUALITY STORAGE: Perfect for high resolution photos, for recording and storing Full HD/4K videos and any other data type ULTRA FAST: Read speed up to 100mb/s. Write speed up to 60mb/s (varies according to memory size). UHS, U3, Class 10 and A2 speed classes for an optimal smartphone experience LASTING RELIABILITY: Shockproof, IPX6 waterproof, temperature-proof (-10° to 80°), X-Ray-proof and magnetic-proof Note: Actual storage capacity shown by a device's OS may be less than the capacity indicated on the product label due to different measurement standards. The available storage capacity is higher than 116GB. Read and write speeds are based on internal tests conducted under controlled conditions. Actual speeds may vary depending on device used, interface, conditions of use, and other factors Note: Please note that we are changing the product's printing and packaging; both 2 versions are the same. (Old version does not show the A2 logo, but its performance is A2 level.) Note: Check whether your device is compatible with the MicroSD capacity, for example, if the device only supports a maximum capacity of 64GB, it may not recognize 128GB MicroSDs above",
-            "img": "/assest/Amazon Basics SD Card.jpg"
+            "img": "/assest/Amazon Basics SD Card.jpg",
+            "quantity": 0
         }
     ],
     "acs": [
@@ -360,7 +404,8 @@
             "brand": "Lasko",
             "price": 1234,
             "fullSpecs": "3 Whisper Quiet Speeds: Provide smooth, consistent air flow. The unique space saver design and quiet operation make this fan ideal for a child's room bedroom, or home office. Widespread Oscillation: Allows you to direct airflow where you need. Turn on oscillation and the fan will gently direct air side to side, allowing the air to distribute and cool the room. Built-in Timer: Automatically shuts the fan off after the selected time. Choose from 1 hour to 7 hours in 1 hour increments. The LED display conveniently displays the number of hours the timer is set for. Wireless Remote Control: Make this fan well suited for the bedroom or home office. The remote allows you to control oscillation, fan speed, the built-in timer or turn the fan or night light on or off. Simple Base Assembly: Allows you to take the fan out of the box and assemble it in minutes. Simply connect the 2 pieces of the base to the fan, plug it in, and start enjoying a cooling breeze.",
-            "img": "/assest/Lasko Tower Fan.jpg"
+            "img": "/assest/Lasko Tower Fan.jpg",
+            "quantity": 0
         }
     ],
     "tvs": [
@@ -369,14 +414,16 @@
             "brand": "Samsung",
             "price": 1234,
             "fullSpecs": "Full HD 1080p Resolution - Enjoy a viewing experience that is 2x the clarity of standard HD TVs..Power Supply (V) AC110-120V 50/60Hz.Image Aspect ratio:16:9.Picture Processor : HyperReal, Audio - Dolby : Yes, Sound Output (RMS) : 10W(L:5W, R:5W)..Screen Type : Flat Panel. Stand Type : MINI ARC. Smart TV - Get to your entertainment the faster, easier, and more intelligent way. Easily access your streaming services all in one place using the Samsung Remote Control. Micro Dimming Pro - Reveal a more true-to-life picture with enhanced contrast. Quad Core Processor: enjoy a Fluid browsing experience and faster control switching between apps, streaming content and other media effortlessly. Inputs Outputs: Two HDMI Input, One Component Video Input, One RF In (Satellite Input), One RF In (Terrestrial Cable Input), One USB Input, One Composite In (AV), One Ethernet (LAN) and One Digital Audio Out (Optical) Game Mode - Yes",
-            "img": "/assest/Samsung 32 inch tv.jpg"
+            "img": "/assest/Samsung 32 inch tv.jpg",
+            "quantity": 0
         },
         {
             "name": "Roku 40 inch Select Series TV",
             "brand": "Roku",
             "price": 1234,
             "spec": "Full HD 1080p Resolution - Enjoy a viewing experience that is 2x the clarity of standard HD TVs..Power Supply (V) AC110-120V 50/60Hz.Image Aspect ratio:16:9.Picture Processor : HyperReal, Audio - Dolby : Yes, Sound Output (RMS) : 10W(L:5W, R:5W)..Screen Type : Flat Panel. Stand Type : MINI ARC. Smart TV - Get to your entertainment the faster, easier, and more intelligent way. Easily access your streaming services all in one place using the Samsung Remote Control. Micro Dimming Pro - Reveal a more true-to-life picture with enhanced contrast. Quad Core Processor: enjoy a Fluid browsing experience and faster control switching between apps, streaming content and other media effortlessly. Inputs Outputs: Two HDMI Input, One Component Video Input, One RF In (Satellite Input), One RF In (Terrestrial Cable Input), One USB Input, One Composite In (AV), One Ethernet (LAN) and One Digital Audio Out (Optical) Game Mode - Yes",
-            "img": "/assest/Roku 40 inch Select Series tv.jpg"
+            "img": "/assest/Roku 40 inch Select Series tv.jpg",
+            "quantity": 0
         }
     ],
     "printers": [
@@ -385,7 +432,8 @@
             "brand": "HP",
             "price": 1234,
             "fullSpecs": "PERFECT FOR HOME – Best for printing basic color documents like recipes, forms and travel documents. Print speeds up to 8.5 pages per minute in black or 5.5 pages per minute in color..Operating temperature range : 41 to 104°F / 5 to 40°C KEY FEATURES – Print, copy and scan in color, auto document feeder, mobile fax, mobile and wireless printing INCLUDES FREE HP+ SMART FEATURES – Upgrade free to HP+ during setup to get advanced features for mobile printing, security, automatic updates and more. HP+ only works with an HP account, internet connection and Original HP Ink for the life of the printer. CONNECTIVITY – Dual-band Wi-Fi with self-reset automatically detects and resolves connectivity issues. Also includes USB 2.0 port. HP SMART APP – Simple, step-by-step guided setup. Print, scan, and copy everyday documents from your phone—from anywhere. Get advanced features with HP+ in the Smart app including mobile fax and advanced scanning features such as multi-item recognition. 3 MONTHS OF INSTANT INK INCLUDED WITH HP+ – Print up to 700 pages a month and get ink delivered only when you need it. After 3 months, monthly fee applies unless cancelled, and you'll save up to 50% on ink. This printer is intended to work only with cartridges with original HP chips or circuitry and will block cartridges using non-HP chips or circuitry. Periodic firmware updates will maintain the effectiveness of these measures.",
-            "img": "/assest/HP DeskJet 4155e printer.jpg"
+            "img": "/assest/HP DeskJet 4155e printer.jpg",
+            "quantity": 0
         }
     ]
 }
