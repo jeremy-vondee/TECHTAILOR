@@ -19,14 +19,22 @@ import Header from "../layout/Header"
 import { productDataType } from "../store/useProductStore"
 
 const CartPage: FC = () => {
-    const { cartItems, increaseQuantity, decreaseQuantity } =
-        useAddToCartStore()
+    const {
+        cartItems,
+        increaseQuantity,
+        decreaseQuantity,
+        removeItemFromCart,
+    } = useAddToCartStore()
     const onIncreaseQuantity = (item: productDataType) => {
         increaseQuantity(item)
     }
     const onDecreaseQuantity = (item: productDataType) => {
         decreaseQuantity(item)
     }
+    const onRemoveItemFromCart = (item: productDataType) => {
+        removeItemFromCart(item)
+    }
+
     return (
         <>
             <Paper
@@ -142,7 +150,12 @@ const CartPage: FC = () => {
                                                             }}
                                                         />
                                                     }
-                                                    sx={{ fontSize: "1.5rem" }}>
+                                                    sx={{ fontSize: "1.5rem" }}
+                                                    onClick={() =>
+                                                        onRemoveItemFromCart(
+                                                            item
+                                                        )
+                                                    }>
                                                     Remove
                                                 </Button>
                                                 <Stack flexDirection={"row"}>
