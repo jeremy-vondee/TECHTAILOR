@@ -3,6 +3,7 @@ import { FC, useState } from "react"
 //*MUI importation
 import {
     AppBar,
+    Badge,
     InputAdornment,
     Stack,
     Link,
@@ -12,6 +13,7 @@ import {
     List,
     Box,
     ListItem,
+    Typography,
 } from "@mui/material"
 import { useTheme } from "@mui/material/styles"
 //*Icon importation
@@ -71,6 +73,11 @@ const Header: FC = () => {
     const handleDrawerToogle = () => {
         setOpenDrawer((prev) => !prev)
     }
+
+    const { cartItems } = useAddToCartStore()
+    const cartCount = cartItems.reduce((acc, current) => {
+        return acc + current.quantity
+    }, 0)
 
     return (
         <>
@@ -138,7 +145,13 @@ const Header: FC = () => {
                             underline="none"
                             fontWeight={"bold"}
                             sx={{ color: theme.palette.text.secondary }}>
-                            <ShoppingCart />
+                            <Badge
+                                badgeContent={
+                                    cartCount === 0 ? null : cartCount
+                                }
+                                color="error">
+                                <ShoppingCart />
+                            </Badge>
                         </Link>
                     </Stack>
                     {/* //Smaller Device Width */}
