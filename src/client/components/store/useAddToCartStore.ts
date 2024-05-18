@@ -1,15 +1,11 @@
 import { create } from "zustand"
 import { productDataType } from "./useProductStore"
 
-interface productType extends productDataType {
-    quantity: number
-}
-
 export type cartType = {
-    cartItems: productType[]
-    addItemToCart: (item: productType) => void
-    increaseQuantity: (item: string) => void
-    decreaseQuantity: (item: string) => void
+    cartItems: productDataType[]
+    addItemToCart: (item: productDataType) => void
+    increaseQuantity: (item: productDataType) => void
+    decreaseQuantity: (item: productDataType) => void
 }
 
 export const useAddToCartStore = create<cartType>((set, get) => ({
@@ -32,33 +28,33 @@ export const useAddToCartStore = create<cartType>((set, get) => ({
     },
 
     increaseQuantity: (item) => {
-        const itemExist = get().cartItems.find(
-            (cartItem) => cartItem.name === item
-        )
+        const items = get().cartItems
+        const itemExist = items.find((cartItem) => cartItem.name === item.name)
 
         if (itemExist) {
             if (typeof itemExist.quantity === "number") {
                 itemExist.quantity++
             }
 
-            set({ cartItems: [...get().cartItems] })
+            set({ cartItems: [...items] })
         }
     },
 
     decreaseQuantity: (item) => {
-        const itemExist = get().cartItems.find(
-            (cartItem) => cartItem.name === item
-        )
+        const items = get().cartItems
+        const itemExist = items.find((cartItem) => cartItem.name === item.name)
 
         if (itemExist) {
             if (typeof itemExist.quantity === "number") {
-                const updatedCartItems = get().cartItems.filter(
-                    (item) => item.name !== item.name
-                )
-                set({ cartItems: updatedCartItems })
-            } else {
-                itemExist.quantity--
-                set({ cartItems: [...get().cartItems] })
+                if (itemExist.quantity <= 1) {
+                    const updatedCartItems = items.filter(
+                        (item) => item.name !== item.name
+                    )
+                    set({ cartItems: updatedCartItems })
+                } else {
+                    itemExist.quantity--
+                    set({ cartItems: [...items] })
+                }
             }
         }
     },

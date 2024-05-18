@@ -16,14 +16,15 @@ import {
     Typography,
 } from "@mui/material"
 import Header from "../layout/Header"
+import { productDataType } from "../store/useProductStore"
 
 const CartPage: FC = () => {
     const { cartItems, increaseQuantity, decreaseQuantity } =
         useAddToCartStore()
-    const onIncreaseQuantity = (item) => {
+    const onIncreaseQuantity = (item: productDataType) => {
         increaseQuantity(item)
     }
-    const onDecreaseQuantity = (item) => {
+    const onDecreaseQuantity = (item: productDataType) => {
         decreaseQuantity(item)
     }
     return (

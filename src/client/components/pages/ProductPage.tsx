@@ -8,11 +8,16 @@ import Footer from "../layout/Footer"
 //* ErrorPage importation
 import ErrorPage from "../pages/ErrorPage"
 //* Fetch util importation
-import { useProductStore } from "../store/useProductStore"
+import { productDataType, useProductStore } from "../store/useProductStore"
+import { useAddToCartStore } from "../store/useAddToCartStore"
 
 const ProductPage: FC = () => {
     const { product } = useParams<string>()
     const data = useProductStore((state) => state.data)
+    const { addItemToCart } = useAddToCartStore()
+    const onAddToCart = (keys: productDataType) => {
+        addItemToCart(keys)
+    }
 
     return (
         <>
@@ -72,7 +77,8 @@ const ProductPage: FC = () => {
                                             sx={{
                                                 width: "fit-content",
                                                 marginTop: "8px",
-                                            }}>
+                                            }}
+                                            onClick={() => onAddToCart(item)}>
                                             add to cart
                                         </Button>
                                         <Divider sx={{ marginTop: "16px" }} />

@@ -20,10 +20,10 @@ import HpLogo from "../../assets/Hp.svg"
 import LgLogo from "../../assets/Lg.svg"
 import NintendoLogo from "../../assets/Nintendo.svg"
 //* Fetch util importation
-import { useProductStore } from "../store/useProductStore"
+import { useAddToCartStore } from "../store/useAddToCartStore"
+import { productDataType, useProductStore } from "../store/useProductStore"
 //* Layout importation
 import Carousel from "./HeroCarousel"
-import { useAddToCartStore } from "../store/useAddToCartStore"
 
 const LandingPageBody: FC = () => {
     const theme = useTheme()
@@ -31,7 +31,7 @@ const LandingPageBody: FC = () => {
     const data = useProductStore((state) => state.data)
     const { addItemToCart } = useAddToCartStore()
 
-    const onAddToCart = (keys) => {
+    const onAddToCart = (keys: productDataType) => {
         addItemToCart(keys)
     }
 
@@ -117,7 +117,8 @@ const LandingPageBody: FC = () => {
                                                                 fontSize:
                                                                     "1.1rem",
                                                             }}>
-                                                            {keys.price}
+                                                            {`GH₵ ` +
+                                                                keys.price}
                                                         </Typography>
                                                     </Stack>
                                                 </Link>
@@ -218,7 +219,8 @@ const LandingPageBody: FC = () => {
                                                                 fontSize:
                                                                     "1.1rem",
                                                             }}>
-                                                            {keys.price}
+                                                            {`GH₵ ` +
+                                                                keys.price}
                                                         </Typography>
                                                     </Stack>
                                                 </Link>
@@ -319,7 +321,8 @@ const LandingPageBody: FC = () => {
                                                                 fontSize:
                                                                     "1.1rem",
                                                             }}>
-                                                            {keys.price}
+                                                            {`GH₵ ` +
+                                                                keys.price}
                                                         </Typography>
                                                     </Stack>
                                                 </Link>
