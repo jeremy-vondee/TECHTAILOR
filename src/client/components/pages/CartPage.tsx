@@ -1,10 +1,11 @@
 import { Link as routerLink } from "react-router-dom"
 import { FC } from "react"
-import { useAddToCartStore } from "../store/useAddToCartStore"
+//*Icon importation
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart"
 import DeleteIcon from "@mui/icons-material/Delete"
 import AddIcon from "@mui/icons-material/Add"
 import RemoveIcon from "@mui/icons-material/Remove"
+//*MUI importation
 import {
     Box,
     Button,
@@ -16,6 +17,8 @@ import {
     Typography,
 } from "@mui/material"
 import Header from "../layout/Header"
+import { useAddToCartStore } from "../store/useAddToCartStore"
+//* Fetch util importation
 import { productDataType } from "../store/useProductStore"
 
 const CartPage: FC = () => {

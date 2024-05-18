@@ -14,11 +14,13 @@ import {
     ListItem,
 } from "@mui/material"
 import { useTheme } from "@mui/material/styles"
-import MenuIcon from "@mui/icons-material/Menu"
-import SearchIcon from "@mui/icons-material/Search"
-import { ShoppingCart } from "@mui/icons-material"
 //*Icon importation
 import Logo from "../../assets/Logo.svg"
+import { ShoppingCart } from "@mui/icons-material"
+import MenuIcon from "@mui/icons-material/Menu"
+import SearchIcon from "@mui/icons-material/Search"
+//* Fetch util importation
+import { useAddToCartStore } from "../store/useAddToCartStore"
 
 const Header: FC = () => {
     const Categorize = [

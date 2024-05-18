@@ -1,13 +1,13 @@
 import { FC, ReactNode } from "react"
-import { Link as routerLink, useParams } from "react-router-dom"
+import { Link as routerLink } from "react-router-dom"
 //*MUI importation
 import { Box, Button, Grid, Link, Typography, useTheme } from "@mui/material"
-import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material"
 //*Icons importation
 import Memory from "../../assets/Ram.svg"
 import Cpu from "../../assets/Cpu.svg"
 import Display from "../../assets/Display.svg"
 import Hdd from "../../assets/Hdd.svg"
+import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material"
 //*Nuka carousel importation
 import Carousel from "nuka-carousel"
 //* Fetch util importation
