@@ -165,7 +165,13 @@ const Header: FC = () => {
                             underline="none"
                             fontWeight={"bold"}
                             sx={{ color: theme.palette.text.secondary }}>
-                            <ShoppingCart />
+                            <Badge
+                                badgeContent={
+                                    cartCount === 0 ? null : cartCount
+                                }
+                                color="error">
+                                <ShoppingCart />
+                            </Badge>
                         </Link>
                         <MenuIcon onClick={handleDrawerToogle} />
                         {/* //Mobile menu Drawer */}
