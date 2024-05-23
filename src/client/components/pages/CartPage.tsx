@@ -16,8 +16,8 @@ import {
     Typography,
 } from "@mui/material"
 import Header from "../layout/Header"
-import { useAddToCartStore } from "../store/useAddToCartStore"
 //* Fetch util importation
+import { useAddToCartStore } from "../store/useAddToCartStore"
 import { productDataType } from "../store/useProductStore"
 
 const CartPage: FC = () => {
