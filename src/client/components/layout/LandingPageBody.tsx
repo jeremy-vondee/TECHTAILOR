@@ -1,15 +1,7 @@
 import { FC } from "react"
 import { Link as routerLink, useParams } from "react-router-dom"
 //*MUI importation
-import {
-    Box,
-    Button,
-    Grid,
-    Link,
-    Stack,
-    Typography,
-    useTheme,
-} from "@mui/material"
+import { Box, Grid, Link, Stack, Typography, useTheme } from "@mui/material"
 //*Icons importation
 import AppleLogo from "../../assets/Apple.svg"
 import PlaystationLogo from "../../assets/Playstation.svg"
@@ -20,20 +12,15 @@ import HpLogo from "../../assets/Hp.svg"
 import LgLogo from "../../assets/Lg.svg"
 import NintendoLogo from "../../assets/Nintendo.svg"
 //* Fetch util importation
-import { useAddToCartStore } from "../store/useAddToCartStore"
-import { productDataType, useProductStore } from "../store/useProductStore"
+import { useProductStore } from "../store/useProductStore"
 //* Layout importation
 import Carousel from "./HeroCarousel"
+import AddToCartButton from "./AddToCartButton"
 
 const LandingPageBody: FC = () => {
     const theme = useTheme()
     const { product } = useParams<string>()
     const data = useProductStore((state) => state.data)
-    const { addItemToCart } = useAddToCartStore()
-
-    const onAddToCart = (keys: productDataType) => {
-        addItemToCart(keys)
-    }
 
     return (
         <>
@@ -122,17 +109,9 @@ const LandingPageBody: FC = () => {
                                                         </Typography>
                                                     </Stack>
                                                 </Link>
-                                                <Button
-                                                    variant="contained"
-                                                    sx={{
-                                                        width: "fit-content",
-                                                        marginTop: "8px",
-                                                    }}
-                                                    onClick={() =>
-                                                        onAddToCart(keys)
-                                                    }>
-                                                    add to cart
-                                                </Button>
+                                                <AddToCartButton
+                                                    productItem={keys}
+                                                />
                                             </Grid>
                                         ))
                                 )
@@ -224,17 +203,9 @@ const LandingPageBody: FC = () => {
                                                         </Typography>
                                                     </Stack>
                                                 </Link>
-                                                <Button
-                                                    variant="contained"
-                                                    sx={{
-                                                        width: "fit-content",
-                                                        marginTop: "8px",
-                                                    }}
-                                                    onClick={() =>
-                                                        onAddToCart(keys)
-                                                    }>
-                                                    add to cart
-                                                </Button>
+                                                <AddToCartButton
+                                                    productItem={keys}
+                                                />
                                             </Grid>
                                         ))
                                 )
@@ -326,17 +297,9 @@ const LandingPageBody: FC = () => {
                                                         </Typography>
                                                     </Stack>
                                                 </Link>
-                                                <Button
-                                                    variant="contained"
-                                                    sx={{
-                                                        width: "fit-content",
-                                                        marginTop: "8px",
-                                                    }}
-                                                    onClick={() =>
-                                                        onAddToCart(keys)
-                                                    }>
-                                                    add to cart
-                                                </Button>
+                                                <AddToCartButton
+                                                    productItem={keys}
+                                                />
                                             </Grid>
                                         ))
                                 )

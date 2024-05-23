@@ -3,21 +3,17 @@ import { Link as routerLink, useParams } from "react-router-dom"
 //*MUI importation
 import { Link, Stack, Grid, Box, Typography, Button } from "@mui/material"
 //* Fetch util importation
-import { productDataType, useProductStore } from "../store/useProductStore"
-import { useAddToCartStore } from "../store/useAddToCartStore"
+import { useProductStore } from "../store/useProductStore"
 //* Layout importation
 import Header from "../layout/Header"
 import Footer from "../layout/Footer"
+import AddToCartButton from "../layout/AddToCartButton"
 //* ErrorPage importation
 import ErrorPage from "../pages/ErrorPage"
 
 const ProductsPage: FC = () => {
     const { category } = useParams<string>()
     const data = useProductStore((state) => state.data)
-    const { addItemToCart } = useAddToCartStore()
-    const onAddToCart = (keys: productDataType) => {
-        addItemToCart(keys)
-    }
 
     return (
         <>
@@ -88,17 +84,9 @@ const ProductsPage: FC = () => {
                                                     </Typography>
                                                 </Stack>
                                             </Link>
-                                            <Button
-                                                variant="contained"
-                                                sx={{
-                                                    width: "fit-content",
-                                                    marginTop: "8px",
-                                                }}
-                                                onClick={() =>
-                                                    onAddToCart(keys)
-                                                }>
-                                                add to cart
-                                            </Button>
+                                            <AddToCartButton
+                                                productItem={keys}
+                                            />
                                         </Grid>
                                     ))
                                 )}

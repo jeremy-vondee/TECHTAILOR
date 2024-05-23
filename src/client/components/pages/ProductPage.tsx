@@ -5,19 +5,15 @@ import { Stack, Grid, Box, Typography, Divider, Button } from "@mui/material"
 //* Layout importation
 import Header from "../layout/Header"
 import Footer from "../layout/Footer"
+import AddToCartButton from "../layout/AddToCartButton"
 //* ErrorPage importation
 import ErrorPage from "../pages/ErrorPage"
 //* Fetch util importation
-import { productDataType, useProductStore } from "../store/useProductStore"
-import { useAddToCartStore } from "../store/useAddToCartStore"
+import { useProductStore } from "../store/useProductStore"
 
 const ProductPage: FC = () => {
     const { product } = useParams<string>()
     const data = useProductStore((state) => state.data)
-    const { addItemToCart } = useAddToCartStore()
-    const onAddToCart = (keys: productDataType) => {
-        addItemToCart(keys)
-    }
 
     return (
         <>
@@ -71,16 +67,7 @@ const ProductPage: FC = () => {
                                             }}>
                                             {`GH₵ ` + item.price}
                                         </Typography>
-                                        <Button
-                                            variant="contained"
-                                            disableElevation
-                                            sx={{
-                                                width: "fit-content",
-                                                marginTop: "8px",
-                                            }}
-                                            onClick={() => onAddToCart(item)}>
-                                            add to cart
-                                        </Button>
+                                        <AddToCartButton productItem={item} />
                                         <Divider sx={{ marginTop: "16px" }} />
                                         <Stack>
                                             <Typography mt={3}>
