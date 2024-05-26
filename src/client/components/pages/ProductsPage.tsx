@@ -13,8 +13,9 @@ import ErrorPage from "../pages/ErrorPage"
 
 const ProductsPage: FC = () => {
     const { category } = useParams<string>()
-    const data = useProductStore((state) => state.data)
+    const { data } = useProductStore()
 
+    console.log(data, category)
     return (
         <>
             {data !== null &&

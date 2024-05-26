@@ -20,7 +20,7 @@ import AddToCartButton from "./AddToCartButton"
 const LandingPageBody: FC = () => {
     const theme = useTheme()
     const { product } = useParams<string>()
-    const data = useProductStore((state) => state.data)
+    const { data } = useProductStore()
 
     return (
         <>

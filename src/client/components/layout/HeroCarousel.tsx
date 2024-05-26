@@ -20,7 +20,7 @@ type CustomControlPropType = {
 
 const HeroCarousel: FC = () => {
     const theme = useTheme()
-    const data = useProductStore((state) => state.data)
+    const { data } = useProductStore()
 
     const CustomControlButton: FC<CustomControlPropType> = ({
         onClickHandler,

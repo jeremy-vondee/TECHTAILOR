@@ -13,7 +13,7 @@ import { useProductStore } from "../store/useProductStore"
 
 const ProductPage: FC = () => {
     const { product } = useParams<string>()
-    const data = useProductStore((state) => state.data)
+    const { data } = useProductStore()
 
     return (
         <>
