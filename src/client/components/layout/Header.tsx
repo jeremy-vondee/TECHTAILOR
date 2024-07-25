@@ -14,6 +14,7 @@ import {
     Box,
     ListItem,
     Typography,
+    Button,
 } from "@mui/material"
 import { useTheme } from "@mui/material/styles"
 //*Icon importation
@@ -79,6 +80,11 @@ const Header: FC = () => {
         return acc + current.quantity
     }, 0)
 
+    const [searchInput, setSearchInput] = useState("")
+    const onSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setSearchInput(event.target.value)
+    }
+
     return (
         <>
             <AppBar elevation={0} sx={{ color: theme.palette.text.secondary }}>
@@ -110,10 +116,17 @@ const Header: FC = () => {
                             placeholder="Search for products"
                             color="primary"
                             size="small"
+                            value={searchInput}
+                            onChange={onSearch}
                             InputProps={{
                                 endAdornment: (
                                     <InputAdornment position="end">
-                                        <SearchIcon />
+                                        <Link
+                                            component={routerLink}
+                                            to={`/s/${searchInput}`}
+                                            underline="none">
+                                            <SearchIcon />
+                                        </Link>
                                     </InputAdornment>
                                 ),
                             }}
