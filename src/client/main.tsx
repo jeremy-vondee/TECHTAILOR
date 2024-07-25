@@ -12,6 +12,7 @@ const ProductPage = lazy(() => import("./components/pages/ProductPage"))
 const SignInPage = lazy(() => import("./components/pages/SignInPage"))
 const SignUpPage = lazy(() => import("./components/pages/SignUpPage"))
 const CartPage = lazy(() => import("./components/pages/CartPage"))
+const SearchPage = lazy(() => import("./components/pages/SearchPage"))
 
 //*Route destinations
 const router = createBrowserRouter([
@@ -19,7 +20,6 @@ const router = createBrowserRouter([
         path: "/",
         element: (
             <Suspense>
-                {" "}
                 <App />
             </Suspense>
         ),
@@ -28,7 +28,6 @@ const router = createBrowserRouter([
         path: "/sign-in",
         element: (
             <Suspense>
-                {" "}
                 <SignInPage />
             </Suspense>
         ),
@@ -37,7 +36,6 @@ const router = createBrowserRouter([
         path: "/sign-up",
         element: (
             <Suspense>
-                {" "}
                 <SignUpPage />
             </Suspense>
         ),
@@ -46,7 +44,6 @@ const router = createBrowserRouter([
         path: "/categories/:category",
         element: (
             <Suspense>
-                {" "}
                 <ProductsPage />
             </Suspense>
         ),
@@ -55,7 +52,6 @@ const router = createBrowserRouter([
         path: "/:product",
         element: (
             <Suspense>
-                {" "}
                 <ProductPage />
             </Suspense>
         ),
@@ -64,8 +60,15 @@ const router = createBrowserRouter([
         path: "/cart",
         element: (
             <Suspense>
-                {" "}
-                <CartPage />{" "}
+                <CartPage />
+            </Suspense>
+        ),
+    },
+    {
+        path: "/s/:search-pram",
+        element: (
+            <Suspense>
+                <SearchPage />
             </Suspense>
         ),
     },
@@ -73,8 +76,7 @@ const router = createBrowserRouter([
         path: "/*",
         element: (
             <Suspense>
-                {" "}
-                <ErrorPage />{" "}
+                <ErrorPage />
             </Suspense>
         ),
     },
