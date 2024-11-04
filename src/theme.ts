@@ -1,11 +1,11 @@
 "use client"
-import { Roboto } from "next/font/google"
+import localFont from "next/font/local"
 import { createTheme } from "@mui/material/styles"
 
-const roboto = Roboto({
-  weight: ["300", "400", "500", "700"],
-  subsets: ["latin"],
-  display: "swap"
+const openSans = localFont({
+  src: "./app/font/OpenSans-Regular.ttf",
+  display: "swap",
+  fallback: ["Arial", "Helvetica", "Verdana", "system-ui", "sans - serif"]
 })
 
 const theme = createTheme({
@@ -18,7 +18,7 @@ const theme = createTheme({
     }
   },
   typography: {
-    fontFamily: roboto.style.fontFamily
+    fontFamily: openSans.style.fontFamily
   }
 })
 
