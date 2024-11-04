@@ -4,8 +4,7 @@ import { createTheme } from "@mui/material/styles"
 
 const openSans = localFont({
   src: "./app/font/OpenSans-Regular.ttf",
-  display: "swap",
-  fallback: ["Arial", "Helvetica", "Verdana", "system-ui", "sans - serif"]
+  display: "swap"
 })
 
 const theme = createTheme({
