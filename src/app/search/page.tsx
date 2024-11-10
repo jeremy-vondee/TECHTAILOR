@@ -1,7 +1,7 @@
 "use client"
 import React from "react"
 import { Stack, Typography } from "@mui/material"
-import Header from "../components/header/page"
+import Header from "../_components/header/page"
 import { useSearchParams } from "next/navigation"
 
 const Search = () => {
