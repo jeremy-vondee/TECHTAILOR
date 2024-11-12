@@ -3,7 +3,7 @@ import path from "path"
 import { NextResponse } from "next/server"
 
 interface ProductDataType {
-  [key: string]: {
+  [key: string]: Array<{
     name: string
     brand: string
     price: number
@@ -13,7 +13,7 @@ interface ProductDataType {
     fullSpecs: string
     img: string
     quantity: number
-  }
+  }>
 }
 
 // In-memory cache

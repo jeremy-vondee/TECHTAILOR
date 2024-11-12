@@ -1,7 +1,7 @@
 import { create } from "zustand"
 
 interface ProductDataType {
-  [key: string]: {
+  [key: string]: Array<{
     name: string
     brand: string
     price: number
@@ -11,7 +11,7 @@ interface ProductDataType {
     fullSpecs: string
     img: string
     quantity: number
-  } | null
+  }> | null
 }
 
 interface State {
