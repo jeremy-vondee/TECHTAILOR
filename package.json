@@ -18,6 +18,7 @@
     "embla-carousel-autoplay": "^8.3.1",
     "embla-carousel-react": "^8.3.1",
     "next": "15.0.1",
+    "persist": "^0.2.7",
     "react": "19.0.0-rc-69d4b800-20241021",
     "react-dom": "19.0.0-rc-69d4b800-20241021",
     "zustand": "^5.0.1"
