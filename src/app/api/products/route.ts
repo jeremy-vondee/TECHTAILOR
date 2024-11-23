@@ -2,22 +2,24 @@ import { promises as fs } from "fs"
 import path from "path"
 import { NextResponse } from "next/server"
 
-interface ProductDataType {
+interface ProductDataProp {
   [key: string]: Array<{
     name: string
     brand: string
     price: number
+    oldPrice: number
     keySpecs: {
       [key: string]: string[]
     }
     fullSpecs: string
     img: string
     quantity: number
+    rating: number
   }>
 }
 
 // In-memory cache
-let cachedData: ProductDataType | null = null
+let cachedData: ProductDataProp | null = null
 let cacheTime: number | null = null
 
 export async function GET() {
@@ -37,7 +39,7 @@ export async function GET() {
     // If cache is invalid or doesn't exist, read from file
     const filePath = path.join(process.cwd(), "data", "productDetails.json")
     const fileContents = await fs.readFile(filePath, "utf8")
-    const data: ProductDataType = JSON.parse(fileContents)
+    const data: ProductDataProp = JSON.parse(fileContents)
 
     // Update cache
     cachedData = data
