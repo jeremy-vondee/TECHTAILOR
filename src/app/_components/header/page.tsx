@@ -145,7 +145,7 @@ const Header: FC = () => {
                   <Link
                     key={keys.link}
                     component={NextLink}
-                    href={`category/${keys.path}`}
+                    href={`/category/${keys.path}`}
                     pt={2}
                     underline="none"
                   >
