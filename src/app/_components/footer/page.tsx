@@ -55,17 +55,17 @@ const Footer = () => {
         <Grid size={{ sm: 4, md: 3 }}>
           <Stack mt={3}>
             <Typography variant="h5">COMPANY</Typography>
-            <Typography variant="body2">About us</Typography>
-            <Typography variant="body2">Payment Method</Typography>
-            <Typography variant="body2">Terms and Conditions</Typography>
+            <Typography variant="body1">About us</Typography>
+            <Typography variant="body1">Payment Method</Typography>
+            <Typography variant="body1">Terms and Conditions</Typography>
           </Stack>
         </Grid>
         <Grid size={{ sm: 4, md: 3 }}>
           <Stack mt={3}>
             <Typography variant="h5">ODERS</Typography>
-            <Typography variant="body2">Support</Typography>
-            <Typography variant="body2">Return Policies</Typography>
-            <Typography variant="body2">Delivery Information</Typography>
+            <Typography variant="body1">Support</Typography>
+            <Typography variant="body1">Return Policies</Typography>
+            <Typography variant="body1">Delivery Information</Typography>
           </Stack>
         </Grid>
         <Grid size={{ sm: 4, md: 3 }}>
