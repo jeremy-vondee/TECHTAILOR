@@ -4,14 +4,17 @@ import Header from "./_components/header/page"
 import { useProductStore } from "@/store/productSotre"
 import FeaturedProducts from "./_components/featuredProducts/page"
 import Footer from "./_components/footer/page"
+import LoadingSkeleton from "./loading"
 
 const Home = () => {
   const { isLoading, error, fetchData } = useProductStore()
+
   useEffect(() => {
     fetchData()
-  }, [])
+  }, [fetchData])
 
-  if (isLoading) return <div>Loading...</div>
+  if (isLoading) return <LoadingSkeleton />
+
   if (error) return <div>Error: {error.message}</div>
 
   return (
