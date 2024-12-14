@@ -1,6 +1,7 @@
 import * as React from "react"
 import type { Metadata } from "next"
 import ThemeRegistry from "./util/ThemeRegistry"
+import { UserProvider } from "@auth0/nextjs-auth0/client"
 
 export default function RootLayout(props: { children: React.ReactNode }) {
   return (
@@ -22,7 +23,9 @@ export default function RootLayout(props: { children: React.ReactNode }) {
         <link rel="manifest" href="/favicon/site.webmanifest" />
       </head>
       <body>
-        <ThemeRegistry>{props.children}</ThemeRegistry>
+        <UserProvider>
+          <ThemeRegistry>{props.children}</ThemeRegistry>
+        </UserProvider>
       </body>
     </html>
   )
