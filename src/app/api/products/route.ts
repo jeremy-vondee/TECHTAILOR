@@ -1,63 +1,21 @@
-import { promises as fs } from "fs"
-import path from "path"
 import { NextResponse } from "next/server"
-
-interface ProductDataProp {
-  [key: string]: Array<{
-    name: string
-    brand: string
-    price: number
-    oldPrice: number
-    keySpecs: {
-      [key: string]: string[]
-    }
-    fullSpecs: string
-    img: string
-    quantity: number
-    rating: number
-  }>
-}
-
-// In-memory cache
-let cachedData: ProductDataProp | null = null
-let cacheTime: number | null = null
+import { getProducts } from "@/app/lib/productDB"
 
 export async function GET() {
   try {
-    // Check if cache is valid (e.g., less than 5 minutes old)
-    if (cachedData && cacheTime && Date.now() - cacheTime < 5 * 60 * 1000) {
-      console.log("Serving from cache")
-      return new NextResponse(JSON.stringify(cachedData), {
-        status: 200,
-        headers: {
-          "Content-Type": "application/json",
-          "Cache-Control": "public, max-age=300, s-maxage=300" // Cache for 5 minutes
-        }
-      })
-    }
-
-    // If cache is invalid or doesn't exist, read from file
-    const filePath = path.join(process.cwd(), "data", "productDetails.json")
-    const fileContents = await fs.readFile(filePath, "utf8")
-    const data: ProductDataProp = JSON.parse(fileContents)
-
-    // Update cache
-    cachedData = data
-    cacheTime = Date.now()
-
-    console.log("Serving fresh data")
-    return new NextResponse(JSON.stringify(data), {
+    const products = await getProducts()
+    return NextResponse.json(products, {
       status: 200,
       headers: {
         "Content-Type": "application/json",
-        "Cache-Control": "public, max-age=300, s-maxage=300" // Cache for 5 minutes
+        "Cache-Control": "public, max-age=300, s-maxage=300"
       }
     })
   } catch (error) {
-    console.error("Error reading file:", error)
-    return new NextResponse(JSON.stringify({ error: "Unable to read file" }), {
-      status: 500,
-      headers: { "Content-Type": "application/json" }
-    })
+    console.error("Error fetching products:", error)
+    return NextResponse.json(
+      { error: "Unable to fetch products" },
+      { status: 500 }
+    )
   }
 }
