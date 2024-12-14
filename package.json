@@ -9,14 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@auth0/nextjs-auth0": "^3.5.0",
     "@emotion/cache": "^11.13.1",
     "@emotion/react": "^11.13.3",
     "@emotion/server": "^11.11.0",
     "@emotion/styled": "^11.13.0",
     "@mui/icons-material": "^6.1.5",
     "@mui/material": "^6.1.5",
+    "@types/mongodb": "^4.0.7",
     "embla-carousel-autoplay": "^8.3.1",
     "embla-carousel-react": "^8.3.1",
+    "mongoose": "^8.8.3",
     "next": "15.0.1",
     "persist": "^0.2.7",
     "react": "19.0.0-rc-69d4b800-20241021",
