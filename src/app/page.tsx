@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect } from "react"
 import Header from "./_components/header/page"
-import { useProductStore } from "@/store/productSotre"
+import { useProductStore } from "@/store/productStore"
 import FeaturedProducts from "./_components/featuredProducts/page"
 import Footer from "./_components/footer/page"
 import LoadingSkeleton from "./loading"
