@@ -3,7 +3,7 @@ import React, { useMemo } from "react"
 import { Box, Grid2, Link, Stack, Typography } from "@mui/material"
 import Header from "../_components/header/page"
 import { useSearchParams } from "next/navigation"
-import { useProductStore } from "@/store/productSotre"
+import { useProductStore } from "@/store/productStore"
 import StarRateIcon from "@mui/icons-material/StarRate"
 import NextLink from "next/link"
 

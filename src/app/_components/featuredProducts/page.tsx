@@ -1,6 +1,6 @@
 "use client"
 import React from "react"
-import { useProductStore } from "@/store/productSotre"
+import { useProductStore } from "@/store/productStore"
 import { Box, Grid2, Link, Stack, Typography, useTheme } from "@mui/material"
 import NextLink from "next/link"
 import StarRateIcon from "@mui/icons-material/StarRate"
