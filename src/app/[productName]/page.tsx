@@ -40,6 +40,41 @@ interface RandomProductDataProp {
   rating: number
 }
 
+interface CartItem {
+  name: string
+  brand: string
+  price: number
+  oldPrice: number
+  keySpecs: {
+    [key: string]: string[]
+  }
+  fullSpecs: string
+  img: string
+  quantity: number
+  rating: number
+}
+
+const sendCartToServer = async (cartItem: CartItem) => {
+  try {
+    const response = await fetch("/api/cart", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ userId: cartItem.name, cartItem })
+    })
+
+    if (!response.ok) {
+      throw new Error("Failed to update cart")
+    }
+
+    const data = await response.json()
+    console.log(data.message)
+  } catch (error) {
+    console.error("Error updating cart:", error)
+  }
+}
+
 type RandomProductArrayProp = RandomProductDataProp[]
 
 const ProductPage = ({ params }: ProductPageProps) => {
@@ -215,7 +250,10 @@ const ProductPage = ({ params }: ProductPageProps) => {
                   Returns & exchanges accepted within 30 days
                 </Typography>
                 <Button
-                  onClick={() => addItemToCart(foundProduct)}
+                  onClick={() => {
+                    addItemToCart(foundProduct)
+                    sendCartToServer(foundProduct)
+                  }}
                   sx={{
                     background: theme.palette.primary.main,
                     color: theme.palette.secondary.main,
