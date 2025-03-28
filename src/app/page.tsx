@@ -5,13 +5,22 @@ import { useProductStore } from "@/store/productStore"
 import FeaturedProducts from "./_components/featuredProducts/page"
 import Footer from "./_components/footer/page"
 import LoadingSkeleton from "./loading"
+import { useCartStore } from "@/store/cartStore"
+import { useUser } from "@auth0/nextjs-auth0/client"
 
 const Home = () => {
   const { isLoading, error, fetchData } = useProductStore()
+  const { setLoggedIn } = useCartStore()
+  const { user } = useUser()
 
   useEffect(() => {
     fetchData()
-  }, [fetchData])
+    if (user) {
+      setLoggedIn(true)
+    } else {
+      setLoggedIn(false)
+    }
+  }, [fetchData, setLoggedIn])
 
   if (isLoading) return <LoadingSkeleton />
 
