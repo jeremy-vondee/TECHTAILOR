@@ -1,60 +1,68 @@
 import { Db, InsertOneResult, MongoClient } from "mongodb"
 import { NextResponse, NextRequest } from "next/server"
 
-const connectToUserDB = async (): Promise<Db> => {
-  const uri = process.env.MONGODB_URI as string
-  const client = await MongoClient.connect(uri)
-  return client.db("userDB")
-}
-
+// Function to check if a user already exists in the database
 const checkUserExist = async (email: string, db: Db) => {
   return await db.collection("users").findOne({ email })
 }
 
+// Function to create a new user
 const createUser = async (
   email: string,
+  nickname: string,
+  image: string,
   username: string,
   db: Db
 ): Promise<InsertOneResult> => {
   const userData = await db.collection("users").insertOne({
     email,
+    nickname,
+    image,
     username
   })
   return userData
 }
 
+// Main POST handler function
 export const POST = async (req: NextRequest) => {
   let client: MongoClient | undefined
+
   try {
-    const { username, email } = await req.json()
+    const { username, email, nickname, image } = await req.json()
+
+    // Validate input
     if (!username || !email) {
-      // Return a response indicating that username and email are required
       return new NextResponse("Username and email are required.", {
         status: 400
       })
     }
-    const db = await connectToUserDB()
+
+    client = await MongoClient.connect(process.env.MONGODB_URI as string)
+    const db = client.db("userDB")
 
     // Check if the user already exists in the database
     const existingUser = await checkUserExist(email, db)
+
     if (existingUser) {
       // If the user already exists, return a response indicating so
-      console.log("User already exists.")
-      return new NextResponse("User already exists.", { status: 400 })
+      return new NextResponse(
+        JSON.stringify({ message: "User logged in.", userData: existingUser }),
+        { status: 200, headers: { "Content-Type": "application/json" } }
+      )
     }
 
-    const userData = await createUser(email, username, db)
-    console.log(userData)
+    // Create a new user since they do not exist
+    const userData = await createUser(email, nickname, image, username, db)
 
     return new NextResponse(
       JSON.stringify({ message: "User stored successfully.", userData }),
       { status: 201, headers: { "Content-Type": "application/json" } }
     )
   } catch (e) {
-    // If an error occurs during the process, log the error and return an internal server error response
     console.error(e)
     return new NextResponse("Internal Server Error", { status: 500 })
   } finally {
+    // Ensure the client is closed only if it was successfully created
     if (client) {
       await client.close()
     }
