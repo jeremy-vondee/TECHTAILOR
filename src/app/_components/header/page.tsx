@@ -8,17 +8,25 @@ import {
   Box,
   ListItem,
   List,
-  Drawer
+  Drawer,
+  Badge,
+  Menu,
+  MenuItem,
+  IconButton
 } from "@mui/material"
 import { useTheme } from "@mui/material/styles"
 import CartIcon from "@mui/icons-material/ShoppingCart"
 import NextLink from "next/link"
 import MenuIcon from "@mui/icons-material/Menu"
-import SignIn from "../sign-in/page"
 import SearchBar from "../searchBar/page"
+import { useCartStore } from "@/store/cartStore"
+import SignIn from "../sign-in/page"
+import { useUser } from "@auth0/nextjs-auth0/client"
+import AccountCircleIcon from "@mui/icons-material/AccountCircle"
 
 const Header: FC = () => {
   const theme = useTheme()
+  const { user } = useUser()
 
   const Categorize = [
     {
@@ -68,6 +76,22 @@ const Header: FC = () => {
     setOpenDrawer((prev) => !prev)
   }
 
+  const cartList = useCartStore((state) => state.cartList)
+  const cartCount = cartList.reduce((acc, current) => {
+    return acc + current.quantity
+  }, 0)
+
+  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null)
+  const open = Boolean(anchorEl)
+
+  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    setAnchorEl(event.currentTarget)
+  }
+
+  const handleClose = () => {
+    setAnchorEl(null)
+  }
+
   return (
     <AppBar elevation={0} sx={{ color: theme.palette.primary.main }}>
       <Toolbar
@@ -75,7 +99,7 @@ const Header: FC = () => {
           justifyContent: "space-between"
         }}
       >
-        <Link>
+        <Link component={NextLink} href="/" underline="none">
           <Box
             component="img"
             alt="logo"
@@ -103,15 +127,63 @@ const Header: FC = () => {
             fontWeight={"bold"}
             sx={{ color: theme.palette.secondary.main }}
           >
-            <CartIcon />
+            <Badge
+              badgeContent={cartCount === 0 ? null : cartCount}
+              color="error"
+            >
+              <CartIcon />
+            </Badge>
           </Link>
-          <SignIn />
+          {user ? (
+            <>
+              <IconButton
+                aria-label="delete"
+                onClick={handleClick}
+                sx={{
+                  color: theme.palette.secondary.main,
+                  font: "large"
+                }}
+              >
+                <AccountCircleIcon />
+              </IconButton>
+              {/* </Button> */}
+              <Menu anchorEl={anchorEl} open={open} onClose={handleClose}>
+                <MenuItem onClick={handleClose}>My Account</MenuItem>
+                <MenuItem onClick={handleClose}>Settings</MenuItem>
+                <MenuItem>
+                  <Link
+                    component={NextLink}
+                    href="/api/auth/logout"
+                    underline="none"
+                  >
+                    Log out
+                  </Link>
+                </MenuItem>
+              </Menu>
+            </>
+          ) : (
+            <SignIn />
+          )}
         </Stack>
         <Stack
           flexDirection={"row"}
           gap={3}
           sx={{ display: { xs: "flex", sm: "none" } }}
         >
+          <Link
+            component={NextLink}
+            href="/cart"
+            underline="none"
+            fontWeight={"bold"}
+            sx={{ color: theme.palette.secondary.main }}
+          >
+            <Badge
+              badgeContent={cartCount === 0 ? null : cartCount}
+              color="error"
+            >
+              <CartIcon />
+            </Badge>
+          </Link>
           <MenuIcon
             sx={{
               color: theme.palette.secondary.main
