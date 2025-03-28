@@ -1,92 +1,54 @@
 "use client"
-import React, { FC, useState } from "react"
-import { Box, Link, Modal, Stack, Typography, useTheme } from "@mui/material"
+import React, { useEffect } from "react"
+import { Link, useTheme } from "@mui/material"
 import NextLink from "next/link"
-import GoogleIcon from "@mui/icons-material/Google"
+import { useUser } from "@auth0/nextjs-auth0/client"
 
-const SignIn: FC = () => {
+const SignIn = () => {
+  const { user } = useUser()
   const theme = useTheme()
 
-  const [open, setOpen] = useState(false)
-  const handleOpen = () => setOpen(true)
-  const handleClose = () => setOpen(false)
+  useEffect(() => {
+    const sendUserDataToServer = async () => {
+      if (user && user.name && user.email) {
+        // Check if user and its properties exist
+        try {
+          const response = await fetch("/api/user", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+              username: user.name,
+              email: user.email,
+              nickname: user.nickname,
+              image: user.picture
+            })
+          })
+
+          if (response.ok) {
+            const data = await response.json()
+          }
+        } catch (error) {
+          console.error("Error storing user data:", error)
+        }
+      }
+    }
+
+    sendUserDataToServer()
+  }, [user?.name])
 
   return (
     <>
       <Link
-        onClick={handleOpen}
+        component={NextLink}
+        href="/api/auth/login"
         underline="none"
-        sx={{
-          color: {
-            xs: theme.palette.primary.main,
-            sm: theme.palette.secondary.main,
-            fontWeight: "bold"
-          },
-          marginTop: { xs: 2, md: 0 },
-          cursor: "pointer"
-        }}
+        fontWeight={"bold"}
+        sx={{ color: theme.palette.secondary.main }}
       >
         Sign in
       </Link>
-      <Modal
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
-      >
-        <Stack
-          flexDirection={"column"}
-          alignItems={"center"}
-          sx={{
-            position: "absolute",
-            top: "50%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-            width: 400,
-            bgcolor: `${theme.palette.primary.main}`,
-            borderRadius: "10px",
-            p: 4
-          }}
-        >
-          <Box
-            component="img"
-            alt="logo"
-            sx={{
-              width: { xs: "160px", md: "304px" }
-            }}
-            src={`/Logo.svg`}
-          />
-          <Typography
-            sx={{
-              color: theme.palette.secondary.main
-            }}
-            mb={3}
-          >
-            Sign in or create an account
-          </Typography>
-          <Link
-            component={NextLink}
-            href="/cart"
-            underline="none"
-            fontWeight={"bold"}
-            p={1}
-            sx={{
-              color: theme.palette.secondary.main,
-              backgroundColor: "#353935",
-              borderRadius: "6px"
-            }}
-          >
-            <Stack flexDirection={"row"} gap={1}>
-              <GoogleIcon
-                sx={{
-                  color: theme.palette.secondary.main
-                }}
-              />
-              <Typography>Continue with Google</Typography>
-            </Stack>
-          </Link>
-        </Stack>
-      </Modal>
     </>
   )
 }
