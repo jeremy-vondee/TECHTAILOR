@@ -5,5 +5,10 @@
     "prettier",
     "eslint:recommended",
     "next"
-  ]
+  ],
+  "settings": {
+    "react": {
+      "version": "detect" // Automatically detect the React version
+    }
+  }
 }
